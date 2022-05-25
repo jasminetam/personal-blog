@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import "../styles/Header.css";
+import "../styles/Navigation.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
