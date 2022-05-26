@@ -23,7 +23,7 @@ export default function Home({ slugs }) {
       </div> */}
       <Navigation />
       <Header />
-      <div key={id} className="home">
+      <div key={""} className="home">
         <Posts />
         <Sidebar />
       </div>
