@@ -1,12 +1,11 @@
 import { RiDeleteBinFill } from "react-icons/ri";
 import { RiEdit2Fill } from "react-icons/ri";
-import Image from "next/image";
 
 export default function SinglePost() {
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        <Image src="" alt="" className="singlePostImg" />
+        <img src="" alt="" className="singlePostImg" />
         <h1 className="singlePostTitle">
           Lorem
           <div className="singlePostEdit">

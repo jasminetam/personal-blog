@@ -1,10 +1,10 @@
 import fs from "fs";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import Posts from "./Components/posts/Posts";
-import Sidebar from "./Components/Sidebar/Sidebar";
-import Header from "./Components/Header/Header";
-import Navigation from "./Components/Navigation/Navigation";
+import Posts from "../Components/posts/Posts";
+import Sidebar from "../Components/Sidebar/Sidebar";
+import Header from "../Components/Header/Header";
+import Navigation from "../Components/Navigation/Navigation";
 
 export default function Home({ slugs }) {
   return (
@@ -24,7 +24,7 @@ export default function Home({ slugs }) {
       <Navigation />
       <Header />
       <div key={""} className="home">
-        <Posts />
+        <Posts slugs={slugs} />
         <Sidebar />
       </div>
     </>
