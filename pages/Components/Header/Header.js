@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -7,7 +7,7 @@ export default function Header() {
         <span className="headerTitleSm">React & Node</span>
         <span className="headerTitleLg">Blog</span>
       </div>
-      <img className="headerImg" src={"/header.jpg"} alt="" />
+      <Image className="headerImg" src={"/header.jpg"} alt="" />
     </div>
   );
 }

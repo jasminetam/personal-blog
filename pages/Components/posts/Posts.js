@@ -6,7 +6,7 @@ export default function Posts() {
   return (
     <div className="posts">
       {arr.map((_, __) => {
-        return <Post />;
+        return <Post key={""} />;
       })}
     </div>
   );

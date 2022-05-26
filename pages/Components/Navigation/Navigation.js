@@ -1,8 +1,8 @@
-import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { SiIndeed } from "react-icons/si";
 import { FiTwitter } from "react-icons/fi";
 import { RiSearch2Line } from "react-icons/ri";
+import Image from "next/image";
 
 export default function Navigation() {
   return (
@@ -21,7 +21,7 @@ export default function Navigation() {
         </ul>
       </div>
       <div className="topRight">
-        <img className="topImg" src={"/jasmine.jpg"} alt="Jasmine"></img>
+        <Image className="topImg" src={"/jasmine.jpg"} alt="Jasmine" />
         <RiSearch2Line className="topSearchIcon" />
       </div>
     </div>

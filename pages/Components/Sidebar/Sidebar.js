@@ -1,13 +1,14 @@
 import { BsGithub } from "react-icons/bs";
 import { SiIndeed } from "react-icons/si";
 import { FiTwitter } from "react-icons/fi";
+import Image from "next/image";
 
 export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
-        <img src={"/profile.jpg"} width="200px" height="200px" alt="" />
+        <Image src={"/profile.jpg"} width="200px" height="200px" alt="" />
         <p>lorem</p>
       </div>
       <div className="sidebarItem">
