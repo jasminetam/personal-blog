@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import Sidebar from "../Components/Sidebar/Sidebar";
 import Header from "../Components/Header/Header";
 import Navigation from "../Components/Navigation/Navigation";
-// import Posts from "../Components/Posts/Posts";
+import Posts from "../Components/Posts/Posts";
 import Head from "next/head";
 
 export default function Home({ data, slugs }) {
@@ -29,7 +29,7 @@ export default function Home({ data, slugs }) {
       <Header />
       <Navigation />
       <div key={""} className="home">
-        {/* <Posts slugs={slugs} data={data} /> */}
+        <Posts slugs={slugs} data={data} />
         <Sidebar />
       </div>
     </>
