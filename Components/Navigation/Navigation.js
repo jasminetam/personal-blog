@@ -7,22 +7,36 @@ export default function Navigation() {
   return (
     <div className="navigation">
       <div className="topLeft">
-        <BsGithub className="topIcons" />
-        <SiIndeed className="topIcons" />
-        <FiTwitter className="topIcons" />
+        <div className="topNavList">
+          <a className="topNavListItem" href="/Porfolio">
+            Porfolio
+          </a>
+          <a className="topNavListItem" href="/">
+            Blog
+          </a>
+          <a className="topNavListItem" href="/Projects">
+            Projects
+          </a>
+          <a className="topNavListItem" href="/Contact">
+            Contact
+          </a>
+        </div>
       </div>
-      <div className="topCenter">
-        <ul className="topList">
-          <li className="topListItem">HOME</li>
-          <li className="topListItem">ABOUT</li>
-          <li className="topListItem">WRITE</li>
-          <li className="topListItem">CONTACT</li>
-        </ul>
-      </div>
+      <div className="topCenter"></div>
       <div className="topRight">
-        <img className="topImg" src={"/jasmine.jpg"} alt="Jasmine" />
-        <RiSearch2Line className="topSearchIcon" />
+        <button className="topSearchIcon">
+          <RiSearch2Line />
+        </button>
       </div>
     </div>
   );
+}
+
+{
+  /* 
+<input value placeholder="Type to Search" />
+<button>
+  <RiSearch2Line className="topSearchIcon" />
+</button>
+ */
 }
