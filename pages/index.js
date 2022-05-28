@@ -1,12 +1,14 @@
 import fs from "fs";
 import styles from "../styles/Home.module.css";
-import Link from "next/link";
-import Posts from "../Components/posts/Posts";
+import path from "path";
+import matter from "gray-matter";
 import Sidebar from "../Components/Sidebar/Sidebar";
 import Header from "../Components/Header/Header";
 import Navigation from "../Components/Navigation/Navigation";
+import Posts from "../Components/Posts/Posts";
+import Head from "next/head";
 
-export default function Home({ slugs }) {
+export default function Home({ data, slugs }) {
   return (
     <>
       {/* <div>
@@ -21,10 +23,13 @@ export default function Home({ slugs }) {
           );
         })}
       </div> */}
-      <Navigation />
+      <Head>
+        <title>Jasmine Blog</title>
+      </Head>
       <Header />
+      <Navigation />
       <div key={""} className="home">
-        <Posts slugs={slugs} />
+        <Posts slugs={slugs} data={data} />
         <Sidebar />
       </div>
     </>
@@ -32,10 +37,16 @@ export default function Home({ slugs }) {
 }
 
 export const getStaticProps = async () => {
-  const files = fs.readdirSync("posts");
+  const files = fs.readdirSync("posts", "utf8").reverse();
+  const slugs = files.map((filename) => filename.replace(".md", ""));
+  const readMarkdownFile = files.map((slug) =>
+    fs.readFileSync(path.join("posts", slug)).toString()
+  );
+  const matterMarkdownFile = readMarkdownFile.map((file) => matter(file).data);
   return {
     props: {
-      slugs: files.map((filename) => filename.replace(".md", "")),
+      slugs,
+      data: matterMarkdownFile,
     },
   };
 };

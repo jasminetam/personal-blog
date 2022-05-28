@@ -1,9 +1,15 @@
-.posts{
-    flex: 9;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
+.posts {
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.postsContainer :hover {
+  background-color: rgb(211, 235, 247);
+  border: 1px solid rgb(211, 235, 247);
+  cursor: pointer;
 }
