@@ -2,9 +2,9 @@ import fs from "fs";
 import styles from "../styles/Home.module.css";
 import path from "path";
 import matter from "gray-matter";
-import Sidebar from "../Components/Sidebar/Sidebar";
-import Header from "../Components/Header/Header";
-import Navigation from "../Components/Navigation/Navigation";
+import Sidebar from "../Components/Sidebar";
+import Header from "../Components/Header";
+import Navigation from "../Components/Navigation";
 import PostComponent from "../Components/PostComponent";
 import Head from "next/head";
 
