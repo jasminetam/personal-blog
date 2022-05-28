@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Post from "../Post/Post";
 
-//
-
 export default function Posts({ data, slugs }) {
   return (
     <div className="posts">
