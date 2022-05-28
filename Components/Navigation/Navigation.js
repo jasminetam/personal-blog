@@ -8,7 +8,7 @@ export default function Navigation() {
     <div className="navigation">
       <div className="topLeft">
         <div className="topNavList">
-          <a className="topNavListItem" href="/Porfolio">
+          {/* <a className="topNavListItem" href="/Porfolio">
             Porfolio
           </a>
           <a className="topNavListItem" href="/">
@@ -17,9 +17,9 @@ export default function Navigation() {
           <a className="topNavListItem" href="/Projects">
             Projects
           </a>
-          <a className="topNavListItem" href="/Contact">
+          <a className="topNavListItem" href="/Conta">
             Contact
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="topCenter"></div>

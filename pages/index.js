@@ -24,11 +24,7 @@ export default function Home({ data, slugs }) {
         })}
       </div> */}
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Anaheim&family=Cinzel+Decorative&family=Hind+Siliguri:wght@300&family=Julius+Sans+One&family=Proza+Libre&family=Rajdhani&family=Spartan:wght@400&family=Ubuntu:wght@300&display=swap"
-          rel="stylesheet"
-        />
-        <title>Jasmine's Blog</title>
+        <title>Jasmine Blog</title>
       </Head>
       <Header />
       <Navigation />
