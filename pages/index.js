@@ -24,7 +24,7 @@ export default function Home({ data, slugs }) {
         })}
       </div> */}
       <Head>
-        <title>Jasmine's Blog</title>
+        <title>Jasmine&apos;s Blog</title>
       </Head>
       <Header />
       <Navigation />
