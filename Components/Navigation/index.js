@@ -2,24 +2,29 @@ import { BsGithub } from "react-icons/bs";
 import { SiIndeed } from "react-icons/si";
 import { FiTwitter } from "react-icons/fi";
 import { RiSearch2Line } from "react-icons/ri";
+import Link from "next/link";
 
 export default function Navigation() {
   return (
     <div className="navigation">
       <div className="topLeft">
         <div className="topNavList">
-          {/* <a className="topNavListItem" href="/Porfolio">
+          {/* <Link className="topNavListItem" href="">
             Porfolio
-          </a>
-          <a className="topNavListItem" href="/">
-            Blog
-          </a>
-          <a className="topNavListItem" href="/Projects">
+          </Link> */}
+          <div className="topNavListItem">
+            <Link className="topNavListItem" href="/">
+              Blog
+            </Link>
+          </div>
+          {/* <Link className="topNavListItem" href="">
             Projects
-          </a>
-          <a className="topNavListItem" href="/Conta">
-            Contact
-          </a> */}
+          </Link> */}
+          <div className="topNavListItem">
+            <Link className="topNavListItem" href="contact">
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
       <div className="topCenter"></div>
