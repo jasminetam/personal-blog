@@ -1,6 +1,9 @@
 import { BsGithub } from "react-icons/bs";
-import { SiIndeed } from "react-icons/si";
+import { BsLinkedin } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
+import { SiGmail } from "react-icons/si";
+
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
@@ -8,24 +11,37 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">Jasmine Tam</span>
         <img src={"/profile.jpg"} width="200px" height="200px" alt="" />
-        <p>From Nurse to React developer</p>
+        <h4>From a Nurse to a React developer</h4>
       </div>
-      <div className="sidebarItem">
-        <span className="sidebarTitle">CATEGORIES</span>
-        <ul className="sidebarList">
-          <li className="sidebarListItem">React</li>
-          <li className="sidebarListItem">Tech</li>
-          <li className="sidebarListItem">Life</li>
-          <li className="sidebarListItem">Nextjs</li>
-          <li className="sidebarListItem">Style</li>
-          <li className="sidebarListItem">Cinema</li>
-        </ul>
-      </div>
-      <div className="sidebarItem">
+      <div className="sidebarItem2">
         <div className="sidebarSocial">
-          <BsGithub className="sidebarIcons" />
-          <SiIndeed className="sidebarIcons" />
-          <FiTwitter className="sidebarIcons" />
+          <Link href="https://github.com/jasminetam">
+            <div className="alignIcons">
+              <BsGithub className="sidebarIcons" />
+              <h3>@jasminetam</h3>
+            </div>
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/ching-man-tam-b89a69129/">
+            <div className="alignIcons">
+              <BsLinkedin className="sidebarIcons" />
+              <h3>Jasmine Tam</h3>
+            </div>
+          </Link>
+
+          <Link href="https://twitter.com/JasmineTam6">
+            <div className="alignIcons">
+              <FiTwitter className="sidebarIcons" />
+              <h3>@JasmineTam6</h3>
+            </div>
+          </Link>
+
+          <Link href="mailto:jasminetam94@gmail.com">
+            <div className="alignIcons">
+              <SiGmail className="sidebarIcons" />
+              <h3>jasminetam94@gmail.com</h3>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

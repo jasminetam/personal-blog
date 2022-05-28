@@ -49,6 +49,11 @@
   cursor: pointer;
 }
 
+.topNavListItem :hover,
+.topSearchIcon :hover {
+  color: rgb(13, 158, 241);
+}
+
 .topSearchIcon {
   padding: 0;
   border: none;
