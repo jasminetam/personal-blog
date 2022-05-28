@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <div className="header">
-      <img className="headerImg" src={"/home.png"} alt="" />
+      <h1>Jasmine's Blog</h1>
     </div>
   );
 }

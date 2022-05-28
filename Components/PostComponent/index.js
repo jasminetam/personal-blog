@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Post from "../Post";
 
-export default function Posts({ data, slugs }) {
+export default function PostComponent({ data, slugs }) {
   return (
     <div className="posts">
       {slugs.map((slug, id) => {

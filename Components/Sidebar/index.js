@@ -21,7 +21,6 @@ export default function Sidebar() {
               <h3>@jasminetam</h3>
             </div>
           </Link>
-
           <Link href="https://www.linkedin.com/in/ching-man-tam-b89a69129/">
             <div className="alignIcons">
               <BsLinkedin className="sidebarIcons" />
