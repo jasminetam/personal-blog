@@ -7,7 +7,7 @@ import Sidebar from "../../Components/Sidebar";
 import Header from "../../Components/Header";
 import Navigation from "../../Components/Navigation";
 import PostComponent from "../../Components/PostComponent";
-import categories from "../../components/Categories";
+import categories from "../../Components/categories";
 import Footer from "../../Components/Footer";
 
 const Catergory = ({ category, data, slugs, htmlString }) => {
