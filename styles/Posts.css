@@ -10,6 +10,5 @@
 
 .postsContainer :hover {
   background-color: rgb(211, 235, 247);
-  border: 0px solid rgb(211, 235, 247);
   cursor: pointer;
 }

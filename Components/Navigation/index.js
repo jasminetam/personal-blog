@@ -5,7 +5,9 @@ export default function Navigation() {
   return (
     <div className="navigation">
       <div className="topLeft">
-        <img src="/favicon.ico" alt="" />
+        <Link href="/">
+          <img className="topImg" src="/logo.png" alt="" />
+        </Link>
         <div className="topNavList">
           {/* <Link className="topNavListItem" href="">
             Porfolio
