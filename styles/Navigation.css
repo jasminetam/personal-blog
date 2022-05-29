@@ -11,10 +11,21 @@
 }
 
 .topLeft {
-  flex: 6;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.topImg {
+  width: 60px;
+  margin-right: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.topImg :hover {
+  border: 2px solid rgb(13, 158, 241);
 }
 
 .topHomeButton {
@@ -28,14 +39,12 @@
 }
 
 .topRight {
-  flex: 3;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .topNavList {
-  flex: 6;
   display: flex;
   justify-content: center;
   margin: 0;
