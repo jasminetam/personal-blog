@@ -4,10 +4,10 @@ import Post from "../Post";
 export default function PostComponent({ data, slugs }) {
   return (
     <div className="posts">
-      {slugs.map((slug, id) => {
+      {data.map((d, id) => {
         return (
           <div key={id} className="postsContainer">
-            <Post data={data[id]} slug={slug} />
+            <Post data={d} slug={slugs[id]} />
           </div>
         );
       })}

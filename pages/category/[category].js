@@ -1,28 +1,23 @@
 import React, { useState, useEffect } from "react";
 import fs from "fs";
-import styles from "../styles/Home.module.css";
 import path from "path";
 import matter from "gray-matter";
-import Sidebar from "../Components/Sidebar";
-import Header from "../Components/Header";
-import Navigation from "../Components/Navigation";
 import Head from "next/head";
-import PostComponent from "../Components/PostComponent";
-import Footer from "../Components/Footer";
+import Sidebar from "../../Components/Sidebar";
+import Header from "../../Components/Header";
+import Navigation from "../../Components/Navigation";
+import PostComponent from "../../Components/PostComponent";
+import categories from "../../components/Categories";
+import Footer from "../../Components/Footer";
 
-export default function Home({ data, slugs, htmlString }) {
-  const [searchInput, setsearchInput] = useState([]);
-  const [searchResults, setsearchResults] = useState([]);
-  const handleChange = (e) => {
-    setsearchInput(e.target.value);
-  };
+const Catergory = ({ category, data, slugs, htmlString }) => {
+  const [filteredCategories, setfilteredCategories] = useState([]);
 
   useEffect(() => {
-    const results = data.filter((data) =>
-      data.title.toLowerCase().includes(searchInput)
+    setfilteredCategories((_prev) =>
+      data.filter((cat) => cat?.tags.includes(category))
     );
-    setsearchResults(results);
-  }, [searchInput]);
+  }, [category]);
 
   return (
     <>
@@ -37,35 +32,40 @@ export default function Home({ data, slugs, htmlString }) {
           content="a Blog about Jasmine learning journey on coding"
         />
         <meta name="keywords" content="Jasmine javascript react jasminetam" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-
-        <title>Jasmine&apos;s Blog</title>
+        <link href="logo.png" rel="icon" type="image/png" sizes="16x16" />
+        <meta name="description" content={htmlString} />
+        <meta name="keywords" content={data.tags} />
+        <title>{`${category} | Jasmine's Blog`}</title>
       </Head>
       <Header />
       <Navigation />
-      <div>
-        <input
-          className="searchBox"
-          type="text"
-          placeholder="Search"
-          value={searchInput}
-          onChange={handleChange}
-        />
-      </div>
       <div key={""} className="home">
         <PostComponent
-          data={searchResults}
           slugs={slugs}
-          htmlString={htmlString}
+          data={filteredCategories}
+          category={category}
         />
         <Sidebar />
       </div>
       <Footer />
     </>
   );
-}
+};
 
-export const getStaticProps = async () => {
+export const getStaticPaths = async () => {
+  const files = categories;
+  const paths = files.map((filename, idx) => ({
+    params: {
+      category: files[idx],
+    },
+  }));
+  return {
+    paths: paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps = async ({ params: { category } }) => {
   const files = fs.readdirSync("posts", "utf8").reverse();
   const slugs = files.map((filename) => filename.replace(".md", ""));
   const readMarkdownFile = files.map((slug) =>
@@ -74,8 +74,11 @@ export const getStaticProps = async () => {
   const matterMarkdownFile = readMarkdownFile.map((file) => matter(file).data);
   return {
     props: {
+      category,
       slugs,
       data: matterMarkdownFile,
     },
   };
 };
+
+export default Catergory;

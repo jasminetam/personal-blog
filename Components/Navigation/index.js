@@ -1,6 +1,3 @@
-import { BsGithub } from "react-icons/bs";
-import { SiIndeed } from "react-icons/si";
-import { FiTwitter } from "react-icons/fi";
 import { RiSearch2Line } from "react-icons/ri";
 import Link from "next/link";
 
@@ -8,6 +5,7 @@ export default function Navigation() {
   return (
     <div className="navigation">
       <div className="topLeft">
+        <img src="/favicon.ico" alt="" />
         <div className="topNavList">
           {/* <Link className="topNavListItem" href="">
             Porfolio
@@ -28,20 +26,7 @@ export default function Navigation() {
         </div>
       </div>
       <div className="topCenter"></div>
-      <div className="topRight">
-        <button className="topSearchIcon">
-          <RiSearch2Line />
-        </button>
-      </div>
+      <div className="topRight"></div>
     </div>
   );
-}
-
-{
-  /* 
-<input value placeholder="Type to Search" />
-<button>
-  <RiSearch2Line className="topSearchIcon" />
-</button>
- */
 }

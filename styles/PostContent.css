@@ -15,12 +15,11 @@
 }
 
 .PostContentTitle {
-  text-align: center;
-  margin: 10px;
-  font-family: "Lora", serif;
-  font-size: 28px;
+  text-align: left;
 }
-
+.postTagTitle {
+  font-family: "Cormorant SC", sans-serif;
+}
 .PostContentInfo {
   margin-bottom: 20px;
   display: flex;
@@ -49,7 +48,7 @@
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #5c99f4;
+  background-color: #24b6df;
   border: none;
   color: #ffffff;
   text-align: center;
@@ -62,6 +61,6 @@
 }
 
 .button:hover {
-  background-color: #0a66f1;
+  background-color: #0680a1;
   border-radius: 16px;
 }
