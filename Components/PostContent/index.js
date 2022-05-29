@@ -6,8 +6,8 @@ export default function PostContent({ data, htmlString }) {
     <div className="PostContent">
       <div className="PostContentwrapper">
         <div className="PostContentTitle">
-          <h1>{data?.title}</h1>
-          <h2>{data?.description}</h2>
+          <h2 className="postTagTitle">{data?.title}</h2>
+          <h3 className="postTagDesc">{data?.description}</h3>
           <div className="PostContentInfo">
             {data?.tags.map((tag) => (
               <button className="button" key={tag}>

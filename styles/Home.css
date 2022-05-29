@@ -9,3 +9,29 @@
   width: 150px;
   height: auto;
 }
+
+.searchBox {
+  flex: 6;
+  display: table;
+  background: none;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(163, 206, 241);
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  background-color: #aedef3;
+  font-family: "Cormorant SC", sans-serif;
+  font-size: 16px;
+}
+
+.footer {
+  font-family: "Cormorant SC", sans-serif;
+  font-size: 18px;
+  border-bottom: 1px solid #aedef3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

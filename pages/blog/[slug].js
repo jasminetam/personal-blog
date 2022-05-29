@@ -8,11 +8,25 @@ import Header from "../../Components/Header";
 import Navigation from "../../Components/Navigation";
 import Sidebar from "../../Components/Sidebar";
 import PostContent from "../../Components/PostContent";
+import Footer from "../../Components/Footer";
 
 const Post = ({ htmlString, data }) => {
   return (
     <>
       <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;500&family=Playfair+Display:ital@1&display=swap"
+          rel="stylesheet"
+        />
+        <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="a Blog about Jasmine learning journey on coding"
+        />
+        <meta name="keywords" content="Jasmine javascript react jasminetam" />
+        <link href="logo.png" rel="icon" type="image/png" sizes="16x16" />
+        <meta name="description" content={htmlString} />
+        <meta name="keywords" content={data.tags} />
         <title>{`${data.title} | Jasmine's Blog`}</title>
       </Head>
       <Header />
@@ -21,6 +35,7 @@ const Post = ({ htmlString, data }) => {
         <PostContent data={data} htmlString={htmlString} />
         <Sidebar />
       </div>
+      <Footer />
     </>
   );
 };

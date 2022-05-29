@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Navigation from "../Components/Navigation";
 import Head from "next/head";
 import ContactForm from "../Components/ContactForm";
+import Footer from "../Components/Footer";
 
 export default function Contact() {
   return (
@@ -28,6 +29,7 @@ export default function Contact() {
         <ContactForm />
         <Sidebar />
       </div>
+      <Footer />
     </>
   );
 }
