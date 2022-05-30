@@ -8,6 +8,12 @@
   margin: 20px;
 }
 
+@media screen and (max-width: 992px) {
+  .posts {
+    margin: 20px 0px;
+  }
+}
+
 .postsContainer :hover {
   background-color: rgb(211, 235, 247);
   cursor: pointer;

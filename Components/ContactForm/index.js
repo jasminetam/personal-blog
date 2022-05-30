@@ -46,21 +46,21 @@ class ContactForm extends React.Component {
             <div className="contactWrapper">
               <div className="contactHeading">Send a Message</div>
               <div className="contactForm">
-                <label htmlFor="name">Name:</label>
+                <label  className="contactFormItems" htmlFor="name">Name:</label>
                 <input
                   className="contactFormItems"
                   name="name"
                   value={name}
                   onChange={(e) => this.handleChange(e)}
                 />
-                <label htmlFor="email">Email Address:</label>
+                <label className="contactFormItems" htmlFor="email">Email Address:</label>
                 <input
                   className="contactFormItems"
                   name="email"
                   value={email}
                   onChange={(e) => this.handleChange(e)}
                 />
-                <label htmlFor="message">Message:</label>
+                <label className="contactFormItems" htmlFor="message">Message:</label>
                 <textarea
                   className="contactFormMsg"
                   name="message"
