@@ -2,6 +2,12 @@
   display: flex;
 }
 
+@media screen and (max-width: 992px) {
+  .home {
+    flex-direction: column;
+  }
+}
+
 .homeIcon {
   display: flex;
   justify-content: center;

@@ -24,7 +24,7 @@
 .contactFormItems {
   display: flex;
   align-items: center;
-  justify-content: center;
+  font-family: "Cormorant SC", sans-serif;
 }
 .contactFormMsg {
   display: flex;
@@ -32,6 +32,7 @@
   justify-content: center;
   width: 500px;
   height: 300px;
+  font-family: "Cormorant SC", sans-serif;
 }
 .sendButton {
   flex: 3;
