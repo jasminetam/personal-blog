@@ -4,9 +4,11 @@ const categories = [
   "Leetcode",
   "Tech",
   "Lifestyle",
-  "Music",
+  "Testing",
   "JavaScript",
-  "Work",
+  "Scecurity",
+  "ExpressJS",
+  "Typescript",
 ];
 
 export default categories;
