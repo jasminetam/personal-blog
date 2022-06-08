@@ -26,11 +26,11 @@
   justify-content: left;
   font-size: 16px;
   font-family: "Cormorant SC", sans-serif;
-  color: #b39656;
+  color: #171613;
 }
 
 .PostContentDesc {
-  color: #666;
+  color: rgb(45, 41, 41);
   font-size: 18px;
   line-height: 25px;
   font-family: "Cormorant SC", sans-serif;
