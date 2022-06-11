@@ -1,11 +1,13 @@
 .sidebar {
-  flex: 3;
   margin: 20px;
-  background-color: #fdfbfb;
+  background-color: #cdecf1;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px;
+  height: 100%;
+  position: sticky;
+  top: 80px;
 }
 
 .sidebarItem {

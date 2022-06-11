@@ -10,7 +10,7 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">Jasmine Tam</span>
-        <img src={"/profile.jpg"} width="200px" height="200px" alt="" />
+        <img src={"/image/profile.jpg"} width="200px" height="200px" alt="" />
         <h4>From a Nurse to a React developer</h4>
       </div>
       <div className="sidebarItem2">

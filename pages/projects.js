@@ -2,10 +2,10 @@ import Sidebar from "../Components/Sidebar";
 import Header from "../Components/Header";
 import Navigation from "../Components/Navigation";
 import Head from "next/head";
-import ContactForm from "../Components/ContactForm";
 import Footer from "../Components/Footer";
+import ProjectsBrowse from "../Components/Projects/ProjectsBrowse";
 
-export default function Contact() {
+export default function Projects() {
   return (
     <>
       <Head>
@@ -21,12 +21,12 @@ export default function Contact() {
         <meta name="keywords" content="Jasmine javascript react jasminetam" />
         <link rel="shortcut icon" href="/favicon.ico" />
 
-        <title>Contact | Jasmine&apos;s Blog</title>
+        <title>Projects | Jasmine&apos;s Blog</title>
       </Head>
       <Header />
       <Navigation />
       <div key={""} className="home">
-        <ContactForm />
+        <ProjectsBrowse />
         <Sidebar />
       </div>
       <Footer />
