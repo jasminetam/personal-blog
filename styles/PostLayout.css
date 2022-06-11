@@ -1,6 +1,6 @@
 .post {
-  width: 385px;
-  margin: 0px 25px 40px 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* 
@@ -13,8 +13,8 @@
 
 .postInfo {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .postCat {
@@ -22,9 +22,11 @@
   font-size: 11px;
   color: #be9656;
   line-height: 20px;
-  margin-top: 15px;
-  margin-right: 10px;
   cursor: pointer;
+}
+
+.postCats {
+  margin-top: 20px;
 }
 
 .postTitle {
@@ -38,9 +40,11 @@
 .postDate {
   font-family: "Cormorant SC", serif;
   font-style: italic;
-  font-size: 15px;
+  font-size: 20px;
   color: rgb(20, 22, 22);
-  margin-top: 15px;
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .postDesc {

@@ -5,6 +5,9 @@
 .PostContentwrapper {
   padding: 20px;
   padding-right: 0;
+  background-color: azure;
+  margin: 30px;
+  height: 50vh;
 }
 
 .PostContentImg {
@@ -16,31 +19,40 @@
 
 .PostContentTitle {
   text-align: left;
+  font-size: 30px;
 }
 .postTagTitle {
   font-family: "Cormorant SC", sans-serif;
 }
+
+.postTagDesc {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
 .PostContentInfo {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   display: flex;
   justify-content: left;
-  font-size: 16px;
-  font-family: "Cormorant SC", sans-serif;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   color: #171613;
 }
 
 .PostContentDesc {
   color: rgb(45, 41, 41);
-  font-size: 18px;
+  font-size: 24px;
   line-height: 25px;
-  font-family: "Cormorant SC", sans-serif;
+  font-family:'Times New Roman', Times, serif;
+  width: 90%;
+
 }
 
-.PostContentDesc:first-letter {
-  margin-left: 20px;
-  font-size: 30px;
-  font-weight: 600;
+p{
+  line-height: 50px;
+  
 }
+
 .PostContentDate {
   display: flex;
   align-items: right;

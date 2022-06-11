@@ -6,9 +6,12 @@ const categories = [
   "Lifestyle",
   "Testing",
   "JavaScript",
-  "Scecurity",
+  "Security",
   "ExpressJS",
   "Typescript",
+  "Database",
+  "Frontend",
+  "Backend"
 ];
 
 export default categories;

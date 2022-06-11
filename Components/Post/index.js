@@ -7,6 +7,7 @@ export default function Post({ data, slug }) {
         <div className="postInfo">
           <img className="postImg" src={data?.picture} alt="" />
           <div className="postCats">
+          <div>
             <div className="postCat">
               {data?.tags.map((tag) => (
                 <button className="button" key={tag}>
@@ -15,9 +16,9 @@ export default function Post({ data, slug }) {
               ))}
             </div>
           </div>
-          <span className="postTitle">{data?.title}</span>
-          <hr />
-          <span className="postDate">{data?.date}</span>
+            <span className="postTitle">{data?.title}</span>
+            <span className="postDate">{data?.date}</span>
+            </div>
         </div>
       </div>
     </Link>
