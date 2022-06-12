@@ -1,0 +1,85 @@
+.projectWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+background-color: rgb(200, 245, 245);
+  
+
+}
+
+.projectHome {
+  flex-direction: column;
+  display: flex;
+justify-content: center;
+  
+}
+
+.projectLinkDiv {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  width: 500px;
+  padding: 20px;
+  border-radius: 50px;
+  border: 5px solid rgb(22, 6, 82);
+  background-color: azure;
+}
+
+.projectflex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 20px;
+ 
+}
+
+@media screen and (max-width: 992px) {
+  .projectHome {
+    margin: 20px 20px;
+    align-items: center;
+    overflow: hidden;
+  }
+  .projectLinkDiv {
+    width: 400px;
+    margin: 0;
+    padding: 5px;
+  }
+  .projectHeading, .projectDescription {
+    width: 350px;
+  }
+  .projectflex, .projectWrapper {
+    margin:  0;
+    padding: 0;
+  }
+  .projectImg {
+  width: fit-content;
+  }
+  
+}
+
+.projectImgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.projectSidebar {
+
+  align-items: stretch;
+}
+
+.projectImg {
+  width: 400px;
+}
+
+.projectLinkDiv:hover {
+  background-color: rgb(115, 186, 244);
+}

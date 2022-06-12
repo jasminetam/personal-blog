@@ -1,7 +1,18 @@
 .post {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: stretch;
+  justify-content: center;
+  margin: 20px;
 }
+
+@media screen and (max-width: 992px) {
+  .post {
+    display: flex;
+  }
+}
+
 
 /* 
 .postImg {
@@ -28,6 +39,7 @@
 .postCats {
   margin-top: 20px;
 }
+
 
 .postTitle {
   font-family: "Cormorant SC", serif;

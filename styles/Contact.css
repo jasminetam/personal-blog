@@ -1,5 +1,4 @@
 .contact {
-  flex: 9;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -9,11 +8,19 @@
   background-color: azure;
 }
 
+@media screen and (max-width: 992px) {
+  .contactWrapper {
+    width: 90%;
+  }
+
+}
+
+
 .contactHeading {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  font-size: 50px;
+  font-size: 55px;
   font-family: "Cormorant SC", sans-serif;
   color: #b39656;
 }
@@ -25,13 +32,14 @@
 .contactFormItems {
   display: flex;
   align-items: center;
+  font-size: 28px;
   font-family: "Cormorant SC", sans-serif;
 }
 .contactFormMsg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 450px;
   height: 300px;
   font-family: "Cormorant SC", sans-serif;
 }

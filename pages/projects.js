@@ -25,9 +25,11 @@ export default function Projects() {
       </Head>
       <Header />
       <Navigation />
-      <div key={""} className="home">
+      <div key={""} className="projectHome">
         <ProjectsBrowse />
-        <Sidebar />
+        <div className="projectSidebar">
+          <Sidebar />
+          </div>
       </div>
       <Footer />
     </>
