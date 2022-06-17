@@ -1,0 +1,210 @@
+/* portfolio home background */
+
+.portfolioHome {
+  background-color: #ADA7C9;
+}
+
+
+
+/*portfolioNavBar*/
+
+.portfolioNavigation {
+  width: 100%;
+  height: 70px;
+  background-color: ADA7C9;
+  color: rgb(16, 14, 14);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  z-index: 999;
+}
+
+.topImg {
+  width: 60px;
+  margin-right: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+
+.portfolioTopNavList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolioTopNavListItem {
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .portfolioTopNavListItem {
+    margin-right: 20px;
+  }
+}
+
+.portfolioTopNavListItem :hover{
+  color: rgb(131, 180, 233);
+}
+
+
+.portfolioHome {
+  height: 100%;
+}
+
+.portfolioHeader {
+  z-index: 100;
+  width: 100%;
+  height: 80vh;
+  color: #242F40;
+  font-size: 20px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.titlesDiv {
+  display: flex;
+  padding: 100px 50px 0px 50px;
+  width: 1800px;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleName {
+  display: flex;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Cormorant SC", serif;
+}
+
+.subtitleName {
+  font-size: 26px;
+  text-align: center;
+  padding: 150px;
+}
+
+/*Portfolio Sidebar*/
+
+.portfolioSidebar {
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  height: 100%;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .titleName {
+    display: flex;
+    font-size: 100px;
+  }
+  .titlesDiv {
+    display: flex;
+    padding: 180px 0px 0px 10px;
+  }
+  
+}
+
+@media (min-width: 748px) and (max-width: 1536px) {
+  .titleName {
+    display: flex;
+    font-size: 130px;
+  }
+  .titlesDiv {
+    display: flex;
+    padding: 180px 0px 0px 20px;
+  }
+  
+}
+
+.portfolioSidebarItem2 {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 300px;
+  right: 20px;
+}
+
+.portfolioSidebarSocial {
+  margin-top: 15px;
+  display: flex;
+  margin-top: 80px;
+}
+
+.portfolioAlignIcons {
+  padding: 10px 0;
+  margin-left: 20px;
+}
+
+.portfolioAlignIcons :hover {
+  color: white;
+}
+
+.portfolioSidebarIconsOnly {
+  color: rgb(235, 186, 54);
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.portfolioHeaderButtonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+
+/* CSS */
+.button-81 {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 40px;
+}
+
+.button-81:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/*About*/
+.aboutContainer {
+width: 100%;
+height: 100%;
+}

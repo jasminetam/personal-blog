@@ -4,16 +4,14 @@ export default function ProjectLayout({ project }) {
   return (
     
       <div className="projectLinkDiv">
-        <a href={project?.link} target="_blank" className="projectLink">
+        <a href={project?.link} className="projectLink">
         
-        <div className="projectImgWrapper">
+        <div className="projectDetails">
           <img
             className="projectImg"
             src={project?.imgUrl}
-            alt={project.heading}
+            alt={project?.title}
           />
-        </div>
-        <div className="projectDetails">
           <h3 className="projectHeading">{project?.title}</h3>
           <p className="projectDescription">{project?.description}</p>
         </div>

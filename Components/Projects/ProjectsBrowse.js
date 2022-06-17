@@ -5,25 +5,23 @@ import {
   personalBlog,
   eCommerceSite,
   dailyExpenses,
-  AdvancedECommerce,
+  projectManagement,
 } from "./ProjectList";
 
 export default function ProjectsBrowse() {
   return (
-    <div>
-      <div className="projectWrapper">
-        <div className="projectflex">
+    <div className="projectWrapper">
+              <div className="projectflex">
           {[
             spotifake,
             personalBlog,
             eCommerceSite,
             dailyExpenses,
-            AdvancedECommerce,
+            projectManagement,
           ].map((item, idx) => (
             <ProjectLayout key={idx} project={item} />
           ))}
         </div>
-      </div>
-    </div>
+        </div>
   );
 }

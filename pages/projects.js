@@ -1,9 +1,9 @@
-import Sidebar from "../Components/Sidebar";
-import Header from "../Components/Header";
-import Navigation from "../Components/Navigation";
+import Header from "../Components/Common/Header/Header";
+import Navigation from "../Components/Common/Navigation/Navigation";
 import Head from "next/head";
-import Footer from "../Components/Footer";
+import Footer from "../Components/Common/Footer/Footer";
 import ProjectsBrowse from "../Components/Projects/ProjectsBrowse";
+import SidebarIcon from "../Components/Common/SidebarIcon/SidebarIcon";
 
 export default function Projects() {
   return (
@@ -25,11 +25,11 @@ export default function Projects() {
       </Head>
       <Header />
       <Navigation />
-      <div key={""} className="projectHome">
-        <ProjectsBrowse />
-        <div className="projectSidebar">
-          <Sidebar />
-          </div>
+      <div key={""} className="home">
+        <div className="projectWrapper">
+          <ProjectsBrowse />
+        </div>
+        <SidebarIcon />
       </div>
       <Footer />
     </>
