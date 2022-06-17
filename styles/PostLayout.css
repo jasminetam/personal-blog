@@ -1,7 +1,6 @@
 .post {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   align-items: stretch;
   justify-content: center;
   margin: 20px;

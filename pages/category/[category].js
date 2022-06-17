@@ -3,12 +3,12 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
-import Sidebar from "../../Components/Sidebar";
-import Header from "../../Components/Header";
-import Navigation from "../../Components/Navigation";
-import PostComponent from "../../Components/PostComponent";
-import categories from "../../Components/categories/categories";
-import Footer from "../../Components/Footer";
+import Sidebar from "../../Components/Common/Sidebar/Sidebar";
+import Header from "../../Components/Common/Header/Header";
+import Navigation from "../../Components/Common/Navigation/Navigation";
+import PostComponent from "../../Components/Blog/PostComponent/PostComponent";
+import categories from "../../Components/Others/categories/categories";
+import Footer from "../../Components/Common/Footer/Footer";
 
 const Catergory = ({ category, data, slugs, htmlString }) => {
   const [filteredCategories, setfilteredCategories] = useState([]);

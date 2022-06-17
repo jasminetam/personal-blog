@@ -1,9 +1,9 @@
-import Sidebar from "../Components/Sidebar";
-import Header from "../Components/Header";
-import Navigation from "../Components/Navigation";
+import Header from "../Components/Common/Header/Header";
+import Navigation from "../Components/Common/Navigation/Navigation";
 import Head from "next/head";
-import ContactForm from "../Components/ContactForm";
-import Footer from "../Components/Footer";
+import ContactForm from "../Components/ContactForm/ContactForm";
+import Footer from "../Components/Common/Footer/Footer";
+import SidebarIcon from "../Components/Common/SidebarIcon/SidebarIcon";
 
 export default function Contact() {
   return (
@@ -27,7 +27,7 @@ export default function Contact() {
       <Navigation />
       <div key={""} className="home">
         <ContactForm />
-        <Sidebar />
+        <SidebarIcon />
       </div>
       <Footer />
     </>

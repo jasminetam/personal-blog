@@ -4,11 +4,11 @@ import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
 import marked from "marked";
-import Header from "../../Components/Header";
-import Navigation from "../../Components/Navigation";
-import Sidebar from "../../Components/Sidebar";
-import PostContent from "../../Components/PostContent";
-import Footer from "../../Components/Footer";
+import Header from "../../Components/Common/Header/Header";
+import Navigation from "../../Components/Common/Navigation/Navigation";
+import Sidebar from "../../Components/Common/Sidebar/Sidebar";
+import PostContent from "../../Components/Blog/PostContent/PostContent";
+import Footer from "../../Components/Common/Footer/Footer";
 
 const Post = ({ htmlString, data }) => {
   return (

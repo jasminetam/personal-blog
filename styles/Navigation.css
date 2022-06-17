@@ -58,6 +58,11 @@
   font-weight: 500;
   cursor: pointer;
 }
+@media screen and (max-width: 992px) {
+  .topNavListItem {
+    margin-right: 20px;
+  }
+}
 
 .topNavListItem :hover,
 .topSearchIcon :hover {
