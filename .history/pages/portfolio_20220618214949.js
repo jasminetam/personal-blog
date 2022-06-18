@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import Head from "next/head";
 import SocialMedia from "../Components/Portfolio/SocialMedia";
 import PortfolioHeader from "../Components/Portfolio/PortfolioHeader/PortfolioHeader";

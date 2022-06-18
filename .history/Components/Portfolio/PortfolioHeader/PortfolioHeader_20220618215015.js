@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import heroImage from "../../../public/image/heroImage.jpg";
-import { Element } from "react-scroll";
 
 export default function PortfolioHeader() {
   return (
@@ -63,7 +62,6 @@ export default function PortfolioHeader() {
           </div>
         </div>
       </div>
-      </div>
-      </Element>
+    </div>
   );
 }

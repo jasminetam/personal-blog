@@ -15,7 +15,7 @@ export default function PortfolioNavBar() {
               offset={50}
               duration={500}
               data-tooltip="Top"
-              className="tooltip-top"
+              className="tooltip-home"
             >
               <BsDot />
             </Link>

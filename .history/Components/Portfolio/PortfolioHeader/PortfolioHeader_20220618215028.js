@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import heroImage from "../../../public/image/heroImage.jpg";
-import { Element } from "react-scroll";
+import {El}
 
 export default function PortfolioHeader() {
   return (

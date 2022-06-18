@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import Head from "next/head";
 import SocialMedia from "../Components/Portfolio/SocialMedia";
 import PortfolioHeader from "../Components/Portfolio/PortfolioHeader/PortfolioHeader";
@@ -44,7 +45,7 @@ export default function Portfolio() {
         <title>Portfolio | Jasmine&apos;s Blog</title>
       </Head>
       <div className="portfoliobackground">
-       
+        <Element id="portfolioHome" name="portfolioHome">
           <PortfolioNavBar />
           <PortfolioHeader />
           <Pprojects />
