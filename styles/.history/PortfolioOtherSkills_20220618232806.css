@@ -1,0 +1,8 @@
+.portfolioOtherSkillsFirstDiv {
+    justify-content: center;
+  align-items: center;
+  gap: 2.5rem /* 40px */;
+  margin-top: 4rem /* 64px */;
+}
+
+.portfolioSkillsComponentsFirstDiv
