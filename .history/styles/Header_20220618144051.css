@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  z-index: 1;
+  font-size: 30px;
+  font-family: "Cormorant SC", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right top,
+    #052960,
+    #00588e,
+    #0089b3,
+    #27bccf,
+    #78eee5
+  );
+}
+
+/* .headerImg {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+} */
+
+.header > h1 {
+  padding: 50px 50px;
+  font-size: 80px;
+  background-color: white;
+  font-family: "Cormorant SC", serif;
+}
+
+@media screen and (max-width) {
+  
+}
