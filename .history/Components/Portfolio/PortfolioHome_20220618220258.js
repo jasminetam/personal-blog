@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import heroImage from "../../public/image/heroImage.jpg";
+import heroImage from "../../public/image/heroImage";
 import { Element } from "react-scroll";
 
 export default function PortfolioHome() {
