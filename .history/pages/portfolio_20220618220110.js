@@ -44,12 +44,14 @@ export default function Portfolio() {
         <title>Portfolio | Jasmine&apos;s Blog</title>
       </Head>
       <div className="portfoliobackground">
-        <PortfolioNavBar />
-        <PortfolioHome />
-        <Pprojects />
-        <SkillSets />
-        <OtherSkills />
-        <SocialMedia />
+       
+          <PortfolioNavBar />
+          <PortfolioHome />
+          <Pprojects />
+          <SkillSets />
+          <OtherSkills />
+          <SocialMedia />
+        
       </div>
     </>
   );

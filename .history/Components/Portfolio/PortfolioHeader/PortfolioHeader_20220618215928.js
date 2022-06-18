@@ -6,7 +6,7 @@ import { Element } from "react-scroll";
 
 export default function PortfolioHeader() {
   return (
-    <Element id="portfolioHome" name="portfolioHome">
+    <Element id="portfoliohome" name="portfoliohome">
     <div className="w-full h-full">
       <div className="md:pt-5 lg:pt-80">
         <div className="flex justify-between text-center md:mx-20 shadow">

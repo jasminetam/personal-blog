@@ -1,7 +1,7 @@
 import Head from "next/head";
 import SocialMedia from "../Components/Portfolio/SocialMedia";
-import PortfolioHome from "../Components/Portfolio/PortfolioHome";
-import PortfolioNavBar from "../Components/Portfolio/PortfolioNavBar";
+import PortfolioHome from "../Components/Portfolio/PortfolioHeader/PortfolioHome";
+import PortfolioNavBar from "../Components/Portfolio/PortfolioNavBar/PortfolioNavBar";
 import Pprojects from "../Components/Portfolio/PProjects";
 import SkillSets from "../Components/Portfolio/SkillSets";
 import OtherSkills from "../Components/Portfolio/OtherSkills";
@@ -44,12 +44,14 @@ export default function Portfolio() {
         <title>Portfolio | Jasmine&apos;s Blog</title>
       </Head>
       <div className="portfoliobackground">
-        <PortfolioNavBar />
-        <PortfolioHome />
-        <Pprojects />
-        <SkillSets />
-        <OtherSkills />
-        <SocialMedia />
+       
+          <PortfolioNavBar />
+          <PortfolioHeader />
+          <Pprojects />
+          <SkillSets />
+          <OtherSkills />
+          <SocialMedia />
+        
       </div>
     </>
   );
