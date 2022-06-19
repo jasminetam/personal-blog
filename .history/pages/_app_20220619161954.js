@@ -1,7 +1,7 @@
 import "../styles/home.css";
 import "../styles/posts.css";
-import "../styles/postlayout.css";
-import "../styles/postcontent.css";
+import "../styles/postLayout.css";
+import "../styles/postContent.css";
 import "../styles/contact.css";
 import "../styles/project.css";
 import "../styles/sidebaricon.css";

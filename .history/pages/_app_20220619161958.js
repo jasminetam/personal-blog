@@ -1,6 +1,6 @@
 import "../styles/home.css";
 import "../styles/posts.css";
-import "../styles/postlayout.css";
+import "../styles/postLayout.css";
 import "../styles/postcontent.css";
 import "../styles/contact.css";
 import "../styles/project.css";
