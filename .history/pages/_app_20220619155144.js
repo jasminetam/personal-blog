@@ -1,9 +1,9 @@
-import "../styles/home.css";
-import "../styles/posts.css";
-import "../styles/postLayout.css";
-import "../styles/postContent.css";
-import "../styles/contact.css";
-import "../styles/project.css"
+import "../styles/Home.css";
+import "../styles/Posts.css";
+import "../styles/PostLayout.css";
+import "../styles/PostContent.css";
+import "../styles/Contact.css";
+import "../styles/Project.css"
 import "../styles/sidebarIcon.css"
 import "../styles/portfolio.css"
 import "../styles/portfolioHome.css"

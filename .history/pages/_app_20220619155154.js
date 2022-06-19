@@ -1,4 +1,4 @@
-import "../styles/home.css";
+import "../styles/Home.css";
 import "../styles/posts.css";
 import "../styles/postLayout.css";
 import "../styles/postContent.css";

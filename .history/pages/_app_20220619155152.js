@@ -1,5 +1,5 @@
-import "../styles/home.css";
-import "../styles/posts.css";
+import "../styles/Home.css";
+import "../styles/Posts.css";
 import "../styles/postLayout.css";
 import "../styles/postContent.css";
 import "../styles/contact.css";
