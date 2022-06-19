@@ -1,0 +1,11 @@
+.portfolioSkillSetsWrapper {
+    padding-top: 2.5rem/* 40px */;
+    padding-bottom: 2.5rem/* 40px */;
+}
+.portfolioSkillSetsFirstDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,51 @@
+.portfolioSkillSetsWrapper {
+    padding-top: 2.5rem/* 40px */;
+    padding-bottom: 2.5rem/* 40px */;
+}
+.portfolioSkillSetsFirstDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24rem/* 384px */;
+    padding-bottom: 24rem/* 384px */;
+    margin-top: 5rem/* 80px */;
+    margin-bottom: 5rem/* 80px */;
+}
+
+.portfolioSkillSetsFirstDiv > h1 {
+    color: #363636;
+    background-color: transparent;
+    font-size: 3.75rem/* 60px */;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.portfolioSkillSetsIconsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem/* 80px */;
+    margin-right: 5rem/* 80px */;
+    margin-top: 2.5rem/* 40px */;
+    margin-bottom: 2.5rem/* 40px */;
+    gap: 0.5rem/* 8px */;
+}
+
+.portfolioSkillSetsSingleIconDiv {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .portfolioSkillSetsIconsDiv {
+        gap: 2.5rem/* 40px */;
+    }
+}
+

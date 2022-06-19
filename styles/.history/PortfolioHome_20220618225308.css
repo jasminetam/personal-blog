@@ -1,0 +1,25 @@
+.PortfolioHomeWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.PortfolioHeaderReactiveWrapper {
+
+}
+
+.PortfolioHeaderWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .PortfolioHeaderReactiveWrapper {
+        padding-top: 1.25rem/* 20px */;
+    }
+}
+
+@media (min-width: 1024px) {
+    .PortfolioHeaderReactiveWrapper {
+        padding-top: 20rem/* 320px */;
+    }
+}
