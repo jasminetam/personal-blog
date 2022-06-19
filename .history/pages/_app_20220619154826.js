@@ -16,8 +16,8 @@ import "../styles/PortfolioSkillSets.css"
 import "../styles/PortfolioOtherSkills.css"
 import "../styels/Header.css"
 import "../styles/Sidebar.css"
-import "../styles/Navigation.css"
-import "../styles/Globals.css"
+import "../Navigation.css"
+import "../Glo"
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
