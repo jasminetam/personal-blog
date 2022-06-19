@@ -19,7 +19,6 @@
     display: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
   }
   .contact {
     margin: 0;
@@ -35,7 +34,12 @@
     padding: 0;
     margin: 0;
   }
-  
+  .contactFormItems {
+    width: 100%;
+  }
+  .contactFormMsg {
+    width: 100%;
+  }
 }
 
 .contactHeading {
@@ -63,7 +67,6 @@
 .contactFormItems {
   display: flex;
   align-items: center;
-  width: 95%;
   font-size: 24px;
   font-family: 'Times New Roman', Times, serif;
   
@@ -75,7 +78,7 @@
 }
 
 .contactFormMsg {
-  width: 95%;
+  width: 100%;
   align-items: center;
   justify-content: center;
  height: 300px;

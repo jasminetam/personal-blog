@@ -26,7 +26,7 @@ export default function PostContent({ data, htmlString }) {
           <span className="postContentDate">{data?.date}</span>
           </div>
         <div
-          className="postContentDesc"
+          className="PostContentDesc"
           dangerouslySetInnerHTML={{ __html: htmlString }}
         ></div>
       </div>

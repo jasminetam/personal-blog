@@ -19,7 +19,6 @@
     display: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
   }
   .contact {
     margin: 0;
@@ -75,7 +74,7 @@
 }
 
 .contactFormMsg {
-  width: 95%;
+  width: 100%;
   align-items: center;
   justify-content: center;
  height: 300px;

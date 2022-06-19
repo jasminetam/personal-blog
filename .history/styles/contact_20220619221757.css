@@ -14,8 +14,8 @@
 }
 @media screen and (max-width: 992px) {
   .contactWrapper {
-    margin: 20px;
-    padding: 20px;
+    /* margin: 20px;
+    padding: 20px; */
     display: column;
     align-items: center;
     justify-content: center;

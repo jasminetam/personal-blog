@@ -23,10 +23,10 @@ export default function PostContent({ data, htmlString }) {
             <BsDot />
           </p>
         </div>
-          <span className="postContentDate">{data?.date}</span>
+          <span className="PostContentDate">{data?.date}</span>
           </div>
         <div
-          className="postContentDesc"
+          className="PostContentDesc"
           dangerouslySetInnerHTML={{ __html: htmlString }}
         ></div>
       </div>

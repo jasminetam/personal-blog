@@ -4,11 +4,11 @@ import { BsDot } from "react-icons/bs";
 
 export default function PostContent({ data, htmlString }) {
   return (
-    <div className="postContent">
-      <div className="postContentWrapper">
+    <div className="PostContent">
+      <div className="PostContentWrapper">
         <div className="postContentHeader">
-        <div className="postContentTitle">
-          <div className="postContentInfo">
+        <div className="PostContentTitle">
+          <div className="PostContentInfo">
             {data?.tags.map((tag) => (
               <button className="button" key={tag}>
                 <Link href={`/category/${tag}`}>{tag}</Link>
@@ -17,16 +17,16 @@ export default function PostContent({ data, htmlString }) {
           </div>
           <h2 className="postTagTitle">{data?.title}</h2>
 
-          <p className="postTagDesc">
+          <p className="PostTagDesc">
             <BsDot />
             {data?.description}
             <BsDot />
           </p>
         </div>
-          <span className="postContentDate">{data?.date}</span>
+          <span className="PostContentDate">{data?.date}</span>
           </div>
         <div
-          className="postContentDesc"
+          className="PostContentDesc"
           dangerouslySetInnerHTML={{ __html: htmlString }}
         ></div>
       </div>
