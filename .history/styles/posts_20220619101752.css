@@ -1,0 +1,31 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .posts {
+    align-items: center;
+    width: 80%;
+  }
+}
+
+.postsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+
+}
+
+.postsContainer :hover {
+  background-color: #CCA43B;
+  border-radius: 50px;
+  cursor: pointer;
+}
