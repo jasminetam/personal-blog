@@ -59,7 +59,7 @@ export default function Home({ data, slugs, htmlString }) {
         />
          <link rel="manifest" href="/manifest.json" />
         <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#363636" />
+        <meta name="theme-color" content="#ffffff" />
 
         <title>Jasmine&apos;s Blog</title>
       </Head>

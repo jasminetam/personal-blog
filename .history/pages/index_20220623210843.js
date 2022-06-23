@@ -32,10 +32,6 @@ export default function Home({ data, slugs, htmlString }) {
         />
         <meta charSet="utf-8" />
         <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
-        />
-        <meta
           name="description"
           content="a Blog about Jasmine learning journey on coding"
         />
@@ -59,7 +55,7 @@ export default function Home({ data, slugs, htmlString }) {
         />
          <link rel="manifest" href="/manifest.json" />
         <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#363636" />
+        <meta name="theme-color" content="#ffffff" />
 
         <title>Jasmine&apos;s Blog</title>
       </Head>
