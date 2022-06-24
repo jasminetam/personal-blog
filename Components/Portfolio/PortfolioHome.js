@@ -5,7 +5,7 @@ import heroImage from "../../public/image/heroImage.jpg";
 
 export default function PortfolioHome() {
   return (
-    <div className="portfolioHomeWrapper">
+    <div className="portfolioHomeWrapper" data-test="component-PortfolioHome">
       <div className="portfolioHeaderReactiveWrapper">
         <div className="portfolioHeaderWrapper">
           <div className="portfolioHeaderImageDiv">

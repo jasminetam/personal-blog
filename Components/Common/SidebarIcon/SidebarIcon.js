@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function SidebarIcon() {
   return (
-    <div className="sidebarIconOnly">
+    <div className="sidebarIconOnly" data-test="component-sidebarIcon">
       <div className="sidebarIconItem2">
         <div className="sidebarIconSocial">
           <Link href="https://github.com/jasminetam">

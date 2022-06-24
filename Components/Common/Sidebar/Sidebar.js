@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <div className="sidebar">
+    <div className="sidebar" data-test="component-sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">Jasmine Tam</span>
         <img src={"/image/profile.jpg"} width="200px" height="200px" alt="" />

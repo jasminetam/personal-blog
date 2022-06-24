@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function SocialMedia() {
   return (
     <>
-      <Element id="socialmedia" name="socialmedia">
+      <Element id="socialmedia" name="socialmedia" data-test="component-SocialMedia">
         <div className="portfolioSidebarTextDiv">
           <div>
             <h3 className="portfolioSidebarText">Thank you for your time</h3>
