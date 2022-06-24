@@ -4,7 +4,7 @@ import {BsDot} from "react-icons/bs"
 export default function PortfolioNavBar() {
 
   return (
-    <div className="portfolioNavigation">
+    <div className="portfolioNavigation" data-test="component-PortfolioNavBar">
       <nav className="topLeft">
         <div className="portfolioTopNavList">
           <div className="portfolioTopNavListItem">

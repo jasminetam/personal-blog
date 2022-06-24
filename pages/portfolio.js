@@ -2,7 +2,7 @@ import Head from "next/head";
 import SocialMedia from "../Components/Portfolio/SocialMedia";
 import PortfolioHome from "../Components/Portfolio/PortfolioHome";
 import PortfolioNavBar from "../Components/Portfolio/PortfolioNavBar";
-import PortfolioProjects from "../Components/Portfolio/PorfolioProjects";
+import PortfolioProjects from "../Components/Portfolio/PortfolioProjects";
 import SkillSets from "../Components/Portfolio/SkillSets";
 import OtherSkills from "../Components/Portfolio/OtherSkills";
 import { Element } from "react-scroll";

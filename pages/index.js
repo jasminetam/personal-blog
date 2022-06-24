@@ -32,10 +32,14 @@ export default function Home({ data, slugs, htmlString }) {
         />
         <meta charSet="utf-8" />
         <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+        />
+        <meta
           name="description"
           content="a Blog about Jasmine learning journey on coding"
         />
-        <meta name="keywords" content="Jasmine javascript react jasminetam" />
+        <meta name="keywords" content="Jasmine javascript react jasminetam blog" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -53,9 +57,9 @@ export default function Home({ data, slugs, htmlString }) {
           sizes="16x16"
           href="image/favicon-16x16.png"
         />
-        
+         <link rel="manifest" href="/manifest.json" />
         <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#363636" />
 
         <title>Jasmine&apos;s Blog</title>
       </Head>

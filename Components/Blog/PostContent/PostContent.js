@@ -4,7 +4,7 @@ import { BsDot } from "react-icons/bs";
 
 export default function PostContent({ data, htmlString }) {
   return (
-    <div className="postContent">
+    <div className="postContent" data-test="component-PostContent">
       <div className="postContentWrapper">
         <div className="postContentHeader">
         <div className="postContentTitle">

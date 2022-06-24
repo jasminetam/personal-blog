@@ -10,7 +10,7 @@ import {
 
 export default function ProjectsBrowse() {
   return (
-    <div className="projectWrapper">
+    <div className="projectWrapper" data-test="component-ProjectsBrowse">
               <div className="projectflex">
           {[
             spotifake,

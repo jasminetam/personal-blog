@@ -11,7 +11,7 @@ import { Element } from "react-scroll";
 
 function SkillSets() {
   return (
-    <Element id="skillsets" name="skillsets">
+    <Element id="skillsets" name="skillsets" data-test="component-SkillSets">
       <div className="portfolioSkillSetsWrapper">
         <div className="portfolioSkillSetsFirstDiv">
           <h1 className="portfolioTitles">Skill Sets</h1>

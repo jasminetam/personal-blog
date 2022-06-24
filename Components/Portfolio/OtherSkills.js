@@ -6,7 +6,7 @@ import { Element } from "react-scroll";
 
 function OtherSkills() {
   return (
-    <Element id="otherskills" name="otherskills">
+    <Element id="otherskills" name="otherskills" data-test="component-OtherSkills">
       <div className="portfolioOtherSkillsWrapper">
       <div className="portfolioOtherSkillsFirstDiv">
         <h1 className="portfolioOtherSkillsTitles">Other Skills</h1>

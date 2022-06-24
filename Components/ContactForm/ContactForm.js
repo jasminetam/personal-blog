@@ -42,7 +42,7 @@ class ContactForm extends React.Component {
   render() {
     const { name, email, message, completed } = this.state;
     return (
-      <div className="contact">
+      <div className="contact" data-test="component-ContactForm">
         <div className="contactContainer">
           {!completed ? (
             <div className="contactWrapper">

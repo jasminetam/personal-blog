@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Post({ data, slug }) {
   return (
-    <Link href={`/blog/${slug}`}>
+    <Link href={`/blog/${slug}`} data-test="component-Post">
       <div className="post">
         <div className="postInfo">
           <div className="postCats">

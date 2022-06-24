@@ -1,7 +1,7 @@
 import Post from "../Post/Post"
 export default function PostComponent({ data, slugs }) {
   return (
-    <div className="posts">
+    <div className="posts" data-test="component-PostComponent">
       {data.map((d, id) => {
         return (
           <div key={id} className="postsContainer">
