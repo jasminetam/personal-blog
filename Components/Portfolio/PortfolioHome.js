@@ -38,20 +38,22 @@ export default function PortfolioHome() {
               <span className="highlight-container">
                 <span className="highlight"> 6 months </span>
               </span>{" "}
-              of experiences in web development and more than{" "}
+              of commercial experiences in web development and more than{" "}
               <span className="highlight-container">
                 <span className="highlight">2 years</span>
               </span>{" "}
-              of experiences in studying related subjects. Many projects and
-              learning are ongoing. I am a{" "}
+              of learning and practicing experience on frontend and backend
+              development. Currently building various projects actively on
+              GitHub. I am a{" "}
               <span className="highlight-container">
                 <span className="highlight">quick and lifelong learner</span>
               </span>{" "}
               that always seek for learning opportunities and{" "}
               <span className="highlight-container">
                 <span className="highlight">passionate</span>
-              </span> in web development
-              . Currently got 13 repositories and nearly 300 contributions since May.
+              </span>{" "}
+              in web development . Currently got 13 repositories and nearly 300
+              contributions since May.
             </p>
             <div className="portfolioHeaderContactBtnDiv">
               <div className="portfolioHeaderContactBtn">
