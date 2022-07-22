@@ -131,6 +131,6 @@
 
 @media (min-width: 1024px) {
   .portfolioHeaderReactiveWrapper {
-    padding-top: 20rem /* 320px */;
+    padding-top: 10rem /* 320px */;
   }
 }
