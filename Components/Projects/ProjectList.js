@@ -6,7 +6,7 @@ export const spotifake = {
 };
 
 export const personalBlog = {
-    link: "https://personal-blog-six-phi.vercel.app/",
+    link: "https://jasminetam94.com",
     imgUrl: "./image/personalBlog.png",
     title: "My personal blog which record my coding journey and my portfolio",
     description: ["Nextjs", "MongoDB", "TailwindCSS", "React Hooks"]
