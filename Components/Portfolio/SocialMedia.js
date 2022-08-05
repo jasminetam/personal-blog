@@ -13,7 +13,7 @@ export default function SocialMedia() {
         <div className="portfolioSidebarTextDiv">
           <div>
             <h3 className="portfolioSidebarText">Thank you for your time</h3>
-            <h3 className="portfolioSidebarText">Want to know more ?</h3>
+            <h3 className="portfolioSidebarText">Want to know more?</h3>
             <h3 className="portfolioSidebarText">Please contact me</h3>
           </div>
         </div>
