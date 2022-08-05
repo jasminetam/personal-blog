@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import heroImage from "../../public/image/heroImage.jpg";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import heroImage from '../../public/image/heroImage.jpg';
 
 export default function PortfolioHome() {
   return (
@@ -26,34 +26,38 @@ export default function PortfolioHome() {
               </h1>
             </div>
             <p className="portfolioHeaderDesc">
-              A self taught{" "}
+              A self taught{' '}
               <span className="highlight-container">
                 <span className="highlight">react developer</span>
-              </span>{" "}
-              with the background as a{" "}
+              </span>{' '}
+              based in the UK with the background as a{' '}
               <span className="highlight-container">
                 <span className="highlight"> nurse </span>
-              </span>{" "}
-              for years based in Hong Kong and in the UK with{" "}
+              </span>{' '}
+              for years based in Hong Kong and in the UK with{' '}
               <span className="highlight-container">
-                <span className="highlight"> 6 months </span>
-              </span>{" "}
-              of commercial experiences in web development and more than{" "}
+                <span className="highlight"> 7 months </span>
+              </span>{' '}
+              of{' '}
               <span className="highlight-container">
-                <span className="highlight">2 years</span>
-              </span>{" "}
+                <span className="highlight"> commercial experience </span>
+              </span>{' '}
+              in web development and more than{' '}
+              <span className="highlight-container">
+                <span className="highlight">3 years</span>
+              </span>{' '}
               of learning and practicing experience on frontend and backend
               development. Currently building various projects actively on
-              GitHub. I am a{" "}
+              GitHub. I am a{' '}
               <span className="highlight-container">
-                <span className="highlight">quick and lifelong learner</span>
-              </span>{" "}
-              that always seek for learning opportunities and{" "}
+                <span className="highlight">lifelong learner</span>
+              </span>{' '}
+              that always seeking for learning opportunities and{' '}
               <span className="highlight-container">
                 <span className="highlight">passionate</span>
-              </span>{" "}
-              in web development . Currently got 13 repositories and nearly 300
-              contributions since May.
+              </span>{' '}
+              in web development . Currently have 20 repositories and more than
+              500 contributions this year.
             </p>
             <div className="portfolioHeaderContactBtnDiv">
               <div className="portfolioHeaderContactBtn">
