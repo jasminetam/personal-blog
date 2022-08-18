@@ -10,7 +10,7 @@ const CategoriesSideBar = () => {
         >
             <div className="catSideBarMargin">
                 <div className="catSideBarContentDiv">
-                    <h1>Categories</h1>
+                    <h3>Categories</h3>
                     <div className="catSideBarContentBorder">
                         {!categories
                             ? null

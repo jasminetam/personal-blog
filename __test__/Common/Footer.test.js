@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import Footer from "../../../Components/Common/Footer/Footer";
+import Footer from "../../Components/Common/Footer";
 
 describe("Footer test", () => {
     const setup = (props = {}, state = null) => {

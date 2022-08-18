@@ -5,15 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20rem /* 384px */;
-  padding-bottom: 20rem /* 384px */;
   
 }
 
 .portfolioSkillSetsIconsDiv {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   margin-left: 5rem /* 80px */;
   margin-right: 5rem /* 80px */;
@@ -22,25 +19,29 @@
   gap: 0.5rem /* 8px */;
 }
 
+.portfolioSkillSetsFirstDiv {
+  margin: 0;
+  padding-top: 150px;
+  padding-bottom: 0px;
+}
+
 .portfolioSkillSetsSingleIconDiv {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
 .portfolioSkillSetsSingleIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #e5e5e5;
-  width: 64px;
-  height: 64px;
-  margin: 12px;
-  padding: 4px;
+  font-size: 50px;
 }
 
 .portfolioSkillSetsSingleText {
-  align-items: center;
-  justify-content: center;
-  display: flex;
   font-size: 20px;
 }
 
@@ -50,7 +51,7 @@
 
 @media (min-width: 768px) {
   .portfolioSkillSetsIconsDiv {
-    gap: 2.5rem /* 40px */;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   .portfolioSkillSetsSingleIcon {
     width: 5rem /* 80px */;
@@ -66,10 +67,8 @@
   }
 }
 
-@media (max-width: 648px) {
-  .portfolioSkillSetsFirstDiv {
-    margin: 0;
-    padding-top: 150px;
-    padding-bottom: 0px;
+@media (min-width: 648px) {
+  .portfolioSkillSetsIconsDiv {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

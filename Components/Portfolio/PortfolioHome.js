@@ -1,30 +1,37 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import heroImage from '../../public/image/heroImage.jpg';
+import socialMediaList from '../../utils/socialMediaList';
 
-export default function PortfolioHome() {
+export default function PortfolioHome({ forwardRef }) {
   return (
-    <div className="portfolioHomeWrapper" data-test="component-PortfolioHome">
-      <div className="portfolioHeaderReactiveWrapper">
-        <div className="portfolioHeaderWrapper">
-          <div className="portfolioHeaderImageDiv">
-            <Image
-              src={heroImage}
-              alt="heroImage"
-              layout="fill"
-              objectFit="cover"
-              className="portfolioHeaderImage"
-            />
-          </div>
-          <div className="portfolioHeaderAllTextDiv">
-            <div className="portfolioHeaderTitleDiv">
-              <h1 className="portfolioHeaderTitle">
-                <span className="portfolioHeaderTitleSpan">
-                  Jasmine Tam <br /> | React Developer
-                </span>
-              </h1>
+    <section
+      className="portfolioHomeWrapper"
+      data-test="component-PortfolioHome"
+      ref={forwardRef}
+    >
+      <div className="portfolioHeaderWrapper">
+        <div className="portfolioHeaderAllTextDiv">
+          <div className="portfolioHeaderTitleDiv">
+            <div className="portfolioHeaderTitle">
+              <h1>Jasmine Tam </h1> <h2> React Developer</h2>
             </div>
+            <div
+             className="portfolioTitleIcons"
+            >
+              {socialMediaList.map((item, idx) => (
+                <a
+                  key={idx}
+                  className="portfolioSidebar"
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {item.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div>
             <p className="portfolioHeaderDesc">
               A self taught{' '}
               <span className="highlight-container">
@@ -36,13 +43,13 @@ export default function PortfolioHome() {
               </span>{' '}
               for years based in Hong Kong and in the UK with{' '}
               <span className="highlight-container">
-                <span className="highlight"> 7 months </span>
+                <span className="highlight"> 8 months </span>
               </span>{' '}
               of{' '}
               <span className="highlight-container">
                 <span className="highlight"> commercial experience </span>
               </span>{' '}
-              in web development and more than{' '}
+              in frontend development and more than{' '}
               <span className="highlight-container">
                 <span className="highlight">3 years</span>
               </span>{' '}
@@ -59,14 +66,14 @@ export default function PortfolioHome() {
               in web development . Currently have 20 repositories and more than
               500 contributions this year.
             </p>
-            <div className="portfolioHeaderContactBtnDiv">
-              <div className="portfolioHeaderContactBtn">
-                <Link href="/contact">Contact Me !</Link>
-              </div>
+          </div>
+          <div className="portfolioHeaderContactBtnDiv">
+            <div className="portfolioHeaderContactBtn">
+              <Link href="/contact">Contact Me !</Link>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

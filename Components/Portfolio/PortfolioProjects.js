@@ -1,35 +1,46 @@
-import Link from "next/link";
-import Image from "next/image";
-import spotifake from "../../public/image/spotifake.png";
-import dailyExpenses from "../../public/image/dailyExpenses.png";
-import eCommerceSite from "../../public/image/eCommerceSite.png";
-import projectManagement from "../../public/image/projectManagement.png";
-import personalBlog from "../../public/image/personalBlog.png";
-import { Element } from "react-scroll";
+import Link from 'next/link';
+import Image from 'next/image';
+import {
+  personalBlog,
+  spotifake,
+  animeGo,
+  insfakegram,
+  dailyExpenses,
+  projectManagement,
+} from '../../utils/projectList';
 
-function PortfolioProjects() {
+function PortfolioProjects({ forwardRef }) {
   return (
-    <Element id="work" name="work" data-test="component-PortfolioProjects">
-      <div className="portfolioProjectsWrapper">
+    <>
+      <div
+        className="portfolioProjectsWrapper"
+        data-test="component-PortfolioProjects"
+        ref={forwardRef}
+      >
         <h1 className="portfolioTitles">My Projects</h1>
         <div className="portfolioProjectsDiv">
-          <div className="portfolioSingleProjectDiv">
-            <h3 className="portfolioSingleProjectTitle">
-              Spotifake - Spotify Clone
-            </h3>
-            <div className="portfolioSingleProjectImgDiv">
-              <a href="https://spotifake-alpha.vercel.app/">
-                <Image
-                  src={spotifake}
-                  alt="spotifake"
-                  layout="fill"
-                  objectFit="cover"
-                  className="portfolioSingleProjectImg"
-                />
-              </a>
+          {[
+            insfakegram,
+            animeGo,
+            personalBlog,
+            projectManagement,
+            spotifake,
+            dailyExpenses,
+          ].map((project, idx) => (
+            <div className="portfolioSingleProjectDiv" key={idx}>
+              <h3 className="portfolioSingleProjectTitle">{project.name}</h3>
+              <div className="portfolioSingleProjectImgDiv">
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  <img
+                    src={project.imgUrl}
+                    alt={project.name}
+                    className="portfolioSingleProjectImg"
+                  />
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="portfolioSingleProjectDiv">
+          ))}
+          {/* <div className="portfolioSingleProjectDiv">
             <h3 className="portfolioSingleProjectTitle">
               Daily Expenses Web App
             </h3>
@@ -59,45 +70,43 @@ function PortfolioProjects() {
               </a>
             </div>
           </div>
-       
-      
-     
-        <div className="portfolioSingleProjectDiv">
-          <h3 className="portfolioSingleProjectTitle">Project Management</h3>
-          <div className="portfolioSingleProjectImgDiv">
-            <a href="https://graph-ql-project-management.vercel.app/">
-              <Image
-                src={projectManagement}
-                alt="projectManagement"
-                layout="fill"
-                objectFit="cover"
-                className="portfolioSingleProjectImg"
-              />
-            </a>
+
+          <div className="portfolioSingleProjectDiv">
+            <h3 className="portfolioSingleProjectTitle">Project Management</h3>
+            <div className="portfolioSingleProjectImgDiv">
+              <a href="https://graph-ql-project-management.vercel.app/">
+                <Image
+                  src={projectManagement}
+                  alt="projectManagement"
+                  layout="fill"
+                  objectFit="cover"
+                  className="portfolioSingleProjectImg"
+                />
+              </a>
+            </div>
           </div>
+          <div className="portfolioSingleProjectDiv">
+            <h3 className="portfolioSingleProjectTitle">Personal Blog</h3>
+            <div className="portfolioSingleProjectImgDiv">
+              <a href="https://personal-blog-six-phi.vercel.app/">
+                <Image
+                  src={personalBlog}
+                  alt="personalBlog"
+                  layout="fill"
+                  objectFit="cover"
+                  className="portfolioSingleProjectImg"
+                />
+              </a>
+            </div>
+          </div> */}
         </div>
-        <div className="portfolioSingleProjectDiv">
-          <h3 className="portfolioSingleProjectTitle">Personal Blog</h3>
-          <div className="portfolioSingleProjectImgDiv">
-            <a href="https://personal-blog-six-phi.vercel.app/">
-              <Image
-                src={personalBlog}
-                alt="personalBlog"
-                layout="fill"
-                objectFit="cover"
-                className="portfolioSingleProjectImg"
-              />
-            </a>
-          </div>
-          </div>
-          </div>
-        </div>
+      </div>
       <div className="portfolioHeaderButtonDiv">
         <button className="button-81" role="button">
           <Link href="/projects">Check Out More</Link>
         </button>
       </div>
-    </Element>
+    </>
   );
 }
 

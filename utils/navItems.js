@@ -1,7 +1,7 @@
 const navItems = [
   {
     name: 'Porfolio',
-    link: '/portfolio',
+    link: '/about',
   },
   {
     name: 'Blog',

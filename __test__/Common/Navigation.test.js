@@ -1,6 +1,6 @@
 import { shallow } from "enzyme"
 import React from "react"
-import Navigation from "../../../Components/Common/Navigation/Navigation"
+import Navigation from "../../Components/Common/Navigation"
 
 describe("navigation test", () => {
   it("expect Navigation component is rendered without crashing", () => {

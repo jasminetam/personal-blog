@@ -7,13 +7,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 9rem /* 144px */;
+  padding-top: 5rem;
 }
 
 .portfolioTitles {
   color: #363636;
   background-color: transparent;
-  font-size: 3.75rem /* 60px */;
+  font-size: 3rem /* 60px */;
   line-height: 1;
   font-weight: 700;
   text-align: center;
@@ -25,7 +25,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem ;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 
@@ -64,7 +64,10 @@
 .portfolioSingleProjectImg {
   padding: 0.5rem /* 8px */;
   border-radius: 0.25rem /* 4px */;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
+  object-fit: cover;
 }
 
 @media (max-width: 648px) {
