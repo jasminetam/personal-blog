@@ -3,7 +3,7 @@ import skillIcons from "../../utils/skillIcons";
 function SkillSets({ forwardRef }) {
   return (
     <>
-      <div className="portfolioSkillSetsWrapper" ref={forwardRef}>
+      <div className="portfolioSkillSetsWrapper" ref={forwardRef} data-test="component-SkillSets">
         <div className="portfolioSkillSetsFirstDiv">
           <h1 className="portfolioTitles">Skill Sets</h1>
           <div className="portfolioSkillSetsIconsDiv">

@@ -3,7 +3,7 @@ import otherSkillList from '../../utils/otherskillList';
 function OtherSkills() {
   return (
     <>
-      <div className="portfolioOtherSkillsWrapper">
+      <div className="portfolioOtherSkillsWrapper" data-test="component-OtherSkills">
         <div className="portfolioOtherSkillsDiv">
           <h1 className="portfolioOtherSkillsTitles">Other Skills</h1>
         </div>

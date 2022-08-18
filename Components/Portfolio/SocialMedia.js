@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function SocialMedia({ forwardRef }) {
   return (
     <>
-      <div className="portfolioSidebarTextDiv" ref={forwardRef}>
+      <div className="portfolioSidebarTextDiv" ref={forwardRef} data-test="component-SocialMedia">
         <div>
           <h3 className="portfolioSidebarText">Thank you for your time</h3>
           <h3 className="portfolioSidebarText">Want to know more?</h3>
