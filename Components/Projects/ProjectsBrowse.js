@@ -1,27 +1,29 @@
-import React from "react";
-import ProjectLayout from "./ProjectLayout";
+import React from 'react';
+import ProjectLayout from './ProjectLayout';
 import {
+  animeGo,
   spotifake,
   personalBlog,
-  eCommerceSite,
+  insfakegram,
   dailyExpenses,
   projectManagement,
-} from "./ProjectList";
+} from '../../utils/projectList';
 
 export default function ProjectsBrowse() {
   return (
     <div className="projectWrapper" data-test="component-ProjectsBrowse">
-              <div className="projectflex">
-          {[
-            spotifake,
-            personalBlog,
-            eCommerceSite,
-            dailyExpenses,
-            projectManagement,
-          ].map((item, idx) => (
-            <ProjectLayout key={idx} project={item} />
-          ))}
-        </div>
-        </div>
+      <div className="projectflex">
+        {[
+          insfakegram,
+          personalBlog,
+          animeGo,
+          spotifake,
+          projectManagement,
+          dailyExpenses,
+        ].map((item, idx) => (
+          <ProjectLayout key={idx} project={item} />
+        ))}
+      </div>
+    </div>
   );
 }

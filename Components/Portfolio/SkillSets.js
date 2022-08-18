@@ -1,26 +1,19 @@
-import { FaReact } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
-import { SiNodedotjs } from "react-icons/si";
-import { SiGraphql } from "react-icons/si";
-import { SiApollographql } from "react-icons/si";
-import { Element } from "react-scroll";
+import skillIcons from "../../utils/skillIcons";
 
-function SkillSets() {
+function SkillSets({ forwardRef }) {
   return (
-    <Element id="skillsets" name="skillsets" data-test="component-SkillSets">
-      <div className="portfolioSkillSetsWrapper">
+    <>
+      <div className="portfolioSkillSetsWrapper" ref={forwardRef}>
         <div className="portfolioSkillSetsFirstDiv">
           <h1 className="portfolioTitles">Skill Sets</h1>
           <div className="portfolioSkillSetsIconsDiv">
-            <div className="portfolioSkillSetsSingleIconDiv">
-              <FaReact className="portfolioSkillSetsSingleIcon" />
-              <h3 className="portfolioSkillSetsSingleText">React.js</h3>
+            {skillIcons.map((item, idx) => (
+            <div className="portfolioSkillSetsSingleIconDiv" key={idx}>
+             <div className="portfolioSkillSetsSingleIcon">{item.icon}</div>
+              <h3 className="portfolioSkillSetsSingleText">{item.name}</h3>
             </div>
-            <div className="portfolioSkillSetsSingleIconDiv">
+            ))}
+            {/* <div className="portfolioSkillSetsSingleIconDiv">
               <SiNextdotjs className="portfolioSkillSetsSingleIcon" />
               <h3 className="portfolioSkillSetsSingleText">Next.js</h3>
             </div>
@@ -53,11 +46,11 @@ function SkillSets() {
             <div className="portfolioSkillSetsSingleIconDiv">
               <SiApollographql className="portfolioSkillSetsSingleIcon" />
               <h3 className="portfolioSkillSetsSingleText">Apollo</h3>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-    </Element>
+    </>
   );
 }
 
