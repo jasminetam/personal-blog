@@ -5,11 +5,8 @@ const categories = [
   "Tech",
   "Lifestyle",
   "Testing",
-  "JavaScript",
-  "Security",
   "ExpressJS",
   "Typescript",
-  "Database",
   "Frontend",
   "Backend",
   "GraphQL"

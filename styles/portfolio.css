@@ -47,7 +47,7 @@
   }
 }
 
-.portfolioTopNavListItem :hover {
+.portfolioTopNavListItem:hover {
   color: #e5e5e5;
 }
 
@@ -211,7 +211,7 @@
   margin-left: 20px;
 }
 
-.portfolioAlignIcons :hover {
+.portfolioAlignIcons:hover {
   color: white;
 }
 

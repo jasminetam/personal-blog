@@ -14,6 +14,7 @@ import "../styles/header.css";
 import "../styles/sidebar.css";
 import "../styles/navigation.css";
 import "../styles/globals.css";
+import "../styles/categories-sidebar.css"
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

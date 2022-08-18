@@ -38,7 +38,6 @@
 .postContentInfo {
   display: flex;
   justify-content: left;
-  color: #363636;
   margin-top: 15px;
   margin-left: 15px;
 }
@@ -96,17 +95,27 @@
   border-radius: 5px;
   background-color: #363636;
   border: none;
-  color: #ffffff;
+  color: #E5E5E5;
   text-align: center;
   font-size: 14px;
   padding: 7px;
-  transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
 }
 
 .button:hover {
-  border-radius: 16px;
+  font-size: 20px;
+  background-color: #CCA43B;
   color: #363636;
-  background-color: #cca43b;
+  font-weight: 700;
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
