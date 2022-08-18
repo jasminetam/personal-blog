@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import Head from "next/head";
-import Sidebar from "../../Components/Common/Sidebar/Sidebar";
-import Header from "../../Components/Common/Header/Header";
-import Navigation from "../../Components/Common/Navigation/Navigation";
-import PostComponent from "../../Components/Blog/PostComponent/PostComponent";
-import categories from "../../Components/Others/categories/categories";
-import Footer from "../../Components/Common/Footer/Footer";
+import React, { useState, useEffect } from 'react';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import CustomHead from '../../Components/Common/CustomHead';
+import Sidebar from '../../Components/Common/Sidebar';
+import Header from '../../Components/Common/Header';
+import Navigation from '../../Components/Common/Navigation';
+import PostComponent from '../../Components/Blog/PostComponent/PostComponent';
+import categories from '../../Components/Common/categories/categories';
+import Footer from '../../Components/Common/Footer';
+import CategoriesSideBar from '../../Components/Common/categories/CategoriesSideBar';
 
 const Catergory = ({ category, data, slugs, htmlString }) => {
   const [filteredCategories, setfilteredCategories] = useState([]);
@@ -21,34 +22,32 @@ const Catergory = ({ category, data, slugs, htmlString }) => {
 
   return (
     <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;500&family=Playfair+Display:ital@1&display=swap"
-          rel="stylesheet"
-        />
-        <meta charSet="utf-8" />
-        <meta
-          name="description"
-          content="a Blog about Jasmine learning journey on coding"
-        />
-        <meta name="keywords" content="Jasmine javascript react jasminetam" />
-        <link rel="manifest" href="/manifest.json" />
-        <link href="logo.png" rel="icon" type="image/png" sizes="16x16" />
-        <meta name="description" content={htmlString} />
-        <meta name="keywords" content={data.tags} />
-        <title>{`${category} | Jasmine's Blog`}</title>
-      </Head>
-      <Header />
-      <Navigation />
-      <div key={""} className="home">
-        <PostComponent
-          slugs={slugs}
-          data={filteredCategories}
-          category={category}
-        />
-        <Sidebar />
+      <div className="pageWrapper">
+        <CustomHead>
+          <meta
+            name="description"
+            content="a Blog about Jasmine learning journey on coding"
+          />
+          <meta name="keywords" content="Jasmine javascript react jasminetam" />
+          <meta name="description" content={htmlString} />
+          <meta name="keywords" content={data.tags} />
+          <title>{`${category} | Jasmine's Blog`}</title>
+        </CustomHead>
+        <div className="center">
+          <Navigation />
+          <Header />
+          <div className="home">
+            <CategoriesSideBar />
+            <PostComponent
+              slugs={slugs}
+              data={filteredCategories}
+              category={category}
+            />
+            <Sidebar />
+          </div>
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </>
   );
 };
@@ -67,10 +66,10 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { category } }) => {
-  const files = fs.readdirSync("posts", "utf8").reverse();
-  const slugs = files.map((filename) => filename.replace(".md", ""));
+  const files = fs.readdirSync('posts', 'utf8').reverse();
+  const slugs = files.map((filename) => filename.replace('.md', ''));
   const readMarkdownFile = files.map((slug) =>
-    fs.readFileSync(path.join("posts", slug)).toString()
+    fs.readFileSync(path.join('posts', slug)).toString()
   );
   const matterMarkdownFile = readMarkdownFile.map((file) => matter(file).data);
   return {

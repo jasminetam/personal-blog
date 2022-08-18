@@ -1,9 +1,14 @@
-import React from "react";
-import { GiDiamonds } from "react-icons/gi";
+import React from 'react';
+import { GiDiamonds } from 'react-icons/gi';
 export default function ProjectLayout({ project }) {
   return (
     <div className="projectLinkDiv" data-test="component-ProjectLayout">
-      <a href={project?.link} className="projectLink">
+      <a
+        href={project?.link}
+        className="projectLink"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div className="projectDetails">
           <img
             className="projectImg"
