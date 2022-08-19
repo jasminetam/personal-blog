@@ -16,12 +16,12 @@ export default function PortfolioHome({ forwardRef }) {
               <h1>Jasmine Tam </h1> <h2> React Developer</h2>
             </div>
             <div
-             className="portfolioTitleIcons"
+             className="portfolioTitleIconDiv"
             >
               {socialMediaList.map((item, idx) => (
                 <a
                   key={idx}
-                  className="portfolioSidebar"
+                  className="portfolioTitleIcon"
                   href={item.link}
                   target="_blank"
                   rel="noreferrer"

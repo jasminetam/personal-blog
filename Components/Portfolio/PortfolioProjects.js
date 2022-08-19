@@ -40,65 +40,6 @@ function PortfolioProjects({ forwardRef }) {
               </div>
             </div>
           ))}
-          {/* <div className="portfolioSingleProjectDiv">
-            <h3 className="portfolioSingleProjectTitle">
-              Daily Expenses Web App
-            </h3>
-            <div className="portfolioSingleProjectImgDiv">
-              <a href="https://daily-expenses.vercel.app/">
-                <Image
-                  src={dailyExpenses}
-                  alt="dailyExpenses"
-                  layout="fill"
-                  objectFit="cover"
-                  className="portfolioSingleProjectImg"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="portfolioSingleProjectDiv">
-            <h3 className="portfolioSingleProjectTitle">E-Commerce Site</h3>
-            <div className="portfolioSingleProjectImgDiv">
-              <a href="https://ecommerce-site-vert.vercel.app/">
-                <Image
-                  src={eCommerceSite}
-                  alt="eCommerceSite"
-                  layout="fill"
-                  objectFit="cover"
-                  className="portfolioSingleProjectImg"
-                />
-              </a>
-            </div>
-          </div>
-
-          <div className="portfolioSingleProjectDiv">
-            <h3 className="portfolioSingleProjectTitle">Project Management</h3>
-            <div className="portfolioSingleProjectImgDiv">
-              <a href="https://graph-ql-project-management.vercel.app/">
-                <Image
-                  src={projectManagement}
-                  alt="projectManagement"
-                  layout="fill"
-                  objectFit="cover"
-                  className="portfolioSingleProjectImg"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="portfolioSingleProjectDiv">
-            <h3 className="portfolioSingleProjectTitle">Personal Blog</h3>
-            <div className="portfolioSingleProjectImgDiv">
-              <a href="https://personal-blog-six-phi.vercel.app/">
-                <Image
-                  src={personalBlog}
-                  alt="personalBlog"
-                  layout="fill"
-                  objectFit="cover"
-                  className="portfolioSingleProjectImg"
-                />
-              </a>
-            </div>
-          </div> */}
         </div>
       </div>
       <div className="portfolioHeaderButtonDiv">

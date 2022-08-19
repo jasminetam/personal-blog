@@ -50,9 +50,6 @@
 }
 
 @media (min-width: 768px) {
-  .portfolioSkillSetsIconsDiv {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
   .portfolioSkillSetsSingleIcon {
     width: 5rem /* 80px */;
     height: 5rem /* 80px */;
@@ -70,5 +67,11 @@
 @media (min-width: 648px) {
   .portfolioSkillSetsIconsDiv {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 968px) {
+  .portfolioSkillSetsIconsDiv {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }

@@ -14,7 +14,7 @@ const socialMediaList = [
   },
   {
     name: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ching-man-tam-b89a69129/',
+    link: 'https://www.linkedin.com/in/jasmine-tam-b89a69129/',
     username: 'Jasmine Tam',
     icon: <BsLinkedin />,
   },
