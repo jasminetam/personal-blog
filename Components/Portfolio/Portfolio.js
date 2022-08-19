@@ -16,7 +16,7 @@ function Portfolio() {
   const executeScroll = (Ref) => Ref.current.scrollIntoView();
 
   return (
-    <section data-test="component-portfolio" className="portfolio">
+    <section data-test="component-Portfolio" className="portfolio">
       <div className="aboutCotent">
         <Scrollbar
           topRef={topRef}
