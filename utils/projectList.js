@@ -15,7 +15,7 @@ export const insfakegram = {
 
 export const personalBlog = {
   name: "Jasmine\'s Blog",
-  link: 'https://jasminetam94.com/portfolio',
+  link: 'https://jasminetam94.com/',
   imgUrl: './image/personalBlog.png',
   title: 'Jasmine\'s Blog - My portfolio website with a blog that records my coding journey.',
   description: [

@@ -7,9 +7,9 @@ import Sidebar from '../../Components/Common/Sidebar';
 import Header from '../../Components/Common/Header';
 import Navigation from '../../Components/Common/Navigation';
 import PostComponent from '../../Components/Blog/PostComponent';
-import categories from '../../Components/Common/Categories/CategoriesList';
+import categories from '../../Components/Categories/CategoriesList';
 import Footer from '../../Components/Common/Footer';
-import CategoriesSideBar from '../../Components/Common/Categories/CategoriesSideBar';
+import CategoriesSideBar from '../../Components/Categories/CategoriesSideBar';
 
 const Catergory = ({ category, data, slugs, htmlString }) => {
   const [filteredCategories, setfilteredCategories] = useState([]);
