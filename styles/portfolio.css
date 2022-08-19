@@ -13,33 +13,35 @@
   background-color: #cca43b;
 }
 
-
 /*scrollbar*/
 .scrollbarWrapper {
   position: fixed;
-  right: 0.75rem /* 12px */;
+  right: 0.25rem /* 12px */;
   top: 50%;
+  width: 40px;
   height: 100%;
   display: flex;
   flex-direction: column;
   z-index: 30;
 }
 .scrollbarList {
+  width: 30px;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .scrollbarIcon {
   margin-top: 1rem /* 16px */;
-    margin-bottom: 1rem /* 16px */;
-    cursor: pointer;
+  margin-bottom: 1rem /* 16px */;
+  cursor: pointer;
+  font-size: 20px;
+  color: #363636;
 }
 .scrollbarIcon:hover {
-  --tw-text-opacity: 1;
-  color: rgba(16, 185, 129, var(--tw-text-opacity));
+  color: #e5e5e5;
+  font-size: 30px;
 }
-
 
 /* highlighttext*/
 .highlight-container,
@@ -71,6 +73,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .portfolioSidebarText {
@@ -79,10 +82,10 @@
   line-height: 1;
   padding: 2rem;
   text-align: center;
+
 }
 
 .portfolioSidebar {
-  margin: 20px;
   border-radius: 10px;
   width: 100%;
   display: flex;
@@ -91,10 +94,8 @@
   text-align: center;
   background-color: transparent;
   font-size: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
-
-
 
 .portfolioAlignIcons {
   padding: 10px 0;
@@ -164,5 +165,35 @@
   .button-81 {
     font-size: 1.125rem;
     padding: 1rem 2rem;
+  }
+  .scrollbarWrapper {
+    left: 80px;
+  }
+  .scrollbarIcon {
+    font-size: 30px;
+  }
+  .scrollbarIcon:hover {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .scrollbarWrapper {
+    left: 180px;
+  }
+}
+@media (min-width: 1900px) {
+  .scrollbarWrapper {
+    left: 280px;
+  }
+}
+@media (min-width: 2080px) {
+  .scrollbarWrapper {
+    left: 380px;
+  }
+}
+@media (min-width: 2280px) {
+  .scrollbarWrapper {
+    left: 460px;
   }
 }

@@ -35,10 +35,26 @@
   margin: 0 0 1rem 0;
 }
 
-.portfolioTitleIcons {
+.portfolioTitleIconDiv {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.portfolioTitleIcon {
+  margin: 10px;
+  border-radius: 10px;
+  width: 10%;
+  text-align: center;
+  background-color: transparent;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+
+.portfolioTitleIcon:hover {
+  color: #e5e5e5;
+  font-size: 25px;
 }
 
 .portfolioHeaderDesc {
@@ -90,6 +106,7 @@
   .portfolioHeaderDesc {
     font-size: 20px;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -114,6 +131,13 @@
   }
   .portfolioHeaderContactBtn {
     margin-top: 2.5rem /* 40px */;
+  }
+  .portfolioTitleIcon {
+    font-size: 30px;
+    width: 80%;
+  }
+  .portfolioTitleIcon:hover {
+    font-size: 35px;
   }
 }
 

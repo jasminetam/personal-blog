@@ -20,32 +20,32 @@ function Scrollbar({
         <div className="scrollbarList">
           <AiOutlineVerticalAlignTop
             className="scrollbarIcon"
-            size={20}
+
             onClick={() => executeScroll(topRef)}
           />
           <MdOutlineWork
             className="scrollbarIcon"
-            size={20}
+
             onClick={() => executeScroll(projectsRef)}
           />
           <MdMilitaryTech
             className="scrollbarIcon"
-            size={20}
+
             onClick={() => executeScroll(techsSkillsRef)}
           />
           <RiTeamFill
             className="scrollbarIcon"
-            size={20}
+
             onClick={() => executeScroll(softSkillsRef)}
           />
           <TbLanguageHiragana
             className="scrollbarIcon"
-            size={20}
+
             onClick={() => executeScroll(langNHobbiesRef)}
           />
           <HiOutlineMail
             className="scrollbarIcon"
-            size={20}
+
             onClick={() => executeScroll(contactRef)}
           />
         </div>
