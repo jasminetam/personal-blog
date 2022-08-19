@@ -6,8 +6,7 @@ import OtherSkills from './OtherSkills';
 import Scrollbar from './Scrollbar';
 import PortfolioContact from './PortfolioContact';
 
-function Portfolio() {
-  const topRef = React.useRef(null);
+function Portfolio({topRef}) {
   const projectsRef = React.useRef(null);
   const techsSkillsRef = React.useRef(null);
   const softSkillsRef = React.useRef(null);

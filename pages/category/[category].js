@@ -12,6 +12,8 @@ import Footer from '../../Components/Common/Footer';
 import CategoriesSideBar from '../../Components/Categories/CategoriesSideBar';
 
 const Catergory = ({ category, data, slugs, htmlString }) => {
+  const topRef = React.useRef(null);
+  const executeScroll = (Ref) => Ref.current.scrollIntoView();
   const [filteredCategories, setfilteredCategories] = useState([]);
 
   useEffect(() => {
@@ -34,8 +36,8 @@ const Catergory = ({ category, data, slugs, htmlString }) => {
           <title>{`${category} | Jasmine's Blog`}</title>
         </CustomHead>
         <div className="center">
-          <Navigation />
-          <Header />
+          <Navigation topRef={topRef} executeScroll={executeScroll} />
+          <Header forwardRef={topRef} />
           <div className="home">
             <CategoriesSideBar />
             <PostComponent

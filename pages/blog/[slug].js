@@ -11,6 +11,9 @@ import PostContent from '../../Components/Blog/PostContent';
 import Footer from '../../Components/Common/Footer';
 
 const Post = ({ htmlString, data }) => {
+  const topRef = React.useRef(null);
+  const executeScroll = (Ref) => Ref.current.scrollIntoView();
+
   return (
     <>
       <div className="pageWrapper">
@@ -25,8 +28,8 @@ const Post = ({ htmlString, data }) => {
           <title>{`${data.title} | Jasmine's Blog`}</title>
         </CustomHead>
         <div className="center">
-          <Header />
-          <Navigation />
+          <Header forwardRef={topRef} />
+          <Navigation topRef={topRef} executeScroll={executeScroll} />
           <div className="projects">
             <PostContent data={data} htmlString={htmlString} />
             <SidebarIcon />

@@ -6,6 +6,9 @@ import Footer from "../Components/Common/Footer";
 import SidebarIcon from "../Components/Common/SidebarIcon";
 
 export default function Contact() {
+  const topRef = React.useRef(null);
+  const executeScroll = (Ref) => Ref.current.scrollIntoView();
+
   return (
     <div className="pageWrapper">
       <CustomHead>
@@ -18,7 +21,7 @@ export default function Contact() {
       </CustomHead>
       <main className="center">
       <Header />
-      <Navigation />
+        <Navigation topRef={topRef} executeScroll={executeScroll} />
       <div className="projects">
         <ContactForm />
         <SidebarIcon />

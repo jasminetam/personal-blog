@@ -4,13 +4,39 @@
 }
 
 .postContentWrapper {
-  padding: 20px;
+  margin: 20px;
+  padding: 0;
   padding-right: 0;
-  margin: 30px;
   height: 100%;
   border: 1px solid #363636;
   border-radius: 25px;
   background-color: #ffffff;
+}
+.backIconDiv {
+  width: 90px;
+  padding-left: 20px;
+}
+.backIcon {
+width: 90px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  padding-left: 10px;
+  background-color: #363636;
+  color: #E5E5E5;
+}
+
+.backIcon:hover {
+  background-color: #CCA43B;
+  margin-left: 10px;
+  color: #363636;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .postContentHeader {
@@ -25,6 +51,7 @@
 
 .postTagTitle {
   font-family: "Cormorant SC", sans-serif;
+  font-size: 36px;
   margin: 20px;
 }
 
@@ -34,6 +61,7 @@
   display: flex;
   align-items: center;
   margin-left: 20px;
+  text-align: center;
 }
 
 .postContentInfo {
@@ -45,8 +73,8 @@
 
 .postContentDesc {
   color: #363636;
-  font-size: 24px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 30px;
   font-family: "Times New Roman", Times, serif;
   width: 90%;
   padding: 20px;
@@ -58,8 +86,8 @@
   display: flex;
   align-items: right;
   padding-top: 20px;
-  padding-right: 20px;
-  font-size: 24px;
+  padding-right: 0;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Cormorant SC", sans-serif;
   height: 100%;
@@ -71,25 +99,27 @@
   height: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .postContentWrapper {
-    margin: 20px;
-    padding: 0;
-  }
-  .postTagTitle {
-    font-size: 36px;
-  }
-  .postContentDate {
-    font-size: 20px;
-  }
-  .postContentDesc {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .postContentDate {
-    padding-right: 0;
-  }
-}
+@media screen and (min-width: 768px) {
+ .postContent {
+  margin-left: 50px;
+  margin-right: 50px;
+ }
+ .postContentWrapper {
+  padding: 20px;
+  margin: 30px;
+ }
+ .postContentDate {
+   font-size: 24px;
+ }
+ .postContentDesc {
+   font-size: 24px;
+   line-height: 50px;
+ }
+ .postContentDate {
+   padding-right: 20px;
+ }
+ }
+
 
 .button {
   display: inline-block;

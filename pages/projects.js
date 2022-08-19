@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "../Components/Common/Header";
 import Navigation from "../Components/Common/Navigation";
 import CustomHead from '../Components/Common/CustomHead';
@@ -6,6 +7,9 @@ import ProjectsBrowse from "../Components/Projects/ProjectsBrowse";
 import SidebarIcon from "../Components/Common/SidebarIcon";
 
 export default function Projects() {
+  const topRef = React.useRef(null);
+  const executeScroll = (Ref) => Ref.current.scrollIntoView();
+
   return (
     <div className="pageWrapper">
       <CustomHead>
@@ -17,8 +21,8 @@ export default function Projects() {
         <title>Projects | Jasmine&apos;s Blog</title>
       </CustomHead>
       <div className="center">
-      <Navigation />
-      <Header />
+        <Navigation topRef={topRef} executeScroll={executeScroll} />
+      <Header forwardRef={topRef} />
       <div className="projects">
         <ProjectsBrowse />
         <SidebarIcon />
