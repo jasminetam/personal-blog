@@ -6,12 +6,15 @@ import Sidebar from '../Components/Common/Sidebar';
 import Header from '../Components/Common/Header';
 import Navigation from '../Components/Common/Navigation';
 import CustomHead from '../Components/Common/CustomHead';
-import PostComponent from '../Components/Blog/PostComponent/PostComponent';
+import PostComponent from '../Components/Blog/PostComponent';
 import Footer from '../Components/Common/Footer';
-import CategoriesSideBar from '../Components/Common/categories/CategoriesSideBar';
+import CategoriesSideBar from '../Components/Common/Categories/CategoriesSideBar';
 import SearchBar from '../Components/Common/SearchBar';
 
+
 export default function Home({ data, slugs, htmlString }) {
+  const topRef = React.useRef(null);
+  const executeScroll = (Ref) => Ref.current.scrollIntoView();
   const [searchInput, setsearchInput] = useState('');
   const [searchResults, setsearchResults] = useState([]);
   const handleChange = (e) => {
@@ -40,8 +43,8 @@ export default function Home({ data, slugs, htmlString }) {
       </CustomHead>
 
       <div className="center">
-        <Navigation />
-        <Header />
+        <Navigation topRef={topRef} executeScroll={executeScroll} />
+        <Header forwardRef={topRef} />
         <SearchBar handleChange={handleChange} searchInput={searchInput} />
         <div className="home">
           <CategoriesSideBar />
@@ -52,14 +55,12 @@ export default function Home({ data, slugs, htmlString }) {
             htmlString={htmlString}
           />
           <Sidebar />
-        </div>
+          </div>
         <Footer />
       </div>
     </div>
   );
 }
-
-
 
 export const getStaticProps = async () => {
   const files = fs.readdirSync('posts', 'utf8').reverse();

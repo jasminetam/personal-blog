@@ -1,4 +1,4 @@
-import Post from "../Post/Post"
+import Post from "./Post"
 export default function PostComponent({ data, slugs }) {
   return (
     <div className="posts" data-test="component-PostComponent">

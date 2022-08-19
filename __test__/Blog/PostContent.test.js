@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import PostContent from "../../../Components/Blog/PostContent/PostContent";
+import PostContent from "../../Components/Blog/PostContent";
 
 describe("PostContent test", () => {
     const mockPostContentData = {};

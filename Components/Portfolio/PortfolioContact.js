@@ -1,13 +1,13 @@
 import socialMediaList from '../../utils/socialMediaList';
 import Link from 'next/link';
 
-export default function SocialMedia({ forwardRef }) {
+export default function PortfolioContact({ forwardRef }) {
   return (
     <>
       <div
         className="portfolioSidebarTextDiv"
         ref={forwardRef}
-        data-test="component-SocialMedia"
+        data-test="component-PortfolioContact"
       >
         <div>
           <h3 className="portfolioSidebarText">Thank you for your time</h3>

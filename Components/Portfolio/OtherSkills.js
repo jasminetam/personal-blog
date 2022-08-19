@@ -1,11 +1,12 @@
 import otherSkillList from '../../utils/otherskillList';
 
-function OtherSkills() {
+function OtherSkills({ forwardRef }) {
   return (
     <>
       <div
         className="portfolioOtherSkillsWrapper"
         data-test="component-OtherSkills"
+        ref={forwardRef}
       >
         <div className="portfolioOtherSkillsDiv">
           <h1 className="portfolioOtherSkillsTitles">Other Skills</h1>

@@ -4,7 +4,7 @@ import PortfolioProjects from './PortfolioProjects';
 import SkillSets from './SkillSets';
 import OtherSkills from './OtherSkills';
 import Scrollbar from './Scrollbar';
-import SocialMedia from './SocialMedia';
+import PortfolioContact from './PortfolioContact';
 
 function Portfolio() {
   const topRef = React.useRef(null);
@@ -39,9 +39,7 @@ function Portfolio() {
         <div className="mb-56" />
         <OtherSkills forwardRef={softSkillsRef} />
         <div className="mb-56" />
-        {/* <LangNHobbies forwardRef={langNHobbiesRef} />
-        <div className="mb-56" /> */}
-        <SocialMedia
+        <PortfolioContact
           forwardRef={contactRef}
           // executeScroll={executeScroll}
           topRef={topRef}

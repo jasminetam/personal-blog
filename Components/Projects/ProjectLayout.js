@@ -1,5 +1,6 @@
 import React from 'react';
 import { GiDiamonds } from 'react-icons/gi';
+
 export default function ProjectLayout({ project }) {
   return (
     <div className="projectLinkDiv" data-test="component-ProjectLayout">

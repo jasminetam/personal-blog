@@ -5,11 +5,13 @@
 .portfolioOtherSkillsTitles {
   color: #363636;
   background-color: transparent;
-  font-size: 3.75rem;
+  font-size: 3rem;
   line-height: 1;
   font-weight: 700;
   text-align: center;
-  padding-top: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
 }
 
 .portfolioOtherSkillsDiv {
@@ -89,6 +91,9 @@
     font-size: 1.2rem;
     line-height: 1.7rem;
   }
+  .portfolioSkillsSubtitles {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -101,6 +106,10 @@
 }
 
 @media (min-width: 1024px) {
+  .portfolioSkillsTextDiv {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .portfolioSkillsText {
     font-size: 1.2rem;
     line-height: 1.75rem;

@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  padding-top: 20px
+  padding-top: 20px;
 }
 
 .searchBox {
@@ -43,6 +43,30 @@
   background-color: #cca43b;
 }
 
+/*scrollbar*/
+.topIconWrapper {
+  position: flex;
+  width: 40px;
+  padding-right: 20px;
+}
+
+.topIcon {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+}
+.topIcon:hover {
+  color: #363636;
+}
+.topIconGray {
+  color: #363636;
+}
+.topIconGray:hover {
+  color: #cca43b;
+}
+
 .footer {
   font-family: 'Cormorant SC', sans-serif;
   font-size: 18px;
@@ -57,25 +81,19 @@
 }
 
 /* Responsive */
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
   .home {
     grid-template-columns: 2fr 1fr;
   }
 }
-@media screen and (min-width: 968px) {
-}
+
 
 @media (min-width: 1280px) {
+  .topIcon {
+    font-size: 40px;
+  }
   .home {
     grid-template-columns: 1fr 2fr 1fr;
   }
 }
+

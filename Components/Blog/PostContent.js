@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { BsDot } from 'react-icons/bs';
 
 export default function PostContent({ data, htmlString }) {
   return (

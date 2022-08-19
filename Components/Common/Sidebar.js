@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import socialMediaList from '../../utils/socialMediaList';
 
-
-
 export default function Sidebar() {
   return (
     <div className="sidebar" data-test="component-sidebar">
@@ -15,10 +13,11 @@ export default function Sidebar() {
         <div className="sidebarSocial">
           {socialMediaList.map((listItem, idx) => (
             <div key={idx}>
-              <h4 >{listItem.name}</h4>
+              <h4>{listItem.name}</h4>
               <Link href={listItem.link}>
                 <div className="alignIcons">
-                  {listItem.icon}{listItem.username}
+                  {listItem.icon}
+                  {listItem.username}
                 </div>
               </Link>
             </div>

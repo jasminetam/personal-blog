@@ -1,11 +1,18 @@
-.portfolioSkillSetsFirstDiv {
+.portfolioSkillSetsWrapper {
+  
+}
+.portfolioSkillSetsDiv {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  padding-top: 7rem;
+}
+
+.portfolioSkillSetsDiv h1 {
+  padding-bottom: 7rem;
 }
 
 .portfolioSkillSetsIconsDiv {
@@ -19,11 +26,7 @@
   gap: 0.5rem /* 8px */;
 }
 
-.portfolioSkillSetsFirstDiv {
-  margin: 0;
-  padding-top: 150px;
-  padding-bottom: 0px;
-}
+
 
 .portfolioSkillSetsSingleIconDiv {
   display: flex;

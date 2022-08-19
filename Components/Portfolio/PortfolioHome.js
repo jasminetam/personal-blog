@@ -64,7 +64,7 @@ export default function PortfolioHome({ forwardRef }) {
                 <span className="highlight">passionate</span>
               </span>{' '}
               in web development . Currently have 20 repositories and more than
-              500 contributions this year.
+              600 contributions this year.
             </p>
           </div>
           <div className="portfolioHeaderContactBtnDiv">

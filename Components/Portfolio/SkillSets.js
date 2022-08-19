@@ -4,7 +4,7 @@ function SkillSets({ forwardRef }) {
   return (
     <>
       <div className="portfolioSkillSetsWrapper" ref={forwardRef} data-test="component-SkillSets">
-        <div className="portfolioSkillSetsFirstDiv">
+        <div className="portfolioSkillSetsDiv">
           <h1 className="portfolioTitles">Skill Sets</h1>
           <div className="portfolioSkillSetsIconsDiv">
             {skillIcons.map((item, idx) => (

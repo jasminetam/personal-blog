@@ -4,9 +4,10 @@ import { useState, useEffect } from 'react';
 import { Menu } from '@headlessui/react';
 import { RiMenuLine } from 'react-icons/ri';
 import DropdownLink from './DropdownLink';
+import { AiOutlineVerticalAlignTop } from 'react-icons/ai';
 
 
-export default function Navigation() {
+export default function Navigation({topRef, executeScroll}) {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -55,6 +56,12 @@ export default function Navigation() {
             ))}
           </Menu.Items>
         </Menu>
+        <div className="topIconWrapper">
+              <AiOutlineVerticalAlignTop
+                className={`topIcon ${show && 'topIconGray'}`}
+                onClick={() => executeScroll(topRef)}
+              />
+          </div>
       </div>
     </div>
   );
