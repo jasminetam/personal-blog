@@ -8,7 +8,7 @@ import Navigation from '../Components/Common/Navigation';
 import CustomHead from '../Components/Common/CustomHead';
 import PostComponent from '../Components/Blog/PostComponent';
 import Footer from '../Components/Common/Footer';
-import CategoriesSideBar from '../Components/Common/Categories/CategoriesSideBar';
+import CategoriesSideBar from '../Components/Categories/CategoriesSideBar';
 import SearchBar from '../Components/Common/SearchBar';
 
 
