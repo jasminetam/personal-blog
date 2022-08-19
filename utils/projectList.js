@@ -16,7 +16,7 @@ export const insfakegram = {
 export const personalBlog = {
   name: "Jasmine\'s Blog",
   link: 'https://jasminetam94.com/portfolio',
-  imgUrl: './image/personalblog.png',
+  imgUrl: './image/personalBlog.png',
   title: 'Jasmine\'s Blog - My portfolio website with a blog that records my coding journey.',
   description: [
     'Nextjs',
@@ -70,7 +70,7 @@ export const dailyExpenses = {
 export const projectManagement = {
   name: "Project Management",
   link: 'https://graph-ql-project-management.vercel.app/',
-  imgUrl: './image/projectmanagement.png',
+  imgUrl: './image/projectManagement.png',
   title: 'Project Management - A project management app to track on production progress',
   description: [
     'Reactjs',
