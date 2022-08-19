@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import socialMediaList from '../../utils/socialMediaList';
+import SetIntersectionObserver from '../../utils/IntersectionObserver';
 
 export default function PortfolioHome({ forwardRef }) {
   return (
@@ -12,25 +13,28 @@ export default function PortfolioHome({ forwardRef }) {
       <div className="portfolioHeaderWrapper">
         <div className="portfolioHeaderAllTextDiv">
           <div className="portfolioHeaderTitleDiv">
-            <div className="portfolioHeaderTitle">
-              <h1>Jasmine Tam </h1> <h2> React Developer</h2>
-            </div>
-            <div
-             className="portfolioTitleIconDiv"
-            >
-              {socialMediaList.map((item, idx) => (
-                <a
-                  key={idx}
-                  className="portfolioTitleIcon"
-                  href={item.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {item.icon}
-                </a>
-              ))}
-            </div>
+            <SetIntersectionObserver type={1} direction="down">
+              <div className="portfolioHeaderTitle">
+                <div>
+                  <h1>Jasmine Tam </h1> <h2> React Developer</h2>
+                </div>
+              </div>
+              <div className="portfolioContactIconDiv">
+                {socialMediaList.map((item, idx) => (
+                  <a
+                    key={idx}
+                    className="portfolioContactIcon"
+                    href={item.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {item.icon}
+                  </a>
+                ))}
+              </div>
+            </SetIntersectionObserver>
           </div>
+          <SetIntersectionObserver type={2} direction="up">
           <div>
             <p className="portfolioHeaderDesc">
               A self taught{' '}
@@ -66,11 +70,14 @@ export default function PortfolioHome({ forwardRef }) {
               in web development . Currently have 20 repositories and more than
               600 contributions this year.
             </p>
-          </div>
+            </div>
+            </SetIntersectionObserver>
           <div className="portfolioHeaderContactBtnDiv">
+          <SetIntersectionObserver type={3} direction="left">
             <div className="portfolioHeaderContactBtn">
               <Link href="/contact">Contact Me !</Link>
-            </div>
+              </div>
+              </SetIntersectionObserver>
           </div>
         </div>
       </div>

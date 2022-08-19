@@ -1,5 +1,7 @@
 .portfolioOtherSkillsWrapper {
   padding-bottom: 7rem;
+  margin-bottom: 10rem;
+  display: grid;
 }
 
 .portfolioOtherSkillsTitles {
@@ -15,15 +17,11 @@
 }
 
 .portfolioOtherSkillsDiv {
-  justify-content: center;
-  align-items: center;
   gap: 2.5rem;
   margin-top: 6rem;
 }
 
 .portfolioSkillsComponentsDiv {
-  justify-content: center;
-  align-items: center;
   margin-top: 2rem;
 }
 
@@ -76,6 +74,7 @@
 }
 
 .portfolioSkillsTextDiv {
+  text-align: center;
   width: 80%;
   font-size: 1.2rem;
   line-height: 1.7rem;

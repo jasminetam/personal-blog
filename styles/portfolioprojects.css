@@ -2,7 +2,6 @@
 .portfolioProjectsWrapper {
   margin-top: 3rem /* 80px */;
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
