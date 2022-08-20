@@ -4,7 +4,7 @@ import socialMediaList from '../../utils/socialMediaList';
 
 export default function Sidebar() {
   return (
-    <div className="sidebar" data-test="component-sidebar">
+    <div className="sidebar" data-test="component-Sidebar">
       <div className="sidebarItem">
         <h1 className="sidebarTitle">Jasmine Tam</h1>
         <div className="profileImg">
