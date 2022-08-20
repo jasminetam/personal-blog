@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import Sidebar from '../Components/Common/Sidebar';
+import Sidebar from '../../Components/Common/Sidebar';
 
 describe('Sidebar test', () => {
   const setup = (props = {}, state = null) => {
@@ -17,7 +17,7 @@ describe('Sidebar test', () => {
 
   it('expect component-sidebar is rendered', () => {
     const wrapper = setup();
-    const sidebar = findJSXByAttr('component-sidebar', wrapper);
-    expect(sidebar.length).toBe(1);
+    const sidebar = findJSXByAttr('component-Sidebar', wrapper);
+    expect(Sidebar.length).toBe(1);
   });
 });
