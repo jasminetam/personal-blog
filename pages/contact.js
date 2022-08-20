@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../omponents/Common/Header';
+import Header from '../components/Common/Header';
 import Navigation from '../components/Common/Navigation';
 import CustomHead from '../components/Common/CustomHead';
 import ContactForm from '../components/ContactForm/ContactForm';
