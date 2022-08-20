@@ -2,12 +2,11 @@
 .portfolioProjectsWrapper {
   margin-top: 3rem /* 80px */;
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .portfolioTitles {
@@ -20,21 +19,20 @@
 }
 
 .portfolioProjectsDiv {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+ display: grid;
+ grid-template-columns: 1fr;
   gap: 2.5rem ;
   margin-top: 2rem;
 }
 
 
 .portfolioSingleProjectDiv {
-  margin: 2.5rem ;
   font-size: 1.875rem ;
   line-height: 2.25rem ;
-  
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .portfolioSingleProjectDiv:hover {
   color: #e5e5e5;
@@ -70,20 +68,16 @@
   object-fit: cover;
 }
 
-@media (max-width: 648px) {
-.portfolioSingleProjectTitle {
-  font-size: 26px;
-}
-  .portfolioSingleProjectImgDiv {
-    width: 98%;
+@media (min-width: 648px) {
+  .portfolioProjectsDiv {
+grid-template-columns: 1fr 1fr;
   }
-  .portfolioSingleProjectDiv{
-    width: 100%;
-  }
+
 }
 
 @media (min-width: 1420px)  {
   .portfolioProjectsDiv {
-    width: 80%;
-  }
+    grid-template-columns: 1fr 1fr 1fr;
+      }
+    
 }

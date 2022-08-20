@@ -1,7 +1,7 @@
 const withPWA = require('next-pwa')
 const runtimeCaching = require('next-pwa/cache')
 
-module.exports = withPWA({
+const settings = {
   pwa: {
     dest: 'public',
     runtimeCaching,
@@ -9,4 +9,6 @@ module.exports = withPWA({
   env: {
     MONGODB: process.env.MONGODB,
   }
-})
+}
+
+module.exports = process.env.NODE_ENV === 'development' ? settings : withPWA(settings);

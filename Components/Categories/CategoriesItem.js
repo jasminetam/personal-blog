@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const CategoriesItem = ({ tag }) => {
     return (
-        <div data-test="component-blog-categoriesItem">
+        <div data-test="component-CategoriesItem">
             <Link href={`/category/${tag}`}>
                 <div className="categoritesItem">
                     <IoIosArrowForward size="30px" />

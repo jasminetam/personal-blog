@@ -6,12 +6,14 @@ import CustomHead from '../../Components/Common/CustomHead';
 import Sidebar from '../../Components/Common/Sidebar';
 import Header from '../../Components/Common/Header';
 import Navigation from '../../Components/Common/Navigation';
-import PostComponent from '../../Components/Blog/PostComponent/PostComponent';
-import categories from '../../Components/Common/categories/categories';
+import PostComponent from '../../Components/Blog/PostComponent';
+import categories from '../../Components/Categories/CategoriesList';
 import Footer from '../../Components/Common/Footer';
-import CategoriesSideBar from '../../Components/Common/categories/CategoriesSideBar';
+import CategoriesSideBar from '../../Components/Categories/CategoriesSideBar';
 
 const Catergory = ({ category, data, slugs, htmlString }) => {
+  const topRef = React.useRef(null);
+  const executeScroll = (Ref) => Ref.current.scrollIntoView();
   const [filteredCategories, setfilteredCategories] = useState([]);
 
   useEffect(() => {
@@ -34,8 +36,8 @@ const Catergory = ({ category, data, slugs, htmlString }) => {
           <title>{`${category} | Jasmine's Blog`}</title>
         </CustomHead>
         <div className="center">
-          <Navigation />
-          <Header />
+          <Navigation topRef={topRef} executeScroll={executeScroll} />
+          <Header forwardRef={topRef} />
           <div className="home">
             <CategoriesSideBar />
             <PostComponent

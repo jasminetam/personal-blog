@@ -1,6 +1,6 @@
 export const insfakegram = {
   name: "Insfakegram",
-  link: 'https://insfakegram.vercel.app/',
+  link: 'https://insfakegram.vercel.app',
   imgUrl: './image/insfakegram.png',
   title: 'Insfakegram - A instagram clone by using google login',
   description: [
@@ -15,8 +15,8 @@ export const insfakegram = {
 
 export const personalBlog = {
   name: "Jasmine\'s Blog",
-  link: 'https://jasminetam94.com/portfolio',
-  imgUrl: './image/personalblog.png',
+  link: 'https://jasminetam94.com/',
+  imgUrl: './image/personalBlog.png',
   title: 'Jasmine\'s Blog - My portfolio website with a blog that records my coding journey.',
   description: [
     'Nextjs',
@@ -61,7 +61,7 @@ export const spotifake = {
 
 export const dailyExpenses = {
   name: "Daily Expenses",
-  link: 'https://daily-expenses.vercel.app/',
+  link: 'https://daily-expenses.vercel.app',
   imgUrl: './image/dailyExpenses.png',
   title: 'Daily Expenses - A budget web application for managing daily expenses',
   description: ['Reactjs', 'Bootstrap', 'Uuid', 'React Hooks', 'Custom Hook for managing local storage'],
@@ -69,8 +69,8 @@ export const dailyExpenses = {
 
 export const projectManagement = {
   name: "Project Management",
-  link: 'https://graph-ql-project-management.vercel.app/',
-  imgUrl: './image/projectmanagement.png',
+  link: 'https://graph-ql-project-management.vercel.app',
+  imgUrl: './image/projectManagement.png',
   title: 'Project Management - A project management app to track on production progress',
   description: [
     'Reactjs',

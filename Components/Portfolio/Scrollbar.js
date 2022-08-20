@@ -1,7 +1,6 @@
 import React from 'react';
 import { AiOutlineVerticalAlignTop } from 'react-icons/ai';
 import { MdOutlineWork, MdMilitaryTech } from 'react-icons/md';
-import { TbLanguageHiragana } from 'react-icons/tb';
 import { RiTeamFill } from 'react-icons/ri';
 import { HiOutlineMail } from 'react-icons/hi';
 
@@ -10,7 +9,6 @@ function Scrollbar({
   projectsRef,
   techsSkillsRef,
   softSkillsRef,
-  langNHobbiesRef,
   contactRef,
   executeScroll,
 }) {
@@ -37,11 +35,6 @@ function Scrollbar({
             className="scrollbarIcon"
 
             onClick={() => executeScroll(softSkillsRef)}
-          />
-          <TbLanguageHiragana
-            className="scrollbarIcon"
-
-            onClick={() => executeScroll(langNHobbiesRef)}
           />
           <HiOutlineMail
             className="scrollbarIcon"

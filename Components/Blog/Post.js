@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Post({ data, slug }) {
   return (
@@ -6,18 +6,18 @@ export default function Post({ data, slug }) {
       <div className="post">
         <div className="postInfo">
           <div className="postCats">
-          <div>
-            <div className="postCat">
-              {data?.tags.map((tag) => (
-                <button className="button" key={tag}>
-                  <Link href={`/category/${tag}`}>{tag}</Link>
-                </button>
-              ))}
+            <div>
+              <div className="postCat">
+                {data?.tags.map((tag) => (
+                  <button className="button" key={tag}>
+                    <Link href={`/category/${tag}`}>{tag}</Link>
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
             <span className="postTitle">{data?.title}</span>
             <span className="postDate">{data?.date}</span>
-            </div>
+          </div>
         </div>
       </div>
     </Link>

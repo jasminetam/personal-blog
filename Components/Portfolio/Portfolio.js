@@ -4,10 +4,9 @@ import PortfolioProjects from './PortfolioProjects';
 import SkillSets from './SkillSets';
 import OtherSkills from './OtherSkills';
 import Scrollbar from './Scrollbar';
-import SocialMedia from './SocialMedia';
+import PortfolioContact from './PortfolioContact';
 
-function Portfolio() {
-  const topRef = React.useRef(null);
+function Portfolio({topRef}) {
   const projectsRef = React.useRef(null);
   const techsSkillsRef = React.useRef(null);
   const softSkillsRef = React.useRef(null);
@@ -16,7 +15,7 @@ function Portfolio() {
   const executeScroll = (Ref) => Ref.current.scrollIntoView();
 
   return (
-    <section data-test="component-portfolio" className="portfolio">
+    <section data-test="component-Portfolio" className="portfolio">
       <div className="aboutCotent">
         <Scrollbar
           topRef={topRef}
@@ -39,9 +38,7 @@ function Portfolio() {
         <div className="mb-56" />
         <OtherSkills forwardRef={softSkillsRef} />
         <div className="mb-56" />
-        {/* <LangNHobbies forwardRef={langNHobbiesRef} />
-        <div className="mb-56" /> */}
-        <SocialMedia
+        <PortfolioContact
           forwardRef={contactRef}
           // executeScroll={executeScroll}
           topRef={topRef}

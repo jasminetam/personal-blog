@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 const CustomHead = ({ children }) => {
   return (
-    <Head>
+    <Head data-test="component-CustomHead">
       <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;500&family=Playfair+Display:ital@1&display=swap"
         rel="stylesheet"

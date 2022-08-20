@@ -7,30 +7,35 @@ import marked from 'marked';
 import Header from '../../Components/Common/Header';
 import Navigation from '../../Components/Common/Navigation';
 import SidebarIcon from '../../Components/Common/SidebarIcon';
-import PostContent from '../../Components/Blog/PostContent/PostContent';
+import PostContent from '../../Components/Blog/PostContent';
 import Footer from '../../Components/Common/Footer';
 
 const Post = ({ htmlString, data }) => {
+  const topRef = React.useRef(null);
+  const executeScroll = (Ref) => Ref.current.scrollIntoView();
+
   return (
     <>
-      <CustomHead>
-        <meta
-          name="description"
-          content="a Blog about Jasmine learning journey on coding"
-        />
-        <meta name="keywords" content="Jasmine javascript react jasminetam" />
-        <meta name="description" content={htmlString} />
-        <meta name="keywords" content={data.tags} />
-        <title>{`${data.title} | Jasmine's Blog`}</title>
-      </CustomHead>
       <div className="pageWrapper">
-        <Header />
-        <Navigation />
-        <div className="home">
-          <PostContent data={data} htmlString={htmlString} />
-          <SidebarIcon />
+        <CustomHead>
+          <meta
+            name="description"
+            content="a Blog about Jasmine learning journey on coding"
+          />
+          <meta name="keywords" content="Jasmine javascript react jasminetam" />
+          <meta name="description" content={htmlString} />
+          <meta name="keywords" content={data.tags} />
+          <title>{`${data.title} | Jasmine's Blog`}</title>
+        </CustomHead>
+        <div className="center">
+          <Header forwardRef={topRef} />
+          <Navigation topRef={topRef} executeScroll={executeScroll} />
+          <div className="projects">
+            <PostContent data={data} htmlString={htmlString} />
+            <SidebarIcon />
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </>
   );

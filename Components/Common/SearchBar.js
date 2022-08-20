@@ -2,7 +2,7 @@ import React from 'react';
 
 function SearchBar({searchInput, handleChange}) {
   return (
-      <div className="searchBoxWrapper">
+      <div className="searchBoxWrapper" data-test="component-SearchBar">
         <input
           className="searchBox"
           type="text"

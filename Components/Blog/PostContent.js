@@ -1,10 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
-import { BsDot } from 'react-icons/bs';
+import { useRouter } from 'next/router';
+import { BiArrowBack } from 'react-icons/bi';
 
 export default function PostContent({ data, htmlString }) {
+  const router = useRouter();
   return (
     <div className="postContent" data-test="component-PostContent">
+      <div className="backIconDiv">
+        <div onClick={() => router.back()}>
+          <a className="backIcon">
+            <BiArrowBack className="mr-2" /> Back
+          </a>
+        </div>
+      </div>
       <div className="postContentWrapper">
         <div className="postContentHeader">
           <div className="postContentTitle">

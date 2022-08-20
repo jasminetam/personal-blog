@@ -1,5 +1,5 @@
 import React from "react";
-import categories from "./categories";
+import categories from "./CategoriesList";
 import CategoriesItem from "./CategoriesItem"
 
 const CategoriesSideBar = () => {
