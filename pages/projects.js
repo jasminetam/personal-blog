@@ -1,10 +1,10 @@
-import React from "react";
-import Header from "../Components/Common/Header";
-import Navigation from "../Components/Common/Navigation";
+import React from 'react';
+import Header from '../Components/Common/Header';
+import Navigation from '../Components/Common/Navigation';
 import CustomHead from '../Components/Common/CustomHead';
-import Footer from "../Components/Common/Footer";
-import ProjectsBrowse from "../Components/Projects/ProjectsBrowse";
-import SidebarIcon from "../Components/Common/SidebarIcon";
+import Footer from '../Components/Common/Footer';
+import ProjectsBrowse from '../Components/Projects/ProjectsBrowse';
+import SidebarIcon from '../Components/Common/SidebarIcon';
 
 export default function Projects() {
   const topRef = React.useRef(null);
@@ -22,13 +22,13 @@ export default function Projects() {
       </CustomHead>
       <div className="center">
         <Navigation topRef={topRef} executeScroll={executeScroll} />
-      <Header forwardRef={topRef} />
-      <div className="projects">
-        <ProjectsBrowse />
-        <SidebarIcon />
+        <Header forwardRef={topRef} />
+        <div className="projects">
+          <ProjectsBrowse />
+          <SidebarIcon />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-      </div>
-      </div>
+    </div>
   );
 }

@@ -7,7 +7,7 @@ import navItems from '../../utils/navItems';
 function DropdownMenu() {
   return (
     <Menu className="dropdownMenuWrapper" data-test="component-DropdownMenu">
-      <Menu.Button className="dropdownButton">
+      <Menu.Button as="button" className="dropdownButton">
         <GrMenu />
       </Menu.Button>
       <Menu.Items className="dropdownMenu">

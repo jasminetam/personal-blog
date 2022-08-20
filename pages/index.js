@@ -11,7 +11,6 @@ import Footer from '../Components/Common/Footer';
 import CategoriesSideBar from '../Components/Categories/CategoriesSideBar';
 import SearchBar from '../Components/Common/SearchBar';
 
-
 export default function Home({ data, slugs, htmlString }) {
   const topRef = React.useRef(null);
   const executeScroll = (Ref) => Ref.current.scrollIntoView();
@@ -55,7 +54,7 @@ export default function Home({ data, slugs, htmlString }) {
             htmlString={htmlString}
           />
           <Sidebar />
-          </div>
+        </div>
         <Footer />
       </div>
     </div>

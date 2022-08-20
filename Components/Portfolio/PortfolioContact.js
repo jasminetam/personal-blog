@@ -7,7 +7,7 @@ export default function PortfolioContact({ forwardRef }) {
     <>
       <div ref={forwardRef} data-test="component-PortfolioContact" className="portfolioContactWrapper">
         <div className="portfolioSidebarTextDiv">
-          <SetIntersectionObserver type={2} direction="left">
+          <SetIntersectionObserver type={2} direction="right">
             <h3 className="portfolioSidebarText">Thank you for your time</h3>
             <h3 className="portfolioSidebarText">Want to know more?</h3>
             <h3 className="portfolioSidebarText">Please contact me</h3>

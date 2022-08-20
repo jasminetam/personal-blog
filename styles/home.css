@@ -43,29 +43,6 @@
   background-color: #cca43b;
 }
 
-/*scrollbar*/
-.topIconWrapper {
-  position: flex;
-  width: 40px;
-  padding-right: 20px;
-}
-
-.topIcon {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  cursor: pointer;
-  font-size: 30px;
-  color: white;
-}
-.topIcon:hover {
-  color: #363636;
-}
-.topIconGray {
-  color: #363636;
-}
-.topIconGray:hover {
-  color: #cca43b;
-}
 
 .footer {
   font-family: 'Cormorant SC', sans-serif;
@@ -89,9 +66,6 @@
 
 
 @media (min-width: 1280px) {
-  .topIcon {
-    font-size: 40px;
-  }
   .home {
     grid-template-columns: 1fr 2fr 1fr;
   }

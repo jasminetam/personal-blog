@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import CustomHead from '../Components/Common/CustomHead';
 import Navigation from '../Components/Common/Navigation';
 import Portfolio from '../Components/Portfolio/Portfolio';

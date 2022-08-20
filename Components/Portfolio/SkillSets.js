@@ -10,10 +10,10 @@ function SkillSets({ forwardRef }) {
           <div className="portfolioSkillSetsIconsDiv">
             {skillIcons.map((item, idx) => (
               <div className="portfolioSkillSetsSingleIconDiv" key={idx}>
-                 <SetIntersectionObserver type={1} direction="left">
+                 <SetIntersectionObserver type={1} direction="down">
                   <div className="portfolioSkillSetsSingleIcon">{item.icon}</div>
                 </SetIntersectionObserver>
-                <SetIntersectionObserver type={1} direction="right">
+                <SetIntersectionObserver type={1} direction="up">
                   <h3 className="portfolioSkillSetsSingleText">{item.name}</h3>
                   </SetIntersectionObserver>
             </div>
