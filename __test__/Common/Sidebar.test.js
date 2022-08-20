@@ -15,9 +15,9 @@ describe('Sidebar test', () => {
     const wrapper = setup();
   });
 
-  it('expect component-sidebar is rendered', () => {
+  it('expect component-Sidebar is rendered', () => {
     const wrapper = setup();
-    const sidebar = findJSXByAttr('component-Sidebar', wrapper);
+    const Sidebar = findJSXByAttr('component-Sidebar', wrapper);
     expect(Sidebar.length).toBe(1);
   });
 });
