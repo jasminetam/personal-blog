@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -10,7 +11,6 @@ import PostComponent from '../Components/Blog/PostComponent';
 import Footer from '../Components/Common/Footer';
 import CategoriesSideBar from '../Components/Categories/CategoriesSideBar';
 import SearchBar from '../Components/Common/SearchBar';
-
 
 export default function Home({ data, slugs, htmlString }) {
   const topRef = React.useRef(null);
@@ -55,7 +55,7 @@ export default function Home({ data, slugs, htmlString }) {
             htmlString={htmlString}
           />
           <Sidebar />
-          </div>
+        </div>
         <Footer />
       </div>
     </div>

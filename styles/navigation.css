@@ -20,43 +20,43 @@
   color: #363636;
 }
 
-.logoWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .navFlex {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.logoWrapper {
+  border-radius: 9999px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
 
 .navDropdownFlex {
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
   margin-right: 50px;
   margin-left: 10px;
   padding: 1.5px;
-  object-fit: contain;
   border-radius: 9999px;
   cursor: pointer;
 }
 
-.logo:hover {
-  border: 3px solid #e5e5e5;
+.logoWrapper:hover {
+  border: 4px solid #e5e5e5;
 }
 
-.logoGray:hover {
-  border: 3px solid #363636;
+.logoWrapperGray:hover {
+  border: 4px solid #363636;
 }
 
 .navList {
@@ -67,8 +67,7 @@
 
 .navListItem {
   display: none;
-  margin-right: 50px;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
   cursor: pointer;
   color: #e5e5e5;
@@ -128,7 +127,7 @@
 /*  */
 .dropdownMenu {
   position: absolute;
-  right: 0px;
+  right: -50px;
   width: 100vw;
   --tw-bg-opacity: 1;
   background-color: #e5e5e5;
@@ -136,6 +135,7 @@
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   z-index: 10;
 }
+
 
 .dropdownLink {
   display: flex;
@@ -150,25 +150,48 @@
   background-color: #cca43b;
 }
 
-@media screen and (max-width: 992px) {
-  .navListItem {
-    margin-right: 10px;
-    font-size: 20px;
-  }
-  .topImg {
-    margin-right: 20px;
-    width: 40px;
-  }
-  .navigation {
-    height: 50px;
-  }
+/*scrollbar*/
+.topIconWrapper {
+  position: flex;
+  width: 40px;
+  padding-right: 10px;
 }
 
+.topIcon {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+}
+.topIcon:hover {
+  color: #363636;
+}
+.topIconGray {
+  color: #363636;
+}
+.topIconGray:hover {
+  color: #cca43b;
+}
+
+
 @media (min-width: 648px) {
+  .navListItem {
+    font-size: 26px;
+  }
   .dropdownMenuWrapper {
     display: none;
   }
   .navListItem {
     display: inline-block;
+  }
+  .navDropdownFlex {
+    width: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .topIcon {
+    font-size: 40px;
   }
 }

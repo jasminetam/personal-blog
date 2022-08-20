@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import { GiDiamonds } from 'react-icons/gi';
 
 export default function ProjectLayout({ project }) {
@@ -11,11 +12,16 @@ export default function ProjectLayout({ project }) {
         rel="noreferrer"
       >
         <div className="projectDetails">
-          <img
+          <div className="projectImgWrapper">
+          <Image
+            layout="responsive"
+            width={400}
+            height={300}
             className="projectImg"
             src={project?.imgUrl}
             alt={project?.title}
-          />
+            />
+            </div>
           <h3 className="projectHeading">{project?.title}</h3>
           <p className="projectSubHeading">
             Framework and tools that I have used:

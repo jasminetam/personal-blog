@@ -1,7 +1,7 @@
 export const insfakegram = {
   name: "Insfakegram",
   link: 'https://insfakegram.vercel.app',
-  imgUrl: './image/insfakegram.png',
+  imgUrl: '/image/insfakegram.png',
   title: 'Insfakegram - A instagram clone by using google login',
   description: [
     'Nextjs',
@@ -16,7 +16,7 @@ export const insfakegram = {
 export const personalBlog = {
   name: "Jasmine\'s Blog",
   link: 'https://jasminetam94.com/',
-  imgUrl: './image/personalBlog.png',
+  imgUrl: '/image/personalBlog.png',
   title: 'Jasmine\'s Blog - My portfolio website with a blog that records my coding journey.',
   description: [
     'Nextjs',
@@ -31,7 +31,7 @@ export const personalBlog = {
 export const animeGo = {
   name: "AnimeGo",
   link: 'https://animego.uk',
-  imgUrl: './image/animego.png',
+  imgUrl: '/image/animego.png',
   title:
     'AnimeGo - My latest freelance project in building a international startup website in selling Japanese goods.',
   description: [
@@ -47,7 +47,7 @@ export const animeGo = {
 export const spotifake = {
   name: "Spotifake",
   link: 'https://spotifake-alpha.vercel.app/',
-  imgUrl: './image/spotifake.png',
+  imgUrl: '/image/spotifake.png',
   title: 'Spotifake - A player with search function and lyrics',
   description: [
     'Reactjs',
@@ -62,15 +62,15 @@ export const spotifake = {
 export const dailyExpenses = {
   name: "Daily Expenses",
   link: 'https://daily-expenses.vercel.app',
-  imgUrl: './image/dailyExpenses.png',
+  imgUrl: '/image/dailyExpenses.png',
   title: 'Daily Expenses - A budget web application for managing daily expenses',
-  description: ['Reactjs', 'Bootstrap', 'Uuid', 'React Hooks', 'Custom Hook for managing local storage'],
+  description: ['Reactjs', 'Bootstrap', 'Uuid', 'React Hooks', 'Manage local storage'],
 };
 
 export const projectManagement = {
   name: "Project Management",
   link: 'https://graph-ql-project-management.vercel.app',
-  imgUrl: './image/projectManagement.png',
+  imgUrl: '/image/projectManagement.png',
   title: 'Project Management - A project management app to track on production progress',
   description: [
     'Reactjs',

@@ -6,8 +6,9 @@
   padding: 30px;
   max-height: calc(100vh - 300px);
   position: sticky;
-  top: 3.5rem;
-  display: none;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
@@ -19,6 +20,11 @@
   }
 }
 
+.profileImg {
+  padding-top: 20px;
+  width: 200px;
+}
+
 .sidebarItem {
   display: flex;
   flex-direction: column;
@@ -28,7 +34,6 @@
 
 .sidebarItem2 {
   display: inline-block;
-  margin-top: 20px;
 }
 
 

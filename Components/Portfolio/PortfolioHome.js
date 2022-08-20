@@ -73,7 +73,7 @@ export default function PortfolioHome({ forwardRef }) {
             </div>
             </SetIntersectionObserver>
           <div className="portfolioHeaderContactBtnDiv">
-          <SetIntersectionObserver type={3} direction="left">
+          <SetIntersectionObserver type={3} direction="right">
             <div className="portfolioHeaderContactBtn">
               <Link href="/contact">Contact Me !</Link>
               </div>

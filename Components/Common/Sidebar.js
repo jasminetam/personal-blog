@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import socialMediaList from '../../utils/socialMediaList';
 
@@ -6,7 +7,15 @@ export default function Sidebar() {
     <div className="sidebar" data-test="component-sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">Jasmine Tam</span>
-        <img src={'/image/profile.jpg'} width="200px" height="200px" alt="" />
+        <div className="profileImg">
+          <Image
+            src={'/image/profile.jpg'}
+            width={200}
+            height={200}
+            layout="responsive"
+            alt="profile"
+          />
+        </div>
         <h4>From a Nurse to a React developer</h4>
       </div>
       <div className="sidebarItem2">
