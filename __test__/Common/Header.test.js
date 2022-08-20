@@ -1,6 +1,6 @@
 import { shallow } from "enzyme"
 import React from "react"
-import Header from "../../components/Common/Header"
+import Header from "../../Components/Common/Header"
 
 describe("Header test", () => {
   it("expect header component is rendered without crashing", () => {

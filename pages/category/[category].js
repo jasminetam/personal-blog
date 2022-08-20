@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import CustomHead from '../../components/Common/CustomHead';
-import Sidebar from '../../components/Common/Sidebar';
-import Header from '../../components/Common/Header';
-import Navigation from '../../components/Common/Navigation';
-import PostComponent from '../../components/Blog/PostComponent';
-import categories from '../../components/Categories/CategoriesList';
-import Footer from '../../components/Common/Footer';
-import CategoriesSideBar from '../../components/Categories/CategoriesSideBar';
+import CustomHead from '../../Components/Common/CustomHead';
+import Sidebar from '../../Components/Common/Sidebar';
+import Header from '../../Components/Common/Header';
+import Navigation from '../../Components/Common/Navigation';
+import PostComponent from '../../Components/Blog/PostComponent';
+import categories from '../../Components/Categories/CategoriesList';
+import Footer from '../../Components/Common/Footer';
+import CategoriesSideBar from '../../Components/Categories/CategoriesSideBar';
 
 const Catergory = ({ category, data, slugs, htmlString }) => {
   const topRef = React.useRef(null);
