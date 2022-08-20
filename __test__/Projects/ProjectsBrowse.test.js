@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import ProjectsBrowse from "../../Components/Projects/ProjectsBrowse";
+import ProjectsBrowse from "../../components/Projects/ProjectsBrowse";
 
 describe("ProjectsBrowse test", () => {
     const setup = (props = {}, state = null) => {

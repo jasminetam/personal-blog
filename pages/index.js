@@ -3,14 +3,14 @@ import dynamic from 'next/dynamic';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import Sidebar from '../Components/Common/Sidebar';
-import Header from '../Components/Common/Header';
-import Navigation from '../Components/Common/Navigation';
-import CustomHead from '../Components/Common/CustomHead';
-import PostComponent from '../Components/Blog/PostComponent';
-import Footer from '../Components/Common/Footer';
-import CategoriesSideBar from '../Components/Categories/CategoriesSideBar';
-import SearchBar from '../Components/Common/SearchBar';
+import Sidebar from '../components/Common/Sidebar';
+import Header from '../components/Common/Header';
+import Navigation from '../components/Common/Navigation';
+import CustomHead from '../components/Common/CustomHead';
+import PostComponent from '../components/Blog/PostComponent';
+import Footer from '../components/Common/Footer';
+import CategoriesSideBar from '../components/Categories/CategoriesSideBar';
+import SearchBar from '../components/Common/SearchBar';
 
 export default function Home({ data, slugs, htmlString }) {
   const topRef = React.useRef(null);

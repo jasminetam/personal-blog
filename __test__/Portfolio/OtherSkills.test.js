@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import OtherSkills from "../../Components/Portfolio/OtherSkills";
+import OtherSkills from "../../components/Portfolio/OtherSkills";
 
 describe("OtherSkills test", () => {
     const setup = (props = {}, state = null) => {

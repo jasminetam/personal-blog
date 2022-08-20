@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import SearchBar from "../../Components/Common/SearchBar";
+import SearchBar from "../../components/Common/SearchBar";
 
 describe("SearchBar test", () => {
     const setup = (props = {}, state = null) => {

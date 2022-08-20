@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../Components/Common/Header';
-import Navigation from '../Components/Common/Navigation';
-import CustomHead from '../Components/Common/CustomHead';
-import ContactForm from '../Components/ContactForm/ContactForm';
-import Footer from '../Components/Common/Footer';
-import SidebarIcon from '../Components/Common/SidebarIcon';
+import Header from '../omponents/Common/Header';
+import Navigation from '../components/Common/Navigation';
+import CustomHead from '../components/Common/CustomHead';
+import ContactForm from '../components/ContactForm/ContactForm';
+import Footer from '../components/Common/Footer';
+import SidebarIcon from '../components/Common/SidebarIcon';
 
 export default function Contact() {
   const topRef = React.useRef(null);

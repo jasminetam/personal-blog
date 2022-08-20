@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import PortfolioProjects from "../../Components/Portfolio/PortfolioProjects";
+import PortfolioProjects from "../../components/Portfolio/PortfolioProjects";
 
 describe("PortfolioProjects test", () => {
     const setup = (props = {}, state = null) => {

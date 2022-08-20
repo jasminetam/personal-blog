@@ -1,7 +1,7 @@
 import React from 'react'
-import CustomHead from '../Components/Common/CustomHead';
-import Navigation from '../Components/Common/Navigation';
-import Portfolio from '../Components/Portfolio/Portfolio';
+import CustomHead from '../components/Common/CustomHead';
+import Navigation from '../components/Common/Navigation';
+import Portfolio from '../components/Portfolio/Portfolio';
 
 export default function About() {
   const topRef = React.useRef(null);

@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import PortfolioHome from "../../Components/Portfolio/PortfolioHome";
+import PortfolioHome from "../../components/Portfolio/PortfolioHome";
 
 describe("PortfolioHome test", () => {
     const setup = (props = {}, state = null) => {

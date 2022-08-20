@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import Sidebar from "../../Components/Common/Sidebar";
+import Sidebar from "../../components/Common/Sidebar";
 
 describe("Sidebar test", () => {
     const setup = (props = {}, state = null) => {

@@ -3,20 +3,10 @@ import Head from 'next/head';
 const CustomHead = ({ children }) => {
   return (
     <Head data-test="component-CustomHead">
-      <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;500&family=Playfair+Display:ital@1&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;500&family=Playfair+Display&display=swap"
-        rel="stylesheet"
-      />
       <meta charSet="utf-8" />
       <meta
         name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5"
       />
       <link
         rel="apple-touch-icon"

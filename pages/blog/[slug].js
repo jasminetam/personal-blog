@@ -2,13 +2,13 @@ import React from 'react';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import CustomHead from '../../Components/Common/CustomHead';
+import CustomHead from '../../components/Common/CustomHead';
 import marked from 'marked';
-import Header from '../../Components/Common/Header';
-import Navigation from '../../Components/Common/Navigation';
-import SidebarIcon from '../../Components/Common/SidebarIcon';
-import PostContent from '../../Components/Blog/PostContent';
-import Footer from '../../Components/Common/Footer';
+import Header from '../../components/Common/Header';
+import Navigation from '../../components/Common/Navigation';
+import SidebarIcon from '../../components/Common/SidebarIcon';
+import PostContent from '../../components/Blog/PostContent';
+import Footer from '../../components/Common/Footer';
 
 const Post = ({ htmlString, data }) => {
   const topRef = React.useRef(null);

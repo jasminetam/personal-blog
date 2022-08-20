@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import SidebarIcon from "../../Components/Common/SidebarIcon";
+import SidebarIcon from "../../components/Common/SidebarIcon";
 
 describe("SidebarIcon test", () => {
     const setup = (props = {}, state = null) => {

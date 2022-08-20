@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import CustomHead from "../../Components/Common/CustomHead";
+import CustomHead from "../../components/Common/CustomHead";
 
 describe("CustomHead test", () => {
     const setup = (props = {}, state = null) => {

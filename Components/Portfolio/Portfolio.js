@@ -10,7 +10,6 @@ function Portfolio({topRef}) {
   const projectsRef = React.useRef(null);
   const techsSkillsRef = React.useRef(null);
   const softSkillsRef = React.useRef(null);
-  const langNHobbiesRef = React.useRef(null);
   const contactRef = React.useRef(null);
   const executeScroll = (Ref) => Ref.current.scrollIntoView();
 
@@ -22,7 +21,6 @@ function Portfolio({topRef}) {
           projectsRef={projectsRef}
           techsSkillsRef={techsSkillsRef}
           softSkillsRef={softSkillsRef}
-          langNHobbiesRef={langNHobbiesRef}
           contactRef={contactRef}
           executeScroll={executeScroll}
         />

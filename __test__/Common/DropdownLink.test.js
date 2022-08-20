@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import DropdownLink from "../../Components/Common/DropdownLink";
+import DropdownLink from "../../components/Common/DropdownLink";
 
 describe("DropdownLink test", () => {
     const setup = (props = {}, state = null) => {

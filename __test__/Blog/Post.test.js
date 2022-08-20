@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import Post from "../../Components/Blog/Post";
+import Post from "../../components/Blog/Post";
 
 describe("Post test", () => {
     const mockPost = "";

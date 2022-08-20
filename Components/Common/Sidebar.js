@@ -6,7 +6,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar" data-test="component-sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">Jasmine Tam</span>
+        <h1 className="sidebarTitle">Jasmine Tam</h1>
         <div className="profileImg">
           <Image
             src={'/image/profile.jpg'}

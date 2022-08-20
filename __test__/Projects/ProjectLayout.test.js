@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import ProjectLayout from "../../Components/Projects/ProjectLayout";
+import ProjectLayout from "../../components/Projects/ProjectLayout";
 
 describe("ProjectLayout test", () => {
     const setup = (props = {}, state = null) => {

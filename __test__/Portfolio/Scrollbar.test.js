@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import Scrollbar from "../../Components/Portfolio/Scrollbar";
+import Scrollbar from "../../components/Portfolio/Scrollbar";
 
 describe("Scrollbar test", () => {
     const setup = (props = {}, state = null) => {

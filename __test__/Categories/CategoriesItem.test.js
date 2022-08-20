@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import CategoriesItem from "../../Components/Categories/CategoriesItem";
+import CategoriesItem from "../../components/Categories/CategoriesItem";
 
 describe("CategoriesItem test", () => {
     const setup = (props = {}, state = null) => {
