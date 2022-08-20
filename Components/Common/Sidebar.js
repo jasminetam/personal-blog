@@ -23,7 +23,7 @@ export default function Sidebar() {
           {socialMediaList.map((listItem, idx) => (
             <div key={idx}>
               <h4>{listItem.name}</h4>
-              <Link href={listItem.link}>
+              <Link href={listItem.link} target="_blank" rel="noreferrer">
                 <div className="alignIcons">
                   {listItem.icon}
                   {listItem.username}
