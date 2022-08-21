@@ -29,7 +29,7 @@ function ProjectItem({ project }) {
             <h6>{project.desc}</h6>
           </div>
                   <p> Framework and technologies used:</p>
-                  <SetIntersectionObserver type={3} direction="down">
+                  <SetIntersectionObserver type={2} direction="down">
           <div className="portfoProjectTagsDiv">
             {project?.tag.map((item, idx) => (
               <div key={idx} className="portfoProjectTags">
@@ -43,7 +43,7 @@ function ProjectItem({ project }) {
                       </div>
                       </SetIntersectionObserver>
           <p> Functions and Usage:</p>
-          <SetIntersectionObserver type={3} direction="down">
+          <SetIntersectionObserver type={2} direction="down">
             <div className="portfoProjectFunctionDiv">
               {project?.function.map((item, idx) => (
                 <div key={idx} className="portfoProjectFunctions">
@@ -53,7 +53,7 @@ function ProjectItem({ project }) {
               ))}
             </div>
           </SetIntersectionObserver>
-          <SetIntersectionObserver type={4} direction="right">
+          <SetIntersectionObserver type={3} direction="right">
             <div className="portfolioHeaderButtonDiv">
               <button className="button-81" role="button">
                 <Link href={project.link} target="_blank" rel="noreferrer">
