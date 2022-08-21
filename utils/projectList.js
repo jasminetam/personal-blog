@@ -1,40 +1,61 @@
 export const insfakegram = {
-  name: "Insfakegram",
+  name: 'Insfakegram',
   link: 'https://insfakegram.vercel.app',
   imgUrl: '/image/insfakegram.png',
-  title: 'Insfakegram - A instagram clone by using google login',
-  description: [
+  desc: 'A instagram clone social media platform',
+  function: [
+    'Next-Auth and Firebase for user authentication',
+    'Firestore for manage database access',
+    'Upload posts, like and comments function',
+    'Comments managed on MongoDB database',
+    'Mini Profile and Suggestions for login users',
+    'Search function for posts',
+    'Recoil working as a global store',
+  ],
+  tag: [
     'Nextjs',
     'Typescript',
     'TailwindCSS',
     'Firebase',
     'Recoil',
     'next-auth',
+    'Jest and Enzyme',
   ],
 };
 
 export const personalBlog = {
-  name: "Jasmine\'s Blog",
+  name: "Jasmine's Blog",
   link: 'https://jasminetam94.com/',
   imgUrl: '/image/personalBlog.png',
-  title: 'Jasmine\'s Blog - My portfolio website with a blog that records my coding journey.',
-  description: [
-    'Nextjs',
-    'MongoDB',
-    'TailwindCSS',
-    'React Hooks',
-    'TDD',
-    'CI/CD',
+  desc: 'My portfolio website with a blog that records my coding journey.',
+  function: [
+    'SEO efficient for Server-Side Rendering',
+    'Read .md files from post folder',
+    'Convert .md files into httpStrings',
+    'Comments managed on MongoDB database',
+    'Blog posts divided by tags',
+    'Search function for posts',
+    'Inter-reactive elements with users',
   ],
+  tag: ['Nextjs', 'MongoDB', 'TailwindCSS', 'React Hooks', 'TDD', 'CI/CD'],
 };
 
 export const animeGo = {
-  name: "AnimeGo",
+  name: 'AnimeGo',
   link: 'https://animego.uk',
   imgUrl: '/image/animego.png',
-  title:
-    'AnimeGo - My latest freelance project in building a international startup website in selling Japanese goods.',
-  description: [
+  desc: 'My latest freelance project for building an international startup website in selling Japanese goods.',
+  function: [
+    'Receive products from database through SSR',
+    'Admin page for editing database on MongoDB',
+    'Handle adding, deleting & updating shopping cart',
+    'Order tracking for user',
+    'Day and night mode on browser',
+    'Search by categories, price, ratings',
+    'Add and Edit comments by users',
+    'Edit user profile',
+  ],
+  tag: [
     'Nextjs',
     'MongoDB',
     'TailwindCSS',
@@ -45,11 +66,11 @@ export const animeGo = {
   ],
 };
 export const spotifake = {
-  name: "Spotifake",
+  name: 'Spotifake',
   link: 'https://spotifake-alpha.vercel.app/',
   imgUrl: '/image/spotifake.png',
-  title: 'Spotifake - A player with search function and lyrics',
-  description: [
+  desc: 'A player with search function and lyrics',
+  tag: [
     'Reactjs',
     'Axios',
     'Bootstrap',
@@ -60,19 +81,26 @@ export const spotifake = {
 };
 
 export const dailyExpenses = {
-  name: "Daily Expenses",
+  name: 'Daily Expenses',
   link: 'https://daily-expenses.vercel.app',
   imgUrl: '/image/dailyExpenses.png',
-  title: 'Daily Expenses - A budget web application for managing daily expenses',
-  description: ['Reactjs', 'Bootstrap', 'Uuid', 'React Hooks', 'Manage local storage'],
+  desc: 'A budget web application for managing daily expenses',
+  tag: ['Reactjs', 'Bootstrap', 'Uuid', 'React Hooks', 'Manage local storage'],
 };
 
 export const projectManagement = {
-  name: "Project Management",
+  name: 'Project Management',
   link: 'https://graph-ql-project-management.vercel.app',
   imgUrl: '/image/projectManagement.png',
-  title: 'Project Management - A project management app to track on production progress',
-  description: [
+  desc: 'A project management app to track on production progress',
+  function: [
+    'ExpressJs for setting up the server',
+    'GraphQL for set up the database',
+    'MongoDB for storing the data',
+    'Apollo Client for connecting the frontend and backend',
+    'Adding, editing and deleting users and projects',
+  ],
+  tag: [
     'Reactjs',
     'Bootstrap',
     'Expressjs',
