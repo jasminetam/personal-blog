@@ -22,8 +22,8 @@ export default function Sidebar() {
         <div className="sidebarSocial">
           {socialMediaList.map((listItem, idx) => (
             <div key={idx}>
-              <h4>{listItem.name}</h4>
-              <Link href={listItem.link}>
+              <p>{listItem.name}</p>
+              <Link href={listItem.link} target="_blank" rel="noreferrer">
                 <div className="alignIcons">
                   {listItem.icon}
                   {listItem.username}

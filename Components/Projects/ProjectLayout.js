@@ -19,17 +19,18 @@ export default function ProjectLayout({ project }) {
             height={300}
             className="projectImg"
             src={project?.imgUrl}
-            alt={project?.title}
+            alt={project?.name}
             />
             </div>
-          <h3 className="projectHeading">{project?.title}</h3>
+          <h3 className="projectHeading">{project?.name}</h3>
+          <h6 className="projectSubHeading">{project?.desc}</h6>
           <p className="projectSubHeading">
-            Framework and tools that I have used:
+            Framework and technologies used:
           </p>
           <p className="projectDescription">
-            {project?.description.map((desc, idx) => (
+            {project?.tag.map((tag, idx) => (
               <div className="frameworkItems" key={idx}>
-                <GiDiamonds /> {desc}
+                <GiDiamonds /> {tag}
               </div>
             ))}
           </p>

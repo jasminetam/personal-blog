@@ -1,12 +1,9 @@
 /* projects */
 .portfolioProjectsWrapper {
-  margin-top: 3rem /* 80px */;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 7rem;
+  min-height: 100vh;
+  padding: 5rem 0 5rem 0;
+    margin: 5rem 1rem 5rem 1rem;
+    color: #363636;
 }
 
 .portfolioTitles {
@@ -18,15 +15,7 @@
   text-align: center;
 }
 
-.portfolioProjectsDiv {
- display: grid;
- grid-template-columns: 1fr;
-  gap: 2.5rem ;
-  margin-top: 2rem;
-}
-
-
-.portfolioSingleProjectDiv {
+.portfolioProjectDiv {
   font-size: 1.875rem ;
   line-height: 2.25rem ;
   display: flex;
@@ -34,21 +23,38 @@
   align-items: center;
   justify-content: center;
 }
-.portfolioSingleProjectDiv:hover {
-  color: #e5e5e5;
-  cursor: pointer;
+
+.portfoProjectGrid {
+  display: grid;
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+    gap: 24rem;
+
+}
+
+.projectItemGrid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+
+.portfolioProjectTitle {
+  margin-bottom: 8px;
   
 }
 
-.portfolioSingleProjectTitle {
-  margin-bottom: 12px;
-  
+.portfoProjectImgAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.portfolioSingleProjectImgDiv {
+.portfolioProjectImgDiv {
   border-radius: 0.25rem /* 4px */;
-  width: 24rem /* 384px */;
-  height: 15rem /* 240px */;
+  width: 35rem /* 384px */;
+  height: 35rem /* 240px */;
   cursor: pointer;
   position: relative;
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
@@ -58,27 +64,73 @@
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     margin-bottom: 3rem;
+  border: 6px solid #363636;
+  border-radius: 0.5rem;
 }
 
 .portfolioSingleProjectImg {
   padding: 0.5rem /* 8px */;
   border-radius: 0.25rem /* 4px */;
-  width: 100%;
-  height: 100%;
   cursor: pointer;
-  object-fit: cover;
 }
 
-@media (min-width: 648px) {
-  .portfolioProjectsDiv {
-grid-template-columns: 1fr 1fr;
+.portfoProjectTextDiv {
+  padding-right: 20px;
+  padding-left: 20px;
+  
+}
+
+.portfoProjectTextDiv p {
+font-size: 22px;
+font-weight: 600;
+}
+
+.portfoProjectTagsDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 10px;
+}
+
+.portfoProjectTags {
+font-size: 18px;
+}
+
+.portfoProjectTags:hover {
+  color: white;
+}
+
+.portfoProjectFunctionsDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.portfoProjectFunctions {
+font-size: 18px;
+}
+
+.portfoProjectFunctions:hover {
+  color: white;
+}
+
+@media (min-width: 1224px) {
+  .projectItemGrid {
+    margin-top: 6rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-}
-
-@media (min-width: 1420px)  {
-  .portfolioProjectsDiv {
-    grid-template-columns: 1fr 1fr 1fr;
+  .portfolioProjectsWrapper {
+      margin-left: 3.5rem /* 56px */;
+      margin-right: 3.5rem /* 56px */;
+  }
+  .portfoProjectGrid {
+      width: 75%;
+  }
+  .portfoProjectTags {
+    font-size: 20px;
+    }
+    .portfoProjectFunctions {
+      font-size: 20px;
       }
-    
+      
 }

@@ -8,7 +8,7 @@ export default function SidebarIcon() {
       <div className="sidebarIconItem2">
         <div className="sidebarIconSocial">
           {socialMediaList.map((item, idx) => (
-            <Link href={item.link} key={idx}>
+            <Link href={item.link} key={idx} target="_blank" rel="noreferrer">
               <div className="alignIconsOnly">
                 <div className="sidebarIconsOnly">{item.icon}</div>
               </div>
