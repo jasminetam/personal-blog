@@ -51,13 +51,13 @@ export default function PortfolioHome({ forwardRef }) {
                 opportunities. {highlighting("Passionate")} about learning,
                 coding, and consistently updating a personal blog. Possesses a
                 solid background in{" "}
-                {highlighting("collaborating with designers")}, optimizing
+                {highlighting("collaborating with designers,")} optimizing
                 codebase performance, and staying up-to-date with the{" "}
-                {highlighting("latest industry trends")}, as demonstrated in
+                {highlighting("latest industry trends,")} as demonstrated in
                 previous commercial experiences. Currently working in an{" "}
-                {highlighting("UK based company")}
-                and developing a learning app, have 20 repositories and more
-                than 600 contributions this year in my personal account.
+                {highlighting("UK based company")} and developing a learning
+                app, have 20 repositories and more than 600 contributions this
+                year in my personal account.
               </p>
             </div>
           </SetIntersectionObserver>
