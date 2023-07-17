@@ -9,7 +9,8 @@ const categories = [
   "Typescript",
   "Frontend",
   "Backend",
-  "GraphQL"
+  "GraphQL",
+  "Work",
 ];
 
 export default categories;
