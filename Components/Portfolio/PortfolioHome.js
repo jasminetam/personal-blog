@@ -45,19 +45,15 @@ export default function PortfolioHome({ forwardRef }) {
             <div>
               <p className="portfolioHeaderDesc">
                 A proactive {highlighting("React Developer")} with a valid UK
-                work permit and {highlighting("One and half years")} of
-                commercial experience, specializing in frontend development and
-                looking for {highlighting("Full Stack development")}{" "}
-                opportunities. {highlighting("Passionate")} about learning,
-                coding, and consistently updating a personal blog. Possesses a
-                solid background in{" "}
-                {highlighting("collaborating with designers,")} optimizing
-                codebase performance, and staying up-to-date with the{" "}
+                work permit and {highlighting("Two years")} of commercial
+                experience, specializing in frontend development and looking for{" "}
+                {highlighting("Full Stack development")} opportunities.{" "}
+                {highlighting("Passionate")} about learning, coding, and
+                consistently updating a personal blog. Possesses a solid
+                background in {highlighting("collaborating with designers,")}{" "}
+                optimizing codebase performance, and staying up-to-date with the{" "}
                 {highlighting("latest industry trends,")} as demonstrated in
-                previous commercial experiences. Currently working in an{" "}
-                {highlighting("UK based company")} and developing a learning
-                app, have 20 repositories and more than 600 contributions this
-                year in my personal account.
+                previous commercial experiences.
               </p>
             </div>
           </SetIntersectionObserver>
