@@ -45,7 +45,7 @@ export default function PortfolioHome({ forwardRef }) {
             <div>
               <p className="portfolioHeaderDesc">
                 A proactive {highlighting("React Developer")} with a valid UK
-                work permit and {highlighting("Two years")} of commercial
+                work permit and {highlighting("Three years")} of commercial
                 experience, specializing in frontend development and looking for{" "}
                 {highlighting("Full Stack development")} opportunities.{" "}
                 {highlighting("Passionate")} about learning, coding, and

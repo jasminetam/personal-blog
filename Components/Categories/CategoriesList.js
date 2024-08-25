@@ -11,6 +11,7 @@ const categories = [
   "Backend",
   "GraphQL",
   "Work",
+  "AI",
 ];
 
 export default categories;
