@@ -33,7 +33,6 @@
   position: relative;
   margin-left: 10px;
   margin-right: 10px;
-
 }
 
 .navDropdownFlex {
@@ -71,16 +70,15 @@
   font-weight: 600;
   cursor: pointer;
   color: #e5e5e5;
-  font-family: 'Cormorant SC', sans-serif;
+  font-family: "Cormorant SC", sans-serif;
   border-radius: 25px;
-  padding: 8px;
+  padding: 10px;
 }
 .navListItemGray {
   color: #363636;
 }
 
 .navListItem:hover {
-  padding: 10px;
   border-radius: 50px;
   background-color: #cca43b;
   border: 3px solid #363636;
@@ -136,7 +134,6 @@
   z-index: 10;
 }
 
-
 .dropdownLink {
   display: flex;
   padding: 1rem;
@@ -173,7 +170,6 @@
 .topIconGray:hover {
   color: #cca43b;
 }
-
 
 @media (min-width: 648px) {
   .navListItem {
