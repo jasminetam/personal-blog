@@ -12,6 +12,7 @@ const categories = [
   "GraphQL",
   "Work",
   "AI",
+  "Movies",
 ];
 
 export default categories;
