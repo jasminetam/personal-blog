@@ -1,5 +1,5 @@
 .portfolioSkillSetsWrapper {
-  margin-bottom: 16rem;
+  margin-bottom: 3rem;
 }
 .portfolioSkillSetsDiv {
   width: 100%;
@@ -8,11 +8,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 .portfolioSkillSetsDiv h1 {
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
 }
 
 .portfolioSkillSetsIconsDiv {
@@ -25,8 +25,6 @@
   margin-bottom: 2.5rem /* 40px */;
   gap: 0.5rem /* 8px */;
 }
-
-
 
 .portfolioSkillSetsSingleIconDiv {
   display: flex;
@@ -59,11 +57,10 @@
   }
   .portfolioSkillSetsWrapper {
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem ;
   }
-  .portfolioSkillSetsFirstDiv{
+  .portfolioSkillSetsFirstDiv {
     margin-top: 5rem /* 80px */;
-  margin-bottom: 5rem /* 80px */;
+    margin-bottom: 5rem /* 80px */;
   }
 }
 

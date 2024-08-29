@@ -1,5 +1,5 @@
 .portfolioHomeWrapper {
-  padding-top: 50px;
+  padding-top: 0 48px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@
   text-align: center;
   font-size: 3rem /* 48px */;
   line-height: 1;
-  margin: 15rem 0 1rem 0;
+  margin: 9rem 0 1rem 0;
 }
 
 .portfolioHeaderTitle h2 {
@@ -52,7 +52,6 @@
   margin-bottom: 30px;
 }
 
-
 .portfolioContactIcon:hover {
   color: #e5e5e5;
   font-size: 25px;
@@ -69,7 +68,7 @@
   font-weight: 400;
   font-size: 0.5rem;
   line-height: 1.5rem;
-  font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   flex-wrap: wrap;
 }
 
@@ -108,7 +107,6 @@
   .portfolioHeaderDesc {
     font-size: 20px;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -137,9 +135,6 @@
   .portfolioContactIcon {
     font-size: 30px;
     width: 80%;
-  }
-  .portfolioContactIcon:hover {
-    font-size: 35px;
   }
 }
 

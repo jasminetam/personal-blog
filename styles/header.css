@@ -11,10 +11,15 @@
     to right bottom,
     #242f40,
     #363636,
-    #CCA43B,
-    #E5E5E5,
-    #FFFFFF
+    #cca43b,
+    #e5e5e5,
+    #ffffff
   );
+}
+@media screen and (max-width: 648px) {
+  .header {
+    height: 175px;
+  }
 }
 
 .headerTitle {
@@ -22,7 +27,6 @@
   font-size: 80px;
   font-family: "Cormorant SC", serif;
 }
-
 
 @media screen and (max-width: 768px) {
   .headerTitle {

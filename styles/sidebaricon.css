@@ -7,51 +7,47 @@
     top:50px;
   }
    */
-  @media screen and (max-width: 992px) {
-    .alignIconsOnly {
-        display: inline-block;
-    }
-    .sidebarIconOnly {
-      justify-content: center;
-      align-items: center;
-      display: flex;
-   
-   
-    }
-  }
-  
-  .sidebarIconItem2 {
-    display: inline-block;
-    position: sticky;
-    top: 600px;
-    padding-right: 10px;
-  }
-  
-  
-  .sidebarIconSocial {
-    margin-top: 15px;
-  }
-  
-
+@media screen and (max-width: 992px) {
   .alignIconsOnly {
-    padding: 10px 0;
-    margin-left: 20px;
-    position: sticky;
+    display: inline-block;
   }
-  
-  .alignIconsOnly:hover {
-    color: #cca43c;
-  }
-  
   .sidebarIconOnly {
-    color: #363636;
-    background-color: #E5E5E5;
-    font-size: 30px;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 30px;
-    position: sticky;
-    top:50px;
-    height: 500px;
-    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100px !important;
   }
+}
+
+.sidebarIconItem2 {
+  display: inline-block;
+  position: sticky;
+  top: 600px;
+  padding-right: 10px;
+}
+
+.sidebarIconSocial {
+  margin-top: 15px;
+}
+
+.alignIconsOnly {
+  padding: 10px 0;
+  margin-left: 20px;
+  position: sticky;
+}
+
+.alignIconsOnly:hover {
+  color: #cca43c;
+}
+
+.sidebarIconOnly {
+  color: #363636;
+  background-color: #e5e5e5;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 30px;
+  position: sticky;
+  top: 50px;
+  height: 500px;
+  z-index: 10;
+}
