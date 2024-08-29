@@ -1,9 +1,9 @@
 /* projects */
 .portfolioProjectsWrapper {
   min-height: 100vh;
-  padding: 5rem 0 5rem 0;
-    margin: 5rem 1rem 5rem 1rem;
-    color: #363636;
+  padding: 5rem 0 0 0;
+  margin: 1rem;
+  color: #363636;
 }
 
 .portfolioTitles {
@@ -16,19 +16,19 @@
 }
 
 .portfolioProjectDiv {
-  font-size: 1.875rem ;
-  line-height: 2.25rem ;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 3rem;
 }
 
 .portfoProjectGrid {
   display: grid;
-    grid-template-rows: repeat(4, minmax(0, 1fr));
-    gap: 24rem;
-
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  gap: 4rem;
 }
 
 .projectItemGrid {
@@ -37,10 +37,8 @@
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-
 .portfolioProjectTitle {
   margin-bottom: 8px;
-  
 }
 
 .portfoProjectImgAlign {
@@ -63,7 +61,7 @@
     0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
   border: 6px solid #363636;
   border-radius: 0.5rem;
 }
@@ -77,12 +75,11 @@
 .portfoProjectTextDiv {
   padding-right: 20px;
   padding-left: 20px;
-  
 }
 
 .portfoProjectTextDiv p {
-font-size: 22px;
-font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .portfoProjectTagsDiv {
@@ -92,7 +89,7 @@ font-weight: 600;
 }
 
 .portfoProjectTags {
-font-size: 18px;
+  font-size: 18px;
 }
 
 .portfoProjectTags:hover {
@@ -107,7 +104,7 @@ font-size: 18px;
 }
 
 .portfoProjectFunctions {
-font-size: 18px;
+  font-size: 18px;
 }
 
 .portfoProjectFunctions:hover {
@@ -117,20 +114,19 @@ font-size: 18px;
 @media (min-width: 1224px) {
   .projectItemGrid {
     margin-top: 6rem;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .portfolioProjectsWrapper {
-      margin-left: 3.5rem /* 56px */;
-      margin-right: 3.5rem /* 56px */;
+    margin-left: 3.5rem /* 56px */;
+    margin-right: 3.5rem /* 56px */;
   }
   .portfoProjectGrid {
-      width: 75%;
+    width: 75%;
   }
   .portfoProjectTags {
     font-size: 20px;
-    }
-    .portfoProjectFunctions {
-      font-size: 20px;
-      }
-      
+  }
+  .portfoProjectFunctions {
+    font-size: 20px;
+  }
 }

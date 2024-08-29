@@ -1,46 +1,46 @@
 .projects {
   display: grid;
-    background-color: #e5e5e5;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 96rem;
+  background-color: #e5e5e5;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90rem;
 }
 
 .projectWrapper {
-background-color: #E5E5E5;
-align-items: center;
-justify-content: center;
-margin-left: auto;
-margin-right: auto;
-padding: 20px;
-height: 100%;
-display: flex;
-max-width: 96rem;
+  background-color: #e5e5e5;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  max-width: 90rem;
 }
 
 .projectLinkDiv {
   padding: 1.5rem /* 24px */;
-    cursor: pointer;
-    border-radius: 0.75rem /* 12px */;
-    --tw-bg-opacity: 1;
-    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
-    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    transition-property: background-color, border-color, color, fill, stroke,
-        opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
-    width: auto;
-    max-width: 26rem;
-    min-width: 18rem;
+  cursor: pointer;
+  border-radius: 0.75rem /* 12px */;
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  width: auto;
+  max-width: 26rem;
+  min-width: 18rem;
 }
 
 .projectflex {
   display: grid;
-grid-template-columns: 1fr;
-  padding: 10px;
-gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 24px;
+  gap: 24px;
 }
 
 .projectImgWrapper {
@@ -49,22 +49,17 @@ gap: 20px;
   width: 100%;
   margin-bottom: 2rem /* 32px */;
   border-radius: 0.75rem /* 12px */;
-  
 }
-
-
-
 
 .projectImg {
   object-fit: cover;
-    object-position: center;
-    margin-bottom: 5rem;
-    border-radius: 0.75rem ;
-
+  object-position: center;
+  margin-bottom: 5rem;
+  border-radius: 0.75rem;
 }
 
 .projectLinkDiv:hover {
-  color: #CCA43B;
+  color: #cca43b;
   --tw-bg-opacity: 1;
   background-color: rgba(54, 54, 54, var(--tw-bg-opacity));
   --tw-translate-y: -0.25rem /* -4px */;
@@ -72,9 +67,6 @@ gap: 20px;
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
 }
-
-
-
 
 .projectHeading {
   font-family: Spartan, sans-serif;
@@ -87,40 +79,39 @@ gap: 20px;
 }
 
 .projectSubHeading {
-font-size: 20px;
-font-weight: 500;
-font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .projectDescription {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   font-size: 1.1rem /* 18px */;
   line-height: 2;
-  max-height: 16rem ;
+  max-height: 16rem;
 }
 
 .frameworkItems {
   display: flex;
   align-items: center;
-  
 }
 
 @media screen and (min-width: 768px) {
   .projects {
     grid-template-columns: 9fr 1fr;
   }
-.projectflex {
-  grid-template-columns:1fr 1fr;
-}
+  .projectflex {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media screen and (min-width: 1280px) {
   .projects {
     grid-template-columns: 9fr 1fr;
   }
-.projectflex {
-  grid-template-columns:1fr 1fr 1fr;
-}
+  .projectflex {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
