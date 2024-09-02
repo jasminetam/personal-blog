@@ -1,3 +1,6 @@
+/* post layout */
+@import "variable";
+
 .post {
   display: flex;
   justify-content: flex-start;
@@ -10,12 +13,9 @@
   }
 }
 
-
-
 .postsDiv {
   width: 100%;
 }
-
 
 .postCat {
   font-family: "Varela Round", sans-serif;
@@ -28,7 +28,6 @@
 .postCats {
   margin-top: 20px;
 }
-
 
 .postTitle {
   font-family: "Cormorant SC", serif;

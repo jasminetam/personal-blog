@@ -1,3 +1,6 @@
+/* sidebar */
+@import "variable";
+
 .sidebar {
   margin: 24px;
   background-color: #363636;
@@ -31,6 +34,14 @@
   align-items: center;
   justify-content: center;
   color: white;
+  & > img {
+    margin-top: 15px;
+  }
+  & > p {
+    padding: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+  }
 }
 
 .sidebarItem2 {
@@ -52,16 +63,6 @@
   align-items: center;
 }
 
-.sidebarItem > img {
-  margin-top: 15px;
-}
-
-.sidebarItem > p {
-  padding: 10px;
-  margin-top: 20px;
-  color: #ffffff;
-}
-
 .sidebarSocial {
   margin-top: 15px;
   color: #cca43b;
@@ -74,21 +75,20 @@
   justify-content: space-around;
   color: #e5e5e5;
   padding: 10px;
-}
-
-.alignIcons:hover {
-  cursor: pointer;
-  border-radius: 50px;
-  background-color: #cca43b;
-  color: #363636;
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  &:hover {
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #cca43b;
+    color: #363636;
+    --tw-scale-x: 1.25;
+    --tw-scale-y: 1.25;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
