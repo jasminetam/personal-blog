@@ -1,20 +1,20 @@
-import "../styles/home.css";
-import "../styles/posts.css";
-import "../styles/postlayout.css";
-import "../styles/postcontent.css";
-import "../styles/contact.css";
-import "../styles/project.css";
-import "../styles/sidebaricon.css";
-import "../styles/portfolio.css";
-import "../styles/portfoliohome.css";
-import "../styles/portfolioprojects.css";
-import "../styles/portfolioskillsets.css";
-import "../styles/portfoliootherskills.css";
-import "../styles/header.css";
-import "../styles/sidebar.css";
-import "../styles/navigation.css";
-import "../styles/globals.css";
-import "../styles/categories-sidebar.css"
+import "../styles/home.scss";
+import "../styles/posts.scss";
+import "../styles/postlayout.scss";
+import "../styles/postcontent.scss";
+import "../styles/contact.scss";
+import "../styles/project.scss";
+import "../styles/sidebaricon.scss";
+import "../styles/portfolio.scss";
+import "../styles/portfoliohome.scss";
+import "../styles/portfolioprojects.scss";
+import "../styles/portfolioskillsets.scss";
+import "../styles/portfoliootherskills.scss";
+import "../styles/header.scss";
+import "../styles/sidebar.scss";
+import "../styles/navigation.scss";
+import "../styles/globals.scss";
+import "../styles/categories-sidebar.scss";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

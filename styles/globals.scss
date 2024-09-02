@@ -1,3 +1,6 @@
+/* global */
+@import "variable";
+
 a,
 a:visited,
 a:hover,
@@ -9,10 +12,9 @@ a:active {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Cormorant SC', serif;
-  font-family: 'Playfair Display', serif;
+  font-family: "Cormorant SC", serif;
+  font-family: "Playfair Display", serif;
 }
-
 
 .scroll-hidden::-webkit-scrollbar {
   height: 0px;
@@ -67,7 +69,6 @@ body {
   transition-delay: 1.4s;
 }
 
-
 .is-visible {
   opacity: 1;
   transform: none;
@@ -91,42 +92,42 @@ body {
 
 @keyframes floatWords {
   0% {
-      transform: translateY(5px);
+    transform: translateY(5px);
   }
 
   50% {
-      transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 
   100% {
-      transform: translateY(5px);
+    transform: translateY(5px);
   }
 }
 
 @keyframes floatWordsLR {
   0% {
-      transform: translateX(10px);
+    transform: translateX(10px);
   }
 
   50% {
-      transform: translateX(-10px);
+    transform: translateX(-10px);
   }
 
   100% {
-      transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
 @keyframes floatWordsRL {
   0% {
-      transform: translateX(-10px);
+    transform: translateX(-10px);
   }
 
   50% {
-      transform: translateX(10px);
+    transform: translateX(10px);
   }
 
   100% {
-      transform: translateX(-10px);
+    transform: translateX(-10px);
   }
 }
