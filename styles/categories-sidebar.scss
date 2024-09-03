@@ -59,13 +59,13 @@
   background-color: #fff;
   cursor: pointer;
   border-radius: 3rem;
-  color: #363636;
+  color: $secondary-color;
   padding-left: 0.75rem;
   margin-right: 0.75rem;
 }
 
 .categoritesItem:hover {
-  background-color: #cca43b;
+  background-color: $primary-color;
   color: #ffffff;
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;

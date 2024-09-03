@@ -11,7 +11,7 @@
 }
 
 .pageWrapper {
-  background-color: #363636;
+  background-color: $secondary-color;
 }
 
 .center {
@@ -42,7 +42,7 @@
 }
 
 .searchBox:focus {
-  background-color: #cca43b;
+  background-color: $primary-color;
   border: 0;
   outline: 0;
 }

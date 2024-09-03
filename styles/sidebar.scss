@@ -3,7 +3,7 @@
 
 .sidebar {
   margin: 24px;
-  background-color: #363636;
+  background-color: $secondary-color;
   border-radius: 10px;
   grid-template-columns: 1fr;
   padding: 30px;
@@ -65,7 +65,7 @@
 
 .sidebarSocial {
   margin-top: 15px;
-  color: #cca43b;
+  color: $primary-color;
 }
 
 .alignIcons {
@@ -78,8 +78,8 @@
   &:hover {
     cursor: pointer;
     border-radius: 50px;
-    background-color: #cca43b;
-    color: #363636;
+    background-color: $primary-color;
+    color: $secondary-color;
     --tw-scale-x: 1.25;
     --tw-scale-y: 1.25;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y))

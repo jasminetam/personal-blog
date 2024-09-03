@@ -12,7 +12,7 @@
 .portfolio {
   display: flex;
   justify-content: center;
-  background-color: #cca43b;
+  background-color: $primary-color;
 }
 
 /*scrollbar*/
@@ -38,7 +38,7 @@
   margin-bottom: 1rem;
   cursor: pointer;
   font-size: 24px;
-  color: #363636;
+  color: $secondary-color;
 }
 .scrollbarIcon:hover {
   color: #e5e5e5;
@@ -83,7 +83,7 @@
 }
 
 .portfolioSidebarText {
-  color: #363636;
+  color: $secondary-color;
   font-size: 2rem;
   line-height: 1;
   padding: 2rem;
@@ -111,7 +111,7 @@
 }
 
 .portfolioSidebarIconsOnly {
-  color: #363636;
+  color: $secondary-color;
   font-size: 30px;
   margin-right: 20px;
   display: flex;
@@ -143,7 +143,7 @@
   border: 0 solid #e2e8f0;
   border-radius: 1.5rem;
   box-sizing: border-box;
-  color: #363636;
+  color: $secondary-color;
   cursor: pointer;
   display: inline-block;
   font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto,
@@ -165,7 +165,7 @@
 }
 
 .button-81:hover {
-  background-color: #363636;
+  background-color: $secondary-color;
   color: #fff;
 }
 
