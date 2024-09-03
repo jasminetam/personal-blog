@@ -10,7 +10,7 @@
   margin: 20px;
   padding: 0;
   padding-right: 0;
-  border: 1px solid #363636;
+  border: 1px solid $secondary-color;
   border-radius: 25px;
   background-color: #ffffff;
 }
@@ -22,7 +22,7 @@
   cursor: pointer;
   font-size: 20px;
   padding: 0 12px 0 8px;
-  background-color: #363636;
+  background-color: $secondary-color;
   color: #e5e5e5;
   svg {
     position: relative;
@@ -31,8 +31,8 @@
 }
 
 .backIcon:hover {
-  background-color: #cca43b;
-  color: #363636;
+  background-color: $primary-color;
+  color: $secondary-color;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -73,7 +73,7 @@
 }
 
 .postContentDesc {
-  color: #363636;
+  color: $secondary-color;
   font-size: 16px;
   line-height: 30px;
   font-family: "Times New Roman", Times, serif;
@@ -120,7 +120,7 @@
 .button {
   display: inline-block;
   border-radius: 5px;
-  background-color: #363636;
+  background-color: $secondary-color;
   border: none;
   color: #e5e5e5;
   text-align: center;
@@ -132,8 +132,8 @@
 }
 
 .button:hover {
-  background-color: #cca43b;
-  color: #363636;
+  background-color: $primary-color;
+  color: $secondary-color;
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
