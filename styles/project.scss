@@ -37,6 +37,15 @@
   width: auto;
   max-width: 26rem;
   min-width: 18rem;
+  &:hover {
+    color: $primary-color;
+    --tw-bg-opacity: 1;
+    background-color: rgba(54, 54, 54, var(--tw-bg-opacity));
+    --tw-translate-y: -0.25rem /* -4px */;
+    transform: var(--tw-transform);
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
+  }
 }
 
 .projectflex {
@@ -59,16 +68,6 @@
   object-position: center;
   margin-bottom: 5rem;
   border-radius: 0.75rem;
-}
-
-.projectLinkDiv:hover {
-  color: $primary-color;
-  --tw-bg-opacity: 1;
-  background-color: rgba(54, 54, 54, var(--tw-bg-opacity));
-  --tw-translate-y: -0.25rem /* -4px */;
-  transform: var(--tw-transform);
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
 }
 
 .projectHeading {
