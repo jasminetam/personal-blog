@@ -25,18 +25,19 @@
   padding-bottom: 50px;
 }
 
-.portfolioHeaderTitle h1 {
-  text-align: center;
-  font-size: 3rem /* 48px */;
-  line-height: 1;
-  margin: 9rem 0 1rem 0;
-}
-
-.portfolioHeaderTitle h2 {
-  text-align: center;
-  font-size: 1.5rem /* 24px */;
-  line-height: 2rem /* 32px */;
-  margin: 0 0 1rem 0;
+.portfolioHeaderTitle {
+  h1 {
+    text-align: center;
+    font-size: 3rem /* 48px */;
+    line-height: 1;
+    margin: 9rem 0 1rem 0;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    margin: 0 0 1rem 0;
+  }
 }
 
 .portfolioContactIconDiv {
@@ -53,26 +54,25 @@
   background-color: transparent;
   font-size: 20px;
   margin-bottom: 30px;
-}
-
-.portfolioContactIcon:hover {
-  color: #e5e5e5;
-  font-size: 25px;
+  &:hover {
+    color: #e5e5e5;
+    font-size: 25px;
+  }
 }
 
 .portfolioHeaderDesc {
   text-align: center;
   margin-left: 3rem;
   margin-right: 3rem;
-}
-.portfolioHeaderDesc p {
-  color: $secondary-color;
-  text-align: left;
-  font-weight: 400;
-  font-size: 0.5rem;
-  line-height: 1.5rem;
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  flex-wrap: wrap;
+  & p {
+    color: $secondary-color;
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.5rem;
+    line-height: 1.5rem;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolioHeaderContactBtnDiv {
@@ -96,11 +96,10 @@
   margin-bottom: 5rem /* 80px */;
   cursor: pointer;
   justify-content: center;
-}
-
-.portfolioHeaderContactBtn:hover {
-  background-color: #e5e5e5;
-  color: $secondary-color;
+  &:hover {
+    background-color: #e5e5e5;
+    color: $secondary-color;
+  }
 }
 
 @media (max-width: 640px) {
