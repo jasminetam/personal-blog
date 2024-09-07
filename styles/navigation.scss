@@ -76,25 +76,24 @@
   border-radius: 50px;
   border: 3px solid transparent;
   padding: 8px;
+  &:hover {
+    background-color: $primary-color;
+    border: 3px solid $secondary-color;
+    color: $secondary-color;
+    --tw-scale-x: 1.25;
+    --tw-scale-y: 1.25;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 .navListItemGray {
   color: $secondary-color;
-}
-
-.navListItem:hover {
-  background-color: $primary-color;
-  border: 3px solid $secondary-color;
-  color: $secondary-color;
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 /* DropdownMenu */
@@ -116,16 +115,16 @@
   cursor: pointer;
   padding: 20px;
   transform-origin: top left;
+  &:hover {
+    color: $secondary-color;
+  }
 }
 
-.dropdownButton:hover {
-  color: $secondary-color;
-}
 .dropdownButtonGray {
   color: $secondary-color;
-}
-.dropdownButtonGray:hover {
-  color: $primary-color;
+  &:hover {
+    color: $primary-color;
+  }
 }
 /*  */
 .dropdownMenu {
@@ -146,11 +145,10 @@
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 20px;
-}
-
-.dropdownLink:hover {
-  --tw-bg-opacity: 1;
-  background-color: $primary-color;
+  &:hover {
+    --tw-bg-opacity: 1;
+    background-color: $primary-color;
+  }
 }
 
 /*scrollbar*/
@@ -166,15 +164,15 @@
   cursor: pointer;
   font-size: 30px;
   color: white;
-}
-.topIcon:hover {
-  color: $secondary-color;
-}
-.topIconGray {
-  color: $secondary-color;
-}
-.topIconGray:hover {
-  color: $primary-color;
+  &:hover {
+    color: $secondary-color;
+  }
+  & .topIconGray {
+    color: $secondary-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
 }
 
 @media (min-width: 648px) {

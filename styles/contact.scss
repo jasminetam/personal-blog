@@ -101,10 +101,9 @@
   color: $primary-color;
   cursor: pointer;
   font-family: "Cormorant SC", sans-serif;
-}
-
-.buttonItems:hover {
-  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
 }
 
 .messageSent {
