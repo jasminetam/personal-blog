@@ -31,16 +31,15 @@
   --tw-text-opacity: 1;
   color: rgba(31, 41, 55, var(--tw-text-opacity));
   margin: 3rem 1rem 1.5rem 1.5rem;
-}
-
-.catSideBarContentDiv h3 {
-  font-family: "Proza Libre", sans-serif;
-  margin: 0.5rem 2rem;
-  font-size: 1.25rem;
-  line-height: 2rem;
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgba(31, 41, 55, var(--tw-text-opacity));
+  & h3 {
+    font-family: "Proza Libre", sans-serif;
+    margin: 0.5rem 2rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgba(31, 41, 55, var(--tw-text-opacity));
+  }
 }
 
 .catSideBarContentBorder {
@@ -62,29 +61,27 @@
   color: $secondary-color;
   padding-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.categoritesItem:hover {
-  background-color: $primary-color;
-  color: #ffffff;
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
-.categoritesItem h2 {
-  font-family: "Hind Siliguri", sans-serif;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-size: 1rem;
-  line-height: 0.75rem;
+  &:hover {
+    background-color: $primary-color;
+    color: #ffffff;
+    --tw-scale-x: 1.25;
+    --tw-scale-y: 1.25;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+  & h2 {
+    font-family: "Hind Siliguri", sans-serif;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+    line-height: 0.75rem;
+  }
 }
 
 @media (min-width: 648px) {
