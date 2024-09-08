@@ -6,7 +6,7 @@
   height: 350px;
   z-index: 1;
   font-size: 30px;
-  font-family: "Cormorant SC", serif;
+  font-family: $primary-font;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,13 +28,13 @@
 .headerTitle {
   padding: 50px 50px;
   font-size: 80px;
-  font-family: "Cormorant SC", serif;
+  font-family: $primary-font;
 }
 
 @media screen and (max-width: 768px) {
   .headerTitle {
     padding: 50px 50px;
     font-size: 50px;
-    font-family: "Cormorant SC", serif;
+    font-family: $primary-font;
   }
 }

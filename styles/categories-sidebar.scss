@@ -32,7 +32,7 @@
   color: rgba(31, 41, 55, var(--tw-text-opacity));
   margin: 3rem 1rem 1.5rem 1.5rem;
   & h3 {
-    font-family: "Proza Libre", sans-serif;
+    font-family: $primary-font;
     margin: 0.5rem 2rem;
     font-size: 1.25rem;
     line-height: 2rem;
@@ -76,7 +76,7 @@
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
   & h2 {
-    font-family: "Hind Siliguri", sans-serif;
+    font-family: $primary-font;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     font-size: 1rem;
