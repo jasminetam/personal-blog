@@ -46,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 36px;
-  font-family: "Cormorant SC", sans-serif;
+  font-family: $primary-font;
   color: $primary-color;
 }
 
@@ -60,14 +60,14 @@
   align-items: center;
   font-size: 30px;
   color: $primary-color;
-  font-family: "Cormorant SC", sans-serif;
+  font-family: $primary-font;
 }
 .contactFormItems {
   display: flex;
   align-items: center;
   width: 95%;
   font-size: 24px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: $secondary-font;
 }
 
 .contactFormItems:focus,
@@ -81,7 +81,7 @@
   justify-content: center;
   height: 300px;
   font-size: 24px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: $secondary-font;
 }
 .sendButton {
   display: flex;
@@ -100,7 +100,7 @@
   font-size: 26px;
   color: $primary-color;
   cursor: pointer;
-  font-family: "Cormorant SC", sans-serif;
+  font-family: $primary-font;
   &:hover {
     color: #ffffff;
   }
@@ -109,6 +109,6 @@
 .messageSent {
   font-size: 50px;
   padding: 50px;
-  font-family: "Cormorant SC", sans-serif;
+  font-family: $primary-font;
   color: #242f40;
 }

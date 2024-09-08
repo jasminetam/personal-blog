@@ -71,7 +71,7 @@
 }
 
 .projectHeading {
-  font-family: Spartan, sans-serif;
+  font-family: $primary-font;
   margin: 0 auto 2.5rem auto;
   height: 1rem /* 80px */;
   font-size: 1.25rem /* 24px */;
@@ -83,11 +83,11 @@
 .projectSubHeading {
   font-size: 20px;
   font-weight: 500;
-  font-family: "Times New Roman", Times, serif;
+  font-family: $secondary-font;
 }
 
 .projectDescription {
-  font-family: "Times New Roman", Times, serif;
+  font-family: $secondary-font;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;

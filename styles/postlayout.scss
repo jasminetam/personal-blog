@@ -18,7 +18,7 @@
 }
 
 .postCat {
-  font-family: "Varela Round", sans-serif;
+  font-family: $primary-font;
   font-size: 11px;
   color: #be9656;
   line-height: 20px;
@@ -30,7 +30,7 @@
 }
 
 .postTitle {
-  font-family: "Cormorant SC", serif;
+  font-family: $primary-font;
   font-size: 30px;
   font-weight: 700;
   margin-top: 15px;
@@ -38,7 +38,7 @@
 }
 
 .postDate {
-  font-family: "Cormorant SC", serif;
+  font-family: $primary-font;
   font-style: italic;
   font-size: 20px;
   color: $secondary-color;
@@ -48,7 +48,7 @@
 }
 
 .postDesc {
-  font-family: "Cormorant SC", serif;
+  font-family: $primary-font;
   font-size: 16px;
   color: $secondary-color;
   line-height: 24px;
