@@ -11,6 +11,7 @@ export default function PortfolioHome({ forwardRef }) {
       </span>
     );
   };
+
   return (
     <section
       className="portfolioHomeWrapper"
@@ -23,7 +24,8 @@ export default function PortfolioHome({ forwardRef }) {
             <SetIntersectionObserver type={1} direction="down">
               <div className="portfolioHeaderTitle">
                 <div>
-                  <h1>Jasmine Tam </h1> <h2> React Developer</h2>
+                  <h1>Jasmine Tam</h1>
+                  <h2>Software Engineer (Full-Stack)</h2>
                 </div>
               </div>
               <div className="portfolioContactIconDiv">
@@ -34,6 +36,8 @@ export default function PortfolioHome({ forwardRef }) {
                     href={item.link}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label={item.name || "social link"}
+                    title={item.name || "social link"}
                   >
                     {item.icon}
                   </a>
@@ -41,26 +45,36 @@ export default function PortfolioHome({ forwardRef }) {
               </div>
             </SetIntersectionObserver>
           </div>
+
           <SetIntersectionObserver type={2} direction="up">
             <div>
               <p className="portfolioHeaderDesc">
-                A proactive {highlighting("React Developer")} with a valid UK
-                work permit and {highlighting("Three years")} of commercial
-                experience, specializing in frontend development and looking for{" "}
-                {highlighting("Full Stack development")} opportunities.{" "}
-                {highlighting("Passionate")} about learning, coding, and
-                consistently updating a personal blog. Possesses a solid
-                background in {highlighting("collaborating with designers,")}{" "}
-                optimizing codebase performance, and staying up-to-date with the{" "}
-                {highlighting("latest industry trends,")} as demonstrated in
-                previous commercial experiences.
+                A proactive {highlighting("Software Engineer")} with{" "}
+                {highlighting("Right to Work in the UK")} and{" "}
+                {highlighting("four years")} of commercial experience. I build
+                {` `}
+                {highlighting("full-stack")} products with{" "}
+                {highlighting("React, Next.js, TypeScript, Java & Node.js")}.
+                Recently, I’ve worked on an{" "}
+                {highlighting("enterprise-scale LMS")}—optimising core modules
+                across front-end and back-end, leading a migration from Redux
+                Saga to React Query with stronger Cypress coverage (cutting API
+                errors by 40%), and contributing to{" "}
+                {highlighting("CSP compliance")} refactors. I also developed a
+                {` `}
+                {highlighting("client skin framework")} used by 30+ corporate
+                customers for scalable branding. I care about{" "}
+                {highlighting("clean, maintainable code")}, performance, and
+                collaborating in {highlighting("Agile")} teams to ship reliable,
+                user-centred features.
               </p>
             </div>
           </SetIntersectionObserver>
+
           <div className="portfolioHeaderContactBtnDiv">
             <SetIntersectionObserver type={3} direction="right">
               <div className="portfolioHeaderContactBtn">
-                <Link href="/contact">Contact Me !</Link>
+                <Link href="/contact">Contact Me</Link>
               </div>
             </SetIntersectionObserver>
           </div>
