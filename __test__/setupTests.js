@@ -1,8 +1,16 @@
-import Enzyme from 'enzyme'
-import EnzymeAdapter from '@wojtekmaj/enzyme-adapter-react-17'
+import '@testing-library/jest-dom';
 
-Enzyme.configure({ adapter: new EnzymeAdapter() })
+import { configure, within } from '@testing-library/react';
+configure({ testIdAttribute: 'data-test' });
 
-export const findJSXByAttr = (wrapper, name) => {
-  return wrapper.find(`[data-test="${name}"]`)
-}
+export const findJSXByAttr = (utilsOrElement, name) => {
+  if (!utilsOrElement) {
+    throw new Error('findJSXByAttr: expected a render utils object or container/element');
+  }
+
+  if (typeof utilsOrElement.getByTestId === 'function') {
+    return utilsOrElement.getByTestId(name);
+  }
+
+  return within(utilsOrElement).getByTestId(name);
+};

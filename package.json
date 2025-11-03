@@ -15,10 +15,8 @@
     "@headlessui/react": "^1.6.4",
     "@types/enzyme": "^3.10.10",
     "@types/jest": "^27.0.3",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
     "autoprefixer": "^10.4.7",
     "babel-jest": "^28.1.1",
-    "enzyme": "^3.11.0",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "jest": "^27.4.5",
@@ -34,7 +32,11 @@
     "yarn": "^1.22.22"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "jest-environment-jsdom": "^30.2.0"
   }
 }
