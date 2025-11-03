@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import CustomHead from '../../Components/Common/CustomHead';
-import marked from 'marked';
+import { marked } from 'marked'; 
 import Header from '../../Components/Common/Header';
 import Navigation from '../../Components/Common/Navigation';
 import SidebarIcon from '../../Components/Common/SidebarIcon';
