@@ -1,26 +1,17 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import PortfolioContact from '../../Components/Portfolio/PortfolioContact';
 
-describe('PortfolioContact test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<PortfolioContact {...props} />);
-  };
+describe('PortfolioContact', () => {
+  const setup = (props = {}) => render(<PortfolioContact {...props} />);
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
-
-  it('expect PortfolioContact component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-PortfolioContact is rendered', () => {
-    const wrapper = setup();
-    const PortfolioContact = findJSXByAttr(
-      'component-PortfolioContact',
-      wrapper
-    );
-    expect(PortfolioContact.length).toBe(1);
+  it('renders root element with data-test="component-PortfolioContact"', () => {
+    setup();
+    expect(screen.getByTestId('component-PortfolioContact')).toBeInTheDocument();
   });
 });

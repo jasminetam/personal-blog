@@ -1,23 +1,16 @@
-import { shallow } from 'enzyme';
-import React from 'react';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import DropdownMenu from '../../Components/Common/DropdownMenu';
 
-describe('DropdownMenu test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<DropdownMenu {...props} />);
-  };
+test('renders and opens menu', async () => {
+  render(<DropdownMenu />);
+  const user = userEvent.setup();
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
+  const button = screen.getByRole('button', { name: /dropdownButton/i });
+  expect(button).toBeInTheDocument();
 
-  it('expect DropdownMenu component is rendered without crashing', () => {
-    const wrapper = setup();
-  });
+  await user.click(button);
 
-  it('expect component-DropdownMenu is rendered', () => {
-    const wrapper = setup();
-    const DropdownMenu = findJSXByAttr('component-DropdownMenu', wrapper);
-    expect(DropdownMenu.length).toBe(1);
-  });
+  expect(screen.getByRole('menu')).toBeInTheDocument();
+  expect(screen.getAllByRole('menuitem').length).toBeGreaterThan(0);
 });

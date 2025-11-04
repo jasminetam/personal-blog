@@ -27,7 +27,7 @@ export default function Navigation({ topRef, executeScroll }) {
         <div className={`logoWrapper ${show && 'logoWrapperGray'}`}>
           <Link href="/">
             <Image
-              layout="fill"
+              fill
               objectFit="cover"
               className={`logo ${show && 'logoGray'}`}
               src="/image/logo.png"

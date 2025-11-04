@@ -1,23 +1,20 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import ProjectLayout from '../../Components/Projects/ProjectLayout';
 
-describe('ProjectLayout test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<ProjectLayout {...props} />);
-  };
+describe('ProjectLayout', () => {
+  const defaultProps = {};
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
+  const setup = (props = {}) =>
+    render(<ProjectLayout {...defaultProps} {...props} />);
 
-  it('expect ProjectLayout component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-ProjectLayout is rendered', () => {
-    const wrapper = setup();
-    const ProjectLayout = findJSXByAttr('component-ProjectLayout', wrapper);
-    expect(ProjectLayout.length).toBe(1);
+  it('renders root element with data-test="component-ProjectLayout"', () => {
+    setup();
+    expect(screen.getByTestId('component-ProjectLayout')).toBeInTheDocument();
   });
 });

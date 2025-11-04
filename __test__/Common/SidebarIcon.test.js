@@ -1,23 +1,19 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import SidebarIcon from '../../Components/Common/SidebarIcon';
 
-describe('SidebarIcon test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<SidebarIcon {...props} />);
-  };
+describe('SidebarIcon', () => {
+  const defaultProps = {};
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
+  const setup = (props = {}) => render(<SidebarIcon {...defaultProps} {...props} />);
 
-  it('expect SidebarIcon component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-sidebarIcon is rendered', () => {
-    const wrapper = setup();
-    const sidebarIcon = findJSXByAttr('component-sidebarIcon', wrapper);
-    expect(sidebarIcon.length).toBe(1);
+  it('renders root element with data-test="component-sidebarIcon"', () => {
+    setup();
+    expect(screen.getByTestId('component-sidebarIcon')).toBeInTheDocument();
   });
 });

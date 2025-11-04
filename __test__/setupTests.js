@@ -1,8 +1,17 @@
-import Enzyme from 'enzyme'
-import EnzymeAdapter from '@wojtekmaj/enzyme-adapter-react-17'
+import '@testing-library/jest-dom';
+import { configure } from '@testing-library/react';
+configure({ testIdAttribute: 'data-test' });
+import 'intersection-observer';
+jest.mock('next/router', () => require('next-router-mock'));
 
-Enzyme.configure({ adapter: new EnzymeAdapter() })
+export const findJSXByAttr = (name, utilsOrElement) => {
+  if (!utilsOrElement) {
+ throw new Error('findJSXByAttr: expected a render utils object or container/element');
+  }
 
-export const findJSXByAttr = (wrapper, name) => {
-  return wrapper.find(`[data-test="${name}"]`)
-}
+  if (typeof utilsOrElement.getByTestId === 'function') {
+    return utilsOrElement.getByTestId(name);
+  }
+
+  return within(utilsOrElement).getByTestId(name);
+};

@@ -1,23 +1,27 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import DropdownLink from '../../Components/Common/DropdownLink';
 
-describe('DropdownLink test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<DropdownLink {...props} />);
-  };
+describe('DropdownLink', () => {
+  const defaultProps = { href: '/test', children: 'Test Link' };
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
+  const setup = (props = {}) =>
+    render(<DropdownLink {...defaultProps} {...props} />);
 
-  it('expect DropdownLink component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-DropdownLink is rendered', () => {
-    const wrapper = setup();
-    const DropdownLink = findJSXByAttr('component-DropdownLink', wrapper);
-    expect(DropdownLink.length).toBe(1);
+  it('renders root element with data-test="component-DropdownLink"', () => {
+    setup();
+    expect(screen.getByTestId('component-DropdownLink')).toBeInTheDocument();
+  });
+
+  it('renders a link with correct text and href', () => {
+    setup({ href: '/about', children: 'About' });
+    const link = screen.getByRole('link', { name: /about/i });
+    expect(link).toBeInTheDocument();
+    expect(link).toHaveAttribute('href', '/about');
   });
 });

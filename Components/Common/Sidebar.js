@@ -12,7 +12,7 @@ export default function Sidebar() {
             src={'/image/profile.jpg'}
             width={200}
             height={200}
-            layout="responsive"
+            responsive={true}
             alt="profile"
           />
         </div>

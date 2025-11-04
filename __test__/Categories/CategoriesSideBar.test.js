@@ -1,26 +1,22 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import CategoriesSideBar from '../../Components/Categories/CategoriesSideBar';
 
-describe('CategoriesSideBar test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<CategoriesSideBar {...props} />);
-  };
+describe('CategoriesSideBar', () => {
+  const defaultProps = {};
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
+  const setup = (props = {}) =>
+    render(<CategoriesSideBar {...defaultProps} {...props} />);
 
-  it('expect CategoriesSideBar component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-CategoriesSideBar is rendered', () => {
-    const wrapper = setup();
-    const CategoriesSideBar = findJSXByAttr(
-      'component-CategoriesSideBar',
-      wrapper
-    );
-    expect(CategoriesSideBar.length).toBe(1);
+  it('renders root element with data-test="component-CategoriesSideBar"', () => {
+    setup();
+    expect(
+      screen.getByTestId('component-CategoriesSideBar')
+    ).toBeInTheDocument();
   });
 });
