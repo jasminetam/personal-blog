@@ -14,7 +14,7 @@ function ProjectItem({ project }) {
           <div className="portfolioProjectImgDiv">
             <a href={project.link} target="_blank" rel="noreferrer">
               <Image
-                layout="fill"
+                fill
                 src={project.imgUrl}
                 alt={project.name}
                 className="portfolioProjectImg"

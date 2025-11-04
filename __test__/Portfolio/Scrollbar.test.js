@@ -1,23 +1,17 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import Scrollbar from '../../Components/Portfolio/Scrollbar';
 
-describe('Scrollbar test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<Scrollbar {...props} />);
-  };
+describe('Scrollbar', () => {
+  const setup = (props = {}) => render(<Scrollbar {...props} />);
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
-
-  it('expect Scrollbar component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-Scrollbar is rendered', () => {
-    const wrapper = setup();
-    const Scrollbar = findJSXByAttr('component-Scrollbar', wrapper);
-    expect(Scrollbar.length).toBe(1);
+  it('renders root element with data-test="component-Scrollbar"', () => {
+    setup();
+    expect(screen.getByTestId('component-Scrollbar')).toBeInTheDocument();
   });
 });

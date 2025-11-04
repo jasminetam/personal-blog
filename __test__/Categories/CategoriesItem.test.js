@@ -1,23 +1,19 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import CategoriesItem from '../../Components/Categories/CategoriesItem';
 
-describe('CategoriesItem test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<CategoriesItem {...props} />);
-  };
+describe('CategoriesItem', () => {
+  const defaultProps = {};
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
+  const setup = (props = {}) => render(<CategoriesItem {...defaultProps} {...props} />);
 
-  it('expect CategoriesItem component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-CategoriesItem is rendered', () => {
-    const wrapper = setup();
-    const CategoriesItem = findJSXByAttr('component-CategoriesItem', wrapper);
-    expect(CategoriesItem.length).toBe(1);
+  it('renders root element with data-test="component-CategoriesItem"', () => {
+    setup();
+    expect(screen.getByTestId('component-CategoriesItem')).toBeInTheDocument();
   });
 });

@@ -14,7 +14,7 @@ export default function ProjectLayout({ project }) {
         <div className="projectDetails">
           <div className="projectImgWrapper">
           <Image
-            layout="responsive"
+            responsive={true}
             width={400}
             height={300}
             className="projectImg"

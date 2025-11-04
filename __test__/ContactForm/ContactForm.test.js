@@ -1,23 +1,19 @@
-import { shallow } from "enzyme";
-import React from "react";
-import ContactForm from "../../Components/ContactForm/ContactForm";
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import ContactForm from '../../Components/ContactForm/ContactForm';
 
-describe("ContactForm test", () => {
-    const setup = (props = {}, state = null) => {
-        return shallow(<ContactForm {...props} />);
-    };
+describe('ContactForm', () => {
+  const defaultProps = {};
 
-    const findJSXByAttr = (name, wrapper) => {
-        return wrapper.find(`[data-test="${name}"]`);
-    };
+  const setup = (props = {}) => render(<ContactForm {...defaultProps} {...props} />);
 
-    it("expect ContactForm component is rendered without crashing", () => {
-        const wrapper = setup();
-    });
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
+  });
 
-    it("expect component-contact is rendered", () => {
-        const wrapper = setup();
-        const ContactForm = findJSXByAttr("component-ContactForm", wrapper);
-        expect(ContactForm.length).toBe(1);
-    });
+  it('renders root element with data-test="component-ContactForm"', () => {
+    setup();
+    expect(screen.getByTestId('component-ContactForm')).toBeInTheDocument();
+  });
 });

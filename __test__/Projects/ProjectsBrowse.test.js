@@ -1,23 +1,18 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render } from '@testing-library/react';
+import { findJSXByAttr } from '../setupTests';
 import ProjectsBrowse from '../../Components/Projects/ProjectsBrowse';
 
-describe('ProjectsBrowse test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<ProjectsBrowse {...props} />);
-  };
-
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
-
-  it('expect ProjectBrowse component is rendered without crashing', () => {
-    const wrapper = setup();
+describe('ProjectsBrowse', () => {
+  const setup = (props = {}) => render(<ProjectsBrowse {...props} />);
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-project is rendered', () => {
-    const wrapper = setup();
-    const ProjectsBrowse = findJSXByAttr('component-ProjectsBrowse', wrapper);
-    expect(ProjectsBrowse.length).toBe(1);
+  it('renders root element with data-test="component-ProjectsBrowse"', () => {
+    const utils = setup();
+    const el = findJSXByAttr('component-ProjectsBrowse', utils);
+    expect(el).toBeTruthy();
   });
 });

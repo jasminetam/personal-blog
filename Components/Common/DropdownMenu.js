@@ -6,11 +6,15 @@ import navItems from '../../utils/navItems';
 
 function DropdownMenu() {
   return (
-    <Menu className="dropdownMenuWrapper" data-test="component-DropdownMenu">
-      <Menu.Button as="button" className="dropdownButton">
+    <Menu as="div" className="dropdownMenuWrapper" data-test="component-DropdownMenu">
+      <Menu.Button
+        as="button"
+        className="dropdownButton"
+        aria-label="DropdownButton"
+      >
         <GrMenu />
       </Menu.Button>
-      <Menu.Items className="dropdownMenu">
+      <Menu.Items as="div" className="dropdownMenu" data-test="dropdownMenu">
         {navItems.map((item, idx) => (
           <Menu.Item key={idx}>
             <DropdownLink className="dropdown-link" href={item.link}>

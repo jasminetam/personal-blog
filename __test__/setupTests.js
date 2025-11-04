@@ -1,11 +1,12 @@
 import '@testing-library/jest-dom';
-
-import { configure, within } from '@testing-library/react';
+import { configure } from '@testing-library/react';
 configure({ testIdAttribute: 'data-test' });
+import 'intersection-observer';
+jest.mock('next/router', () => require('next-router-mock'));
 
-export const findJSXByAttr = (utilsOrElement, name) => {
+export const findJSXByAttr = (name, utilsOrElement) => {
   if (!utilsOrElement) {
-    throw new Error('findJSXByAttr: expected a render utils object or container/element');
+ throw new Error('findJSXByAttr: expected a render utils object or container/element');
   }
 
   if (typeof utilsOrElement.getByTestId === 'function') {

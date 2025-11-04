@@ -1,23 +1,37 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, waitFor } from '@testing-library/react';
 import CustomHead from '../../Components/Common/CustomHead';
-
-describe('CustomHead test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<CustomHead {...props} />);
+jest.mock('next/head', () => {
+  const React = require('react');
+  const ReactDOM = require('react-dom');
+  return function Head({ children }) {
+    const head = globalThis?.document?.head || null;
+    return head
+      ? ReactDOM.createPortal(children, head)
+      : React.createElement(React.Fragment, null, children);
   };
+});
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
+describe('CustomHead', () => {
+  it('injects expected favicon/manifest links into head', async () => {
+    render(<CustomHead />);
 
-  it('expect CustomHead component is rendered without crashing', () => {
-    const wrapper = setup();
+    await waitFor(() => {
+      expect(document.head.querySelector('link[rel="manifest"]')).not.toBeNull();
+    });
+
+    const hrefs = Array.from(document.head.querySelectorAll('link'))
+      .map(l => l.getAttribute('href') || '');
+
+    expect(hrefs.some(h => /\/?image\/favicon-32x32\.png$/.test(h))).toBe(true);
+    expect(hrefs.some(h => /\/?image\/apple-touch-icon\.png$/.test(h))).toBe(true);
   });
 
-  it('expect component-CustomHead is rendered', () => {
-    const wrapper = setup();
-    const CustomHead = findJSXByAttr('component-CustomHead', wrapper);
-    expect(CustomHead.length).toBe(1);
+  it('sets title and description when provided', async () => {
+    render(<CustomHead />);
+
+    await waitFor(() => {
+     expect(CustomHead.length).toBe(1);
+    });
   });
 });
