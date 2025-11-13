@@ -1,23 +1,17 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import Footer from '../../Components/Common/Footer';
 
-describe('Footer test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<Footer {...props} />);
-  };
+describe('Footer', () => {
+  const setup = (props = {}) => render(<Footer {...props} />);
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
-
-  it('expect Footer component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-footer is rendered', () => {
-    const wrapper = setup();
-    const footer = findJSXByAttr('component-footer', wrapper);
-    expect(footer.length).toBe(1);
+  it('renders root element with data-test="component-footer"', () => {
+    setup();
+    expect(screen.getByTestId('component-footer')).toBeInTheDocument();
   });
 });

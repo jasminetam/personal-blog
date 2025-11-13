@@ -1,26 +1,21 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import PortfolioProjects from '../../Components/Portfolio/PortfolioProjects';
 
-describe('PortfolioProjects test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<PortfolioProjects {...props} />);
-  };
+describe('PortfolioProjects', () => {
+  const defaultProps = {};
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
+  const setup = (props = {}) =>
+    render(<PortfolioProjects {...defaultProps} {...props} />);
 
-  it('expect PortfolioProjects component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-PortfolioProjects is rendered', () => {
-    const wrapper = setup();
-    const PortfolioProjects = findJSXByAttr(
-      'component-PortfolioProjects',
-      wrapper
-    );
-    expect(PortfolioProjects.length).toBe(1);
+  it('renders root element with data-test="component-PortfolioProjects"', () => {
+    setup();
+    expect(screen.getByTestId('component-PortfolioProjects')).toBeInTheDocument();
   });
 });
+

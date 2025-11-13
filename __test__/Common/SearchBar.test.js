@@ -1,23 +1,19 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import SearchBar from '../../Components/Common/SearchBar';
 
-describe('SearchBar test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<SearchBar {...props} />);
-  };
+describe('SearchBar', () => {
+  const defaultProps = {};
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
+  const setup = (props = {}) => render(<SearchBar {...defaultProps} {...props} />);
 
-  it('expect SearchBar component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-SearchBar is rendered', () => {
-    const wrapper = setup();
-    const SearchBar = findJSXByAttr('component-SearchBar', wrapper);
-    expect(SearchBar.length).toBe(1);
+  it('renders root element with data-test="component-SearchBar"', () => {
+    setup();
+    expect(screen.getByTestId('component-SearchBar')).toBeInTheDocument();
   });
 });

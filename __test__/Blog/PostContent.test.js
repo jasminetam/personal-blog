@@ -1,25 +1,19 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import PostContent from '../../Components/Blog/PostContent';
 
-describe('PostContent test', () => {
-  const mockPostContentData = {};
+describe('PostContent', () => {
+  const defaultProps = {};
 
-  const setup = (props = {}, state = null) => {
-    return shallow(<PostContent {...props} />);
-  };
+  const setup = (props = {}) => render(<PostContent {...defaultProps} {...props} />);
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
-
-  it('expect PostContent component is rendered without crashing', () => {
-    const wrapper = setup(mockPostContentData, null);
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-PostContent is rendered', () => {
-    const wrapper = setup(mockPostContentData, null);
-    const PostContent = findJSXByAttr('component-PostContent', wrapper);
-    expect(PostContent.length).toBe(1);
+  it('renders root element with data-test="component-PostContent"', () => {
+    setup();
+    expect(screen.getByTestId('component-PostContent')).toBeInTheDocument();
   });
 });

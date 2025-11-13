@@ -11,6 +11,7 @@ export default function PortfolioHome({ forwardRef }) {
       </span>
     );
   };
+
   return (
     <section
       className="portfolioHomeWrapper"
@@ -23,7 +24,8 @@ export default function PortfolioHome({ forwardRef }) {
             <SetIntersectionObserver type={1} direction="down">
               <div className="portfolioHeaderTitle">
                 <div>
-                  <h1>Jasmine Tam </h1> <h2> React Developer</h2>
+                  <h1>Jasmine Tam</h1>
+                  <h2>Software Engineer (Full-Stack)</h2>
                 </div>
               </div>
               <div className="portfolioContactIconDiv">
@@ -34,6 +36,8 @@ export default function PortfolioHome({ forwardRef }) {
                     href={item.link}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label={item.name || "social link"}
+                    title={item.name || "social link"}
                   >
                     {item.icon}
                   </a>
@@ -41,6 +45,7 @@ export default function PortfolioHome({ forwardRef }) {
               </div>
             </SetIntersectionObserver>
           </div>
+
           <SetIntersectionObserver type={2} direction="up">
             <div>
               <p className="portfolioHeaderDesc">
@@ -58,10 +63,11 @@ export default function PortfolioHome({ forwardRef }) {
               </p>
             </div>
           </SetIntersectionObserver>
+
           <div className="portfolioHeaderContactBtnDiv">
             <SetIntersectionObserver type={3} direction="right">
               <div className="portfolioHeaderContactBtn">
-                <Link href="/contact">Contact Me !</Link>
+                <Link href="/contact">Contact Me</Link>
               </div>
             </SetIntersectionObserver>
           </div>

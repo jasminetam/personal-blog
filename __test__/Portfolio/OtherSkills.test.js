@@ -1,23 +1,17 @@
-import { shallow } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import OtherSkills from '../../Components/Portfolio/OtherSkills';
 
-describe('OtherSkills test', () => {
-  const setup = (props = {}, state = null) => {
-    return shallow(<OtherSkills {...props} />);
-  };
+describe('OtherSkills', () => {
+  const setup = (props = {}) => render(<OtherSkills {...props} />);
 
-  const findJSXByAttr = (name, wrapper) => {
-    return wrapper.find(`[data-test="${name}"]`);
-  };
-
-  it('expect OtherSkills component is rendered without crashing', () => {
-    const wrapper = setup();
+  it('renders without crashing', () => {
+    const { baseElement } = setup();
+    expect(baseElement).toBeTruthy();
   });
 
-  it('expect component-OtherSkills is rendered', () => {
-    const wrapper = setup();
-    const OtherSkills = findJSXByAttr('component-OtherSkills', wrapper);
-    expect(OtherSkills.length).toBe(1);
+  it('renders root element with data-test="component-OtherSkills"', () => {
+    setup();
+    expect(screen.getByTestId('component-OtherSkills')).toBeInTheDocument();
   });
 });
