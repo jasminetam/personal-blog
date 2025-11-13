@@ -1,19 +1,24 @@
 import { FaReact } from "react-icons/fa";
 import {
-  SiTypescript,
   SiNextdotjs,
-  SiCircleci,
-  SiGraphql,
-  SiApollographql,
-  SiJest,
+  SiTypescript,
   SiNodedotjs,
-  SiTailwindcss,
-  SiMongodb,
   SiExpress,
-  SiStorybook,
-  SiSass,
-  SiMysql,
+  SiJava,
+  SiSpringboot,
+  SiPostgresql,
+  SiMongodb,
+  SiAmazonaws,
   SiDocker,
+  SiGraphql,
+  SiJest,
+  SiJavascript,
+  SiPython,
+  SiJenkins,
+  SiGithub,
+  SiMysql,
+  SiCypress,
+  SiTailwindcss,
 } from "react-icons/si";
 
 const skillIcons = [
@@ -26,16 +31,12 @@ const skillIcons = [
     icon: <SiNextdotjs />,
   },
   {
-    name: "Typescript",
+    name: "TypeScript",
     icon: <SiTypescript />,
   },
   {
-    name: "MongoDB",
-    icon: <SiMongodb />,
-  },
-  {
-    name: "TailwindCSS",
-    icon: <SiTailwindcss />,
+    name: "JavaScript",
+    icon: <SiJavascript />,
   },
   {
     name: "Node.js",
@@ -46,36 +47,60 @@ const skillIcons = [
     icon: <SiExpress />,
   },
   {
-    name: "GraphQL",
-    icon: <SiGraphql />,
+    name: "Java",
+    icon: <SiJava />,
+  },
+  {
+    name: "Spring Boot",
+    icon: <SiSpringboot />,
+  },
+  {
+    name: "Python",
+    icon: <SiPython />,
+  },
+  {
+    name: "PostgreSQL",
+    icon: <SiPostgresql />,
   },
   {
     name: "MySQL",
     icon: <SiMysql />,
   },
   {
-    name: "Apollo",
-    icon: <SiApollographql />,
+    name: "MongoDB",
+    icon: <SiMongodb />,
   },
   {
-    name: "Jest",
-    icon: <SiJest />,
-  },
-  {
-    name: "Circle Ci",
-    icon: <SiCircleci />,
+    name: "AWS",
+    icon: <SiAmazonaws />,
   },
   {
     name: "Docker",
     icon: <SiDocker />,
   },
   {
-    name: "Storybook",
-    icon: <SiStorybook />,
+    name: "GitHub",
+    icon: <SiGithub />,
   },
   {
-    name: "SASS",
-    icon: <SiSass />,
+    name: "Jenkins",
+    icon: <SiJenkins />,
+  },
+  {
+    name: "GraphQL",
+    icon: <SiGraphql />,
+  },
+  {
+    name: "Jest",
+    icon: <SiJest />,
+  },
+  {
+    name: "Cypress",
+    icon: <SiCypress />,
+  },
+  {
+    name: "TailwindCSS",
+    icon: <SiTailwindcss />,
   },
 ];
 

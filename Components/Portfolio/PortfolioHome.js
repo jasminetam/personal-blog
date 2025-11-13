@@ -49,24 +49,17 @@ export default function PortfolioHome({ forwardRef }) {
           <SetIntersectionObserver type={2} direction="up">
             <div>
               <p className="portfolioHeaderDesc">
-                A proactive {highlighting("Software Engineer")} with{" "}
-                {highlighting("Right to Work in the UK")} and{" "}
-                {highlighting("four years")} of commercial experience. I build
-                {` `}
-                {highlighting("full-stack")} products with{" "}
-                {highlighting("React, Next.js, TypeScript, Java & Node.js")}.
-                Recently, I’ve worked on an{" "}
-                {highlighting("enterprise-scale LMS")}—optimising core modules
-                across front-end and back-end, leading a migration from Redux
-                Saga to React Query with stronger Cypress coverage (cutting API
-                errors by 40%), and contributing to{" "}
-                {highlighting("CSP compliance")} refactors. I also developed a
-                {` `}
-                {highlighting("client skin framework")} used by 30+ corporate
-                customers for scalable branding. I care about{" "}
-                {highlighting("clean, maintainable code")}, performance, and
-                collaborating in {highlighting("Agile")} teams to ship reliable,
-                user-centred features.
+                {highlighting("Software Engineer")} with hands-on experience
+                building and maintaining{" "}
+                {highlighting("enterprise-grade SaaS applications")}. Skilled in{" "}
+                {highlighting("full-stack")} development using{" "}
+                {highlighting("Java, React, Next.js, and TypeScript")}, with a
+                focus on{" "}
+                {highlighting("clean, maintainable, and scalable code")}.
+                Passionate about improving {highlighting("performance")},{" "}
+                {highlighting("user experience")}, and{" "}
+                {highlighting("development workflows")}. Continuously learning
+                through {highlighting("side projects")}.
               </p>
             </div>
           </SetIntersectionObserver>
