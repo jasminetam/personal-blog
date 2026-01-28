@@ -11,8 +11,8 @@ export default function ProjectLayout({ project }) {
         target="_blank"
         rel="noreferrer"
       >
-        <div className="projectDetails">
-          <div className="projectImgWrapper">
+        <span className="projectDetails">
+          <span className="projectImgWrapper">
           <Image
             responsive={true}
             width={400}
@@ -21,7 +21,7 @@ export default function ProjectLayout({ project }) {
             src={project?.imgUrl}
             alt={project?.name}
             />
-            </div>
+            </span>
           <h3 className="projectHeading">{project?.name}</h3>
           <h6 className="projectSubHeading">{project?.desc}</h6>
           <p className="projectSubHeading">
@@ -29,12 +29,12 @@ export default function ProjectLayout({ project }) {
           </p>
           <p className="projectDescription">
             {project?.tag.map((tag, idx) => (
-              <div className="frameworkItems" key={idx}>
+              <span className="frameworkItems" key={idx}>
                 <GiDiamonds /> {tag}
-              </div>
+              </span>
             ))}
           </p>
-        </div>
+        </span>
       </a>
     </div>
   );

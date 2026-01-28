@@ -1,14 +1,20 @@
-import { FaReact } from "react-icons/fa";
-import {
+import * as FaIcons from "react-icons/fa";
+import * as SiIcons from "react-icons/si";
+
+// Font Awesome
+const { FaReact } = FaIcons;
+
+// Simple Icons (v5-compatible)
+const {
   SiNextdotjs,
   SiTypescript,
   SiNodedotjs,
   SiExpress,
-  SiJava,
-  SiSpringboot,
+  SiOpenjdk,      // Replacement for SiJava
+  SiSpring,       // Replacement for SiSpringboot
   SiPostgresql,
   SiMongodb,
-  SiAmazonaws,
+  SiAmazon,       // Replacement for SiAmazonaws
   SiDocker,
   SiGraphql,
   SiJest,
@@ -18,8 +24,8 @@ import {
   SiGithub,
   SiMysql,
   SiCypress,
-  SiTailwindcss,
-} from "react-icons/si";
+  SiTailwindcss
+} = SiIcons;
 
 const skillIcons = [
   {
@@ -48,11 +54,11 @@ const skillIcons = [
   },
   {
     name: "Java",
-    icon: <SiJava />,
+    icon: <SiOpenjdk />,
   },
   {
-    name: "Spring Boot",
-    icon: <SiSpringboot />,
+    name: "Spring",
+    icon: <SiSpring />,
   },
   {
     name: "Python",
@@ -72,7 +78,7 @@ const skillIcons = [
   },
   {
     name: "AWS",
-    icon: <SiAmazonaws />,
+    icon: <SiAmazon />,
   },
   {
     name: "Docker",
