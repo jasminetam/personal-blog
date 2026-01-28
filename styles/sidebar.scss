@@ -66,6 +66,9 @@
 .sidebarSocial {
   margin-top: 15px;
   color: $primary-color;
+  & div p {
+    margin: 12px 0;
+  }
 }
 
 .alignIcons {

@@ -1,20 +1,18 @@
-const withPWA = require("next-pwa");
-const runtimeCaching = require("next-pwa/cache");
-const path = require("path");
-
-const base = {
-  env: { MONGODB: process.env.MONGODB },
-  sassOptions: { includePaths: [path.join(__dirname, "styles")] },
-};
-
-const withPwaConfig = withPWA({
-  ...base,
-  pwa: {
-    dest: "public",
-    runtimeCaching,
-    disable: process.env.NODE_ENV === "development",
-  },
+const withPWA = require("next-pwa")({
+  dest: "public",
+  runtimeCaching: require("next-pwa/cache"),
+  disable: process.env.NODE_ENV === "development"
 });
 
-module.exports =
-  process.env.NODE_ENV === "development" ? base : withPwaConfig;
+const path = require("path");
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")]
+  }
+};
+
+module.exports = withPWA(nextConfig);
